@@ -30,14 +30,14 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 720,
-              linkImagesToOriginal: false,
-              backgroundColor: `none`,
-            }
-          },
+          `gatsby-remark-copy-images`,
+          // {
+          //   resolve: `gatsby-remark-images`,
+          //   options: {
+          //     maxWidth: 720,
+          //     linkImagesToOriginal: false,
+          //   }
+          // },
           {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
