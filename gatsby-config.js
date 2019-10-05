@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog (AMP to PWA)`,
-    author: `Tomoyuki Kashiro`,
-    description: `A starter blog (AMP to PWA) demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-amp-to-pwa.netlify.com/`,
+    title: `Code Me, dsewnr`,
+    author: `dsewnr`,
+    description: `軟體工程師．大 Linux 神教教徒`,
+    siteUrl: `https://p3t.lu/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `dsewnr`,
     },
   },
   plugins: [
@@ -98,8 +98,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Code Me, dsewnr`,
+        short_name: `Code Me`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -114,8 +114,8 @@ module.exports = {
         gaConfigPath: 'gaConfig.json',
         dist: 'public/amp',
         serviceWorker: {
-          src: 'https://gatsby-starter-blog-amp-to-pwa.netlify.com/sw.js',
-          'data-iframe-src': 'https://gatsby-starter-blog-amp-to-pwa.netlify.com/amp-install-serviceworker.html',
+          src: 'https://p3t.lu/sw.js',
+          'data-iframe-src': 'https://p3t.lu/amp-install-serviceworker.html',
           layout: 'nodisplay'
         }
       }
@@ -128,5 +128,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
