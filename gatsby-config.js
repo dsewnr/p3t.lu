@@ -5,7 +5,10 @@ module.exports = {
     description: `軟體工程師．大 Linux 神教教徒`,
     siteUrl: `https://p3t.lu/`,
     social: {
+      email: `dsewnr@just4fun.dev`,
       twitter: `dsewnr`,
+      github: `dsewnr`,
+      linkedin: `dsewnr`,
     },
   },
   plugins: [
