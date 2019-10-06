@@ -7,12 +7,6 @@ date: 2019-10-06T03:51:01+08:00
 draft: false
 ---
 
-最近看到 Gatsby 都會想到這個廣告，小時候還蠻紅的… 但本肥宅不是 TA QQ
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Kc3LgL65qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
 參加讀書會聽到，同事一直講，推上一直看到，引起來我好奇心
 
 - [Github](https://github.com/gatsbyjs/gatsby) 38.8K 個星星
@@ -20,7 +14,13 @@ draft: false
 - [Plugin](https://www.gatsbyjs.org/plugins/) 豐富，包括 [AMP](https://www.gatsbyjs.org/plugins/?=amp) 支援
 - 支援 CMSs, markdown, data 多種 datasource
 
-更多資訊請到 [www.gatsbyjs.org](https://www.gatsbyjs.org/) 看
+更多資訊請到 [www.gatsbyjs.org](https://www.gatsbyjs.org/)
+
+---
+
+其實看到 Gatsby 都會想到這個廣告，小時候還蠻紅的… 但本肥宅不是 TA QQ
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Kc3LgL65qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
