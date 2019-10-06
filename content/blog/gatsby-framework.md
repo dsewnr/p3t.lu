@@ -20,7 +20,7 @@ draft: false
 
 其實看到 Gatsby 都會想到這個廣告，小時候還蠻紅的… 但本肥宅不是 TA QQ
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4Kc3LgL65qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Kc3LgL65qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" layout="responsive" allowfullscreen></iframe>
 
 ---
 
