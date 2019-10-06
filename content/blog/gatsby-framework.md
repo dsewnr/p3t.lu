@@ -32,6 +32,7 @@ draft: false
 5. sitemap 要另外安裝外掛
 6. AMP 圖片顯示上有點問題，換外掛解決/捨棄優化
 7. 我的標籤雲不見了，要找找看有沒有得用
+8. 預設的 YouTube iframe 屬性不足，html2amp 後 AMP validation 不會過
 
 除了上述這些比較明顯的問題，如果不硬要用 AMP 主題的話，應該是不會遇到太多麻煩，我猜 XD
 
