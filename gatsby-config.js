@@ -109,7 +109,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#debe1d`,
         display: `minimal-ui`,
-        icon: `content/assets/profile-pic.jpg`
+        icon: `content/assets/gatsby-icon.png`
       }
     },
     {
