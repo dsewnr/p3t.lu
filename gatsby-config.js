@@ -107,9 +107,9 @@ module.exports = {
         short_name: `Code Me`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#6aac0e`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`
+        icon: `content/assets/profile-pic.jpg`
       }
     },
     {
