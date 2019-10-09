@@ -22,3 +22,9 @@ Kobo 沒有內建英漢字典，然後內建的英英字典超難用…
 ---
 
 Kobo 英漢字典檔[下載連結](https://www.mobileread.com/forums/showpost.php?p=3859267&postcount=592) 或 [備用連結](http://bit.ly/dicthtml-en-zh)。
+
+### 安裝字典檔
+1. USB 接上電腦，找到 `.kobo` 進入並打開 `dict` 資料夾
+2. 把裡面的 `dicthtml.zip` 更名或備份出來(選擇性)
+3. 把下載下來的檔案丟進去 `dict` 資料夾，並重新命名為 `dicthtml.zip`
+4. 退出連接去試試新的字典檔！
