@@ -1,9 +1,9 @@
 ---
-title: "PyCon Taiwan 2019"
-author: "dsewnr"
+title: 'PyCon Taiwan 2019'
+author: 'dsewnr'
 #cover: "/img/cover.jpg"
-tags: ["PyCon", "Taiwan", "2019", "Python"]
-categories: ["Con"]
+tags: ['PyCon', 'Taiwan', '2019', 'Python']
+categories: ['Con']
 date: 2019-09-26T23:37:16+08:00
 draft: false
 ---
@@ -25,61 +25,71 @@ draft: false
 PyCon 跟目前參加過的 con 比，有好多國外的與會者跟講者，也蠻多之前沒看過的贊助商。
 
 ### 報到領到的資料
+
 ![](/images/pycon-taiwan-2019-0.jpg)
 
 ---
 
 ### 有質感的硬卡
+
 ![](/images/pycon-taiwan-2019-1.jpg)
 
 ---
 
 ### 現場玩了 iCHEF 的點餐結帳流程
+
 ![](/images/pycon-taiwan-2019-2.jpg)
 
 ---
 
 ### 去饒河夜市吃晚餐
+
 ![](/images/pycon-taiwan-2019-3.jpg)
 
 ---
 
 ### 跟蛇蛇佈景合照
+
 ![](/images/pycon-taiwan-2019-4.jpg)
 
 ---
 
 ### Apache NiFi flow
+
 ![](/images/pycon-taiwan-2019-5.jpg)
 
 ---
 
 ### Apache NiFi suggestions
+
 ![](/images/pycon-taiwan-2019-6.jpg)
 
 ---
 
 ### 午茶小點
+
 ![](/images/pycon-taiwan-2019-7.jpg)
 
 ---
 
 ### 聽 Instagram 講者介紹 [LibCST](https://github.com/Instagram/LibCST)
+
 ![](/images/pycon-taiwan-2019-8.jpg)
 
 ---
 
 ### [2019 MOPCON](https://mopcon.org/2019/) 開箱
+
 ![](/images/pycon-taiwan-2019-9.jpg)
 
 ---
 
-這次最令人印象深刻的就是 Unnotech 的挑戰賽，議程中一堆人畫面都是這個…
+這次最令人印象深刻的就是 Unnotech 的[挑戰賽](https://pycon.unnotech.com/)，議程中一堆人畫面都是這個…
 
 不得不說他們真的蠻用心準備的！
 
-
 ### Unnotech Python Challenge
+
 ![](/images/pycon-taiwan-2019-10.jpg)
 
 這次聽到蠻多元的主題，Data Pipeline、Deep Learning、Statistics、Profiling、GraphQL、Bot、Asynchronous I/O…等。
