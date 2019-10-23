@@ -2,7 +2,7 @@
 title: 'PyCon Taiwan 2019'
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
-tags: ['PyCon', 'Taiwan', '2019', 'Python']
+tags: ['PyCon', 'Taiwan', '2019', 'Python', 'Taipei']
 categories: ['Con']
 date: 2019-09-26T23:37:16+08:00
 draft: false

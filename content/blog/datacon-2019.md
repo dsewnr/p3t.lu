@@ -1,9 +1,9 @@
 ---
-title: "DataCon.TW 2019"
-author: "dsewnr"
+title: 'DataCon.TW 2019'
+author: 'dsewnr'
 #cover: "/img/cover.jpg"
-tags: ["DataCon", "2019"]
-categories: ["Con"]
+tags: ['DataCon', '2019', 'Taipei']
+categories: ['Con']
 date: 2019-09-26T23:04:44+08:00
 draft: false
 ---
@@ -24,6 +24,6 @@ draft: false
 
 當然還聽到很多其他非常不錯的分享，希望明年還有機會參加 😀
 
-
 ### DataCon.TW 2019
+
 ![](/images/datacon-2019.jpg)
