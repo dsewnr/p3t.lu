@@ -262,4 +262,20 @@ FB 社群 [遠距工作者在台灣 (work remotely in Taiwan)](https://www.faceb
 
 好吃！
 
+---
+
+這篇文章是用 [Making a list of numbers](https://vim.fandom.com/wiki/Making_a_list_of_numbers) in [Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki) 產生樣版然後再編修的，語法大概會像下面這樣：
+
+```
+# 先產生插入圖片的 markdown templates
+:for i in range(0,37) | put ='### title\n![](/images/mopcon-2019-'.i.'.jpg)\n\n---' | endfor
+
+# 再把要換行的字串 \n 取代成真的換行
+:%s/\\n/\r/g
+
+# 最後是修改內容完成文章
+```
+
+---
+
 ### MOPCON 明年見！
