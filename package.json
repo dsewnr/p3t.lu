@@ -61,9 +61,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "amp": "find public/amp -type f | xargs amphtml-validator",
-    "test": "npm run amp"
+    "test": "npm run amp",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
-    "amphtml-validator": "^1.0.23"
+    "amphtml-validator": "^1.0.23",
+    "gh-pages": "^2.1.1"
   }
 }
