@@ -1,8 +1,8 @@
 ---
-title: "新椅子來囉~ Enjoy 121"
+title: "Ergohuman Enjoy 121 企業版，新椅子來囉~"
 author: "dsewnr"
 #cover: "/img/cover.jpg"
-tags: ["Development Environment", "Gears", "Chair"]
+tags: ["Development Environment", "Gears", "Chair", "Ergohuman"]
 categories: ["Dev"]
 date: 2019-09-11T23:23:43+08:00
 draft: false
@@ -37,3 +37,6 @@ draft: false
 ![](/images/enjoy-121-3.jpg)
 
 比原本的椅子好坐多了，輪子滑起來蠻安靜的，現在正坐著這張椅子吹電扇，屁屁好涼好舒服 XD
+
+[2019/10/24 Updated] 坐了一個多月真的很好坐，完全沒後悔，女兒超愛跟我搶椅子！
+
