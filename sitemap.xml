@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://p3t.lu/p3t.lu/posts/modify-koko-id/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/mopcon-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/python-pandas-nan-to-none/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/vimrc/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/my-favorite-podcasts-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/kobo-dict/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/gatsby-framework/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/e-ink-kobo-libra-h2o/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/cli-log-parsing-cool/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/pycon-taiwan-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/datacon-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/enjoy-121/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/upgrade-mongodb-from-3.2-to-4.2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/golang-chromedp-v0.4.0/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/coscup-2019/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/vim-coc-tabnine-autocomplete/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/golang-mongodb-mgo-v2-unmaintained/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/posts/hello-world/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://p3t.lu/p3t.lu/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
