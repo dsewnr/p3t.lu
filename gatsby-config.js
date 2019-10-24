@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/p3t.lu',
+  pathPrefix: '/',
   siteMetadata: {
     title: `Code Me, dsewnr`,
     author: `dsewnr`,
