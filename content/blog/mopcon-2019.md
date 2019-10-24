@@ -165,6 +165,8 @@ FB 社群 [遠距工作者在台灣 (work remotely in Taiwan)](https://www.faceb
 
 ![](/images/mopcon-2019-24.jpg)
 
+覺得超讚，用買 Kobo 有送的 Kobo 點數買了[商業思維 Business Thinking：職涯躍進的唯一解！一次搞懂企業如何高效運轉！](https://www.kobo.com/tw/zh/ebook/business-thinking)
+
 ---
 
 ### [@sudoliyang](https://github.com/sudoliyang) 跟 Gipi 合照
