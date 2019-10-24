@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 24 Oct 2019 11:55:19 GMT</lastBuildDate><item><title><![CDATA[國泰世華 KOKO ID 變更方法]]></title><description><![CDATA[去 MOPCON 不小心在國泰攤位辦了 KOKO 帳戶，都是為了現場拿電腦包 辦 KOKO 送的當肯電腦包 KOKO 帳戶兩天就通過了 可是我在使用 KOKO App 設定 KOKO ID…]]></description><link>https://p3t.lu/posts/modify-koko-id/</link><guid isPermaLink="false">https://p3t.lu/posts/modify-koko-id/</guid><pubDate>Thu, 24 Oct 2019 10:43:16 GMT</pubDate><content:encoded>&lt;p&gt;去 MOPCON 不小心在國泰攤位辦了 KOKO 帳戶，都是為了現場拿電腦包&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 24 Oct 2019 13:11:08 GMT</lastBuildDate><item><title><![CDATA[國泰世華 KOKO ID 變更方法]]></title><description><![CDATA[去 MOPCON 不小心在國泰攤位辦了 KOKO 帳戶，都是為了現場拿電腦包 辦 KOKO 送的當肯電腦包 KOKO 帳戶兩天就通過了 可是我在使用 KOKO App 設定 KOKO ID…]]></description><link>https://p3t.lu/posts/modify-koko-id/</link><guid isPermaLink="false">https://p3t.lu/posts/modify-koko-id/</guid><pubDate>Thu, 24 Oct 2019 10:43:16 GMT</pubDate><content:encoded>&lt;p&gt;去 MOPCON 不小心在國泰攤位辦了 KOKO 帳戶，都是為了現場拿電腦包&lt;/p&gt;
 &lt;h3&gt;辦 KOKO 送的當肯電腦包&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/koko-id-0.jpg&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -1995,7 +1995,7 @@ $ cat access.log.210.52.224.155-200-201909280114
 &lt;p&gt;講者在 Apache Software Foundation 開源的貢獻非常令人激賞！&lt;/p&gt;
 &lt;p&gt;當然還聽到很多其他非常不錯的分享，希望明年還有機會參加 😀&lt;/p&gt;
 &lt;h3&gt;DataCon.TW 2019&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/images/datacon-2019.jpg&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新椅子來囉~ Enjoy 121]]></title><description><![CDATA[坐了兩個多月租屋處附的燒屁股椅子… 終於等到這一天了… 因為在家用電腦的時間也算是蠻長的，而且平常客廳也不太會開冷氣，所以起了一個要買網椅的念頭！ 某大大是一直推什麼 Herman Miller 啦… 但小弟的財力無法負荷那麼狂暴的攻擊，會直接倒地 Orz…]]></description><link>https://p3t.lu/posts/enjoy-121/</link><guid isPermaLink="false">https://p3t.lu/posts/enjoy-121/</guid><pubDate>Wed, 11 Sep 2019 15:23:43 GMT</pubDate><content:encoded>&lt;p&gt;坐了兩個多月租屋處附的燒屁股椅子… 終於等到這一天了…&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/datacon-2019.jpg&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Ergohuman Enjoy 121 企業版，新椅子來囉~]]></title><description><![CDATA[坐了兩個多月租屋處附的燒屁股椅子… 終於等到這一天了… 因為在家用電腦的時間也算是蠻長的，而且平常客廳也不太會開冷氣，所以起了一個要買網椅的念頭！ 某大大是一直推什麼 Herman Miller 啦… 但小弟的財力無法負荷那麼狂暴的攻擊，會直接倒地 Orz…]]></description><link>https://p3t.lu/posts/enjoy-121/</link><guid isPermaLink="false">https://p3t.lu/posts/enjoy-121/</guid><pubDate>Wed, 11 Sep 2019 15:23:43 GMT</pubDate><content:encoded>&lt;p&gt;坐了兩個多月租屋處附的燒屁股椅子… 終於等到這一天了…&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;因為在家用電腦的時間也算是蠻長的，而且平常客廳也不太會開冷氣，所以起了一個要買網椅的念頭！&lt;/p&gt;
 &lt;p&gt;某大大是一直推什麼 Herman Miller 啦… 但小弟的財力無法負荷那麼狂暴的攻擊，會直接倒地 Orz&lt;/p&gt;
@@ -2011,7 +2011,8 @@ $ cat access.log.210.52.224.155-200-201909280114
 &lt;hr&gt;
 &lt;h3&gt;安靜的輪子&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;/images/enjoy-121-3.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;比原本的椅子好坐多了，輪子滑起來蠻安靜的，現在正坐著這張椅子吹電扇，屁屁好涼好舒服 XD&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Upgrade MongoDB From 3.2 to 4.2]]></title><description><![CDATA[在使用 side project 的時候發現一些功能很慢… 在優化了功能之後，想說順手把 MongoDB 升級好了，沒想到坑越來越大… 官方文件建議的升級順序是 3.2 -> 3.4 -> 3.6 -> 4.2 但是在嘗試從 3.2 升到 3.…]]></description><link>https://p3t.lu/posts/upgrade-mongodb-from-3.2-to-4.2/</link><guid isPermaLink="false">https://p3t.lu/posts/upgrade-mongodb-from-3.2-to-4.2/</guid><pubDate>Sun, 01 Sep 2019 17:14:35 GMT</pubDate><content:encoded>&lt;p&gt;在使用 side project 的時候發現一些功能很慢…&lt;/p&gt;
+&lt;p&gt;比原本的椅子好坐多了，輪子滑起來蠻安靜的，現在正坐著這張椅子吹電扇，屁屁好涼好舒服 XD&lt;/p&gt;
+&lt;p&gt;[2019/10/24 Updated] 坐了一個多月真的很好坐，完全沒後悔，女兒超愛跟我搶椅子！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Upgrade MongoDB From 3.2 to 4.2]]></title><description><![CDATA[在使用 side project 的時候發現一些功能很慢… 在優化了功能之後，想說順手把 MongoDB 升級好了，沒想到坑越來越大… 官方文件建議的升級順序是 3.2 -> 3.4 -> 3.6 -> 4.2 但是在嘗試從 3.2 升到 3.…]]></description><link>https://p3t.lu/posts/upgrade-mongodb-from-3.2-to-4.2/</link><guid isPermaLink="false">https://p3t.lu/posts/upgrade-mongodb-from-3.2-to-4.2/</guid><pubDate>Sun, 01 Sep 2019 17:14:35 GMT</pubDate><content:encoded>&lt;p&gt;在使用 side project 的時候發現一些功能很慢…&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;在優化了功能之後，想說順手把 MongoDB 升級好了，沒想到坑越來越大…&lt;/p&gt;
 &lt;p&gt;官方文件建議的升級順序是 3.2 -&gt; 3.4 -&gt; 3.6 -&gt; 4.2&lt;/p&gt;
