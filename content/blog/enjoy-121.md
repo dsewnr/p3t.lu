@@ -1,8 +1,8 @@
 ---
-title: "Ergohuman Enjoy 121 企業版，新椅子來囉~"
+title: "Ergohuman Enjoy 121 企業版開箱，新椅子來囉~"
 author: "dsewnr"
 #cover: "/img/cover.jpg"
-tags: ["Development Environment", "Gears", "Chair", "Ergohuman"]
+tags: ["Development Environment", "Gears", "Chair", "Ergohuman", "開箱"]
 categories: ["Dev"]
 date: 2019-09-11T23:23:43+08:00
 draft: false

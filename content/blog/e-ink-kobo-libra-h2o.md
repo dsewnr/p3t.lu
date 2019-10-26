@@ -2,7 +2,7 @@
 title: "E Ink: Kobo Libra H2O 開箱"
 author: "dsewnr"
 #cover: "/img/cover.jpg"
-tags: ["E Ink", "Kobo", "Books", "Calibre", "Gears"]
+tags: ["E Ink", "Kobo", "Books", "Calibre", "Gears", "開箱"]
 categories: ["Unboxing"]
 date: 2019-10-01T19:29:44+08:00
 draft: false
