@@ -31,7 +31,10 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-copy-images`,
+          // `gatsby-remark-copy-images`,
+          `gatsby-remark-images`,
+          `gatsby-plugin-sharp`,
+          `gatsby-transformer-sharp`,
           // {
           //   resolve: `gatsby-remark-images`,
           //   options: {
