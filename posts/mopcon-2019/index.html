@@ -1,103 +1,989 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.1812f792dc7f28de35af.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-a50c381443e6993188ed9cc4b6806866.woff2) format("woff2"),url(/static/merriweather-latin-300-2c73b119ad85e697123658b8a091ff83.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-bd410cbf8c272acd4fbdd9f61a7015bf.woff2) format("woff2"),url(/static/merriweather-latin-300italic-9deeb422b65afb1daacc039296bb3640.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-f936cb550d4dcd769f75c453207ac5e6.woff2) format("woff2"),url(/static/merriweather-latin-400-ab0616e6d856817eff54eb8c5e1664e4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-5c9a23d08e2c851e5a25795b940acd4f.woff2) format("woff2"),url(/static/merriweather-latin-400italic-0ab4b54f3b1e8b14cf755970fde8ce35.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-1636f13a52ca3f0eb8784c9c57f62082.woff2) format("woff2"),url(/static/merriweather-latin-700-cc673c945b482dc1378d4a3c95ffd175.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-8b0db67123584893c6591accbc51640c.woff2) format("woff2"),url(/static/merriweather-latin-700italic-513649f5b9ba4675cff15cf3f7ad4f2a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-46631a9aab93dec3ed34f429dd1a5646.woff2) format("woff2"),url(/static/merriweather-latin-900-a0528570caa2c785891308ce604d8db7.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-a26a8168916e5d4e5485081171d7fdb0.woff2) format("woff2"),url(/static/merriweather-latin-900italic-db42a3f34378e69ef5aebb6717f1f33e.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.1.10"/><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#debe1d"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">MOPCON 2019 | Code Me, dsewnr</title><link data-react-helmet="true" rel="canonical" href="https://p3t.lu/posts/mopcon-2019/"/><link data-react-helmet="true" rel="amphtml" href="https://p3t.lu/amp/posts/mopcon-2019/"/><meta data-react-helmet="true" name="description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><meta data-react-helmet="true" property="og:title" content="MOPCON 2019"/><meta data-react-helmet="true" property="og:description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="dsewnr"/><meta data-react-helmet="true" name="twitter:title" content="MOPCON 2019"/><meta data-react-helmet="true" name="twitter:description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-7d74ce5c5e942b44cf70.js"/><link as="script" rel="preload" href="/0-186f7d81f8627a75bab8.js"/><link as="script" rel="preload" href="/app-3164dd4ea77c31413143.js"/><link as="script" rel="preload" href="/styles-f35f2d1f5550ba3c536f.js"/><link as="script" rel="preload" href="/webpack-runtime-988ec65abd88ce68f487.js"/><link as="fetch" rel="preload" href="/static/d/307/path---posts-mopcon-2019-aab-1f7-aBK17M4bchdWJB7qFdcLre8M.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Code Me, dsewnr</a></h3></header><main><h1>MOPCON 2019</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 23, 2019</p><div><h3>第一天，往 MOPCON 的路上，凹子底站</h3>
-<p><img src="/images/mopcon-2019-0.jpg"></p>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.1812f792dc7f28de35af.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-a50c381443e6993188ed9cc4b6806866.woff2) format("woff2"),url(/static/merriweather-latin-300-2c73b119ad85e697123658b8a091ff83.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-bd410cbf8c272acd4fbdd9f61a7015bf.woff2) format("woff2"),url(/static/merriweather-latin-300italic-9deeb422b65afb1daacc039296bb3640.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-f936cb550d4dcd769f75c453207ac5e6.woff2) format("woff2"),url(/static/merriweather-latin-400-ab0616e6d856817eff54eb8c5e1664e4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-5c9a23d08e2c851e5a25795b940acd4f.woff2) format("woff2"),url(/static/merriweather-latin-400italic-0ab4b54f3b1e8b14cf755970fde8ce35.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-1636f13a52ca3f0eb8784c9c57f62082.woff2) format("woff2"),url(/static/merriweather-latin-700-cc673c945b482dc1378d4a3c95ffd175.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-8b0db67123584893c6591accbc51640c.woff2) format("woff2"),url(/static/merriweather-latin-700italic-513649f5b9ba4675cff15cf3f7ad4f2a.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-46631a9aab93dec3ed34f429dd1a5646.woff2) format("woff2"),url(/static/merriweather-latin-900-a0528570caa2c785891308ce604d8db7.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-a26a8168916e5d4e5485081171d7fdb0.woff2) format("woff2"),url(/static/merriweather-latin-900italic-db42a3f34378e69ef5aebb6717f1f33e.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.1.10"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="stylesheet" href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css"/><link rel="alternate" type="application/rss+xml" title="Gatsby RSS Feed" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#debe1d"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png"/><title data-react-helmet="true">MOPCON 2019 | Code Me, dsewnr</title><link data-react-helmet="true" rel="canonical" href="https://p3t.lu/posts/mopcon-2019/"/><link data-react-helmet="true" rel="amphtml" href="https://p3t.lu/amp/posts/mopcon-2019/"/><meta data-react-helmet="true" name="description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><meta data-react-helmet="true" property="og:title" content="MOPCON 2019"/><meta data-react-helmet="true" property="og:description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="dsewnr"/><meta data-react-helmet="true" name="twitter:title" content="MOPCON 2019"/><meta data-react-helmet="true" name="twitter:description" content="第一天，往 MOPCON 的路上，凹子底站 MOPCON 場地高雄國際會議中心 杜奕瑾講「HI AI~」 聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！ PTT 創世神杜奕瑾 MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！ 「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX…"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-703a250183669ccd6d08.js"/><link as="script" rel="preload" href="/0-c1abf0809c81a40b30a0.js"/><link as="script" rel="preload" href="/app-30953bcfe2f779954489.js"/><link as="script" rel="preload" href="/styles-34cef343e4df6c2b7309.js"/><link as="script" rel="preload" href="/webpack-runtime-3645322cfb088ab41b16.js"/><link as="fetch" rel="preload" href="/static/d/773/path---posts-mopcon-2019-aab-1f7-Zzf2ZtSJ4r5WadoRDWOmeVROLtg.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Code Me, dsewnr</a></h3></header><main><h1>MOPCON 2019</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem">October 23, 2019</p><div><h3>第一天，往 MOPCON 的路上，凹子底站</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3cfd041065237aa472ab0fd1fc472646/00e39/mopcon-2019-0.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 177.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAQBAwUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHpYl2RWwHh+4t2DCgMs5uCP//EABsQAAIDAQEBAAAAAAAAAAAAAAABAhESEAMi/9oACAEBAAEFAoP51rm3Xg0WKRt1aN2QynaFFD5//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwFf/8QAFxEBAAMAAAAAAAAAAAAAAAAAEAAREv/aAAgBAgEBPwEubf/EABwQAAIBBQEAAAAAAAAAAAAAAAABEBESICFBMv/aAAgBAQAGPwJGoWxqPUdOFbsf/8QAHhAAAwACAgMBAAAAAAAAAAAAAAERITFRgUFhkaH/2gAIAQEAAT8hbxOCXJqJGDwyKO2RqvK+lFpg0q2vQ6Ct46E/AFNXokGyV8n/2gAMAwEAAgADAAAAEIc6wAgf/8QAFxEBAQEBAAAAAAAAAAAAAAAAERAAIf/aAAgBAwEBPxBeQxf/xAAaEQACAgMAAAAAAAAAAAAAAAABEQAQITFB/9oACAECAQE/EEsxwkN07X//xAAdEAEAAwACAwEAAAAAAAAAAAABABEhMUFxgbHh/9oACAEBAAE/EKbdB95H1KGnIKaETHYEsyyosBdsPHMfp2L0EAxA6L+RN2PHL8nIPsyzQktC7xTKga0zpQwFg2MOuoJ2PDP/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 0"
+        title="mopcon 2019 0"
+        src="/static/3cfd041065237aa472ab0fd1fc472646/55071/mopcon-2019-0.jpg"
+        srcset="/static/3cfd041065237aa472ab0fd1fc472646/493b1/mopcon-2019-0.jpg 163w,
+/static/3cfd041065237aa472ab0fd1fc472646/17f95/mopcon-2019-0.jpg 325w,
+/static/3cfd041065237aa472ab0fd1fc472646/55071/mopcon-2019-0.jpg 650w,
+/static/3cfd041065237aa472ab0fd1fc472646/00e39/mopcon-2019-0.jpg 720w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>MOPCON 場地高雄國際會議中心</h3>
-<p><img src="/images/mopcon-2019-1.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/376d5a2a54ddc7cdbe44ed143368e31b/7b3f7/mopcon-2019-1.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAgUD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAHorRdNozQoYR1ZCTL/AP/EAB4QAAICAgIDAAAAAAAAAAAAAAECAAMREgQQEyEy/9oACAEBAAEFAr7dIr+15OocmyKxztLSfKEBmAI/31//xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAwEBPwEj/8QAFxEBAAMAAAAAAAAAAAAAAAAAEAERMf/aAAgBAgEBPwGycP/EAB4QAAIBAwUAAAAAAAAAAAAAAAABERIhMRAgQWFx/9oACAEBAAY/AqedIgulJgvA+iq68ZjZ/8QAHRAAAgICAwEAAAAAAAAAAAAAAREAIVFxMWGBEP/aAAgBAQABPyEaA8lE2JLgAg67i82FoXFRt5ANo2ocXKtQNyzzRAMgHsNiepnfz//aAAwDAQACAAMAAAAQk+7A/8QAGREAAgMBAAAAAAAAAAAAAAAAAAEQETEh/9oACAEDAQE/EMHRa7j/xAAXEQEBAQEAAAAAAAAAAAAAAAABACEQ/9oACAECAQE/EFNksc//xAAeEAEAAgMAAgMAAAAAAAAAAAABABEhMUFRYXGRsf/aAAgBAQABPxBJRaNiUfMPIvFVUpCMLdokZKFrGBfOowlhurURmQt0RSGii1YdY5iHkZP2UKtB0C/cZZtR+sFX1ZCf/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 1"
+        title="mopcon 2019 1"
+        src="/static/376d5a2a54ddc7cdbe44ed143368e31b/55071/mopcon-2019-1.jpg"
+        srcset="/static/376d5a2a54ddc7cdbe44ed143368e31b/493b1/mopcon-2019-1.jpg 163w,
+/static/376d5a2a54ddc7cdbe44ed143368e31b/17f95/mopcon-2019-1.jpg 325w,
+/static/376d5a2a54ddc7cdbe44ed143368e31b/55071/mopcon-2019-1.jpg 650w,
+/static/376d5a2a54ddc7cdbe44ed143368e31b/7b3f7/mopcon-2019-1.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>杜奕瑾講「HI AI~」</h3>
-<p><img src="/images/mopcon-2019-2.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/10991184397b94d8f0d3dd35f1f06317/7b0d7/mopcon-2019-2.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAACAP/aAAwDAQACEAMQAAABq3H1mYsFf//EABoQAAICAwAAAAAAAAAAAAAAAAIDESIBEBP/2gAIAQEAAQUCxGiOwHdkclHC/wD/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFH/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Biv/EAB0QAAEEAgMAAAAAAAAAAAAAAAABESEyAhATgpH/2gAIAQEABj8ChyqwUXzXJ1MUc//EABoQAQADAAMAAAAAAAAAAAAAAAEAESExQaH/2gAIAQEAAT8haUKSK3VUPbxhyxq87GMHVAPUoTAT/9oADAMBAAIAAwAAABCPP//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPxC1h//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxC4U//EABwQAQADAAMBAQAAAAAAAAAAAAEAESExgaFBYf/aAAgBAQABPxDkaKJT3cQkjlQe7KboO8HkVG1BKGj9gkiMGA9W3fkvzA1nc//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 2"
+        title="mopcon 2019 2"
+        src="/static/10991184397b94d8f0d3dd35f1f06317/55071/mopcon-2019-2.jpg"
+        srcset="/static/10991184397b94d8f0d3dd35f1f06317/493b1/mopcon-2019-2.jpg 163w,
+/static/10991184397b94d8f0d3dd35f1f06317/17f95/mopcon-2019-2.jpg 325w,
+/static/10991184397b94d8f0d3dd35f1f06317/55071/mopcon-2019-2.jpg 650w,
+/static/10991184397b94d8f0d3dd35f1f06317/4194c/mopcon-2019-2.jpg 975w,
+/static/10991184397b94d8f0d3dd35f1f06317/7b0d7/mopcon-2019-2.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>聽起來 Taiwan AI Labs 在做的事情也是蠻有趣的！</p>
 <hr>
 <h3>PTT 創世神杜奕瑾</h3>
-<p><img src="/images/mopcon-2019-3.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d566a5607b9d66f2e4f695daf7cf319f/7b3f7/mopcon-2019-3.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFBAP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAXd+eAomIeKljWpZKj//xAAdEAABBAIDAAAAAAAAAAAAAAABAAIDBBETITIz/9oACAEBAAEFAhEVpK1FSy62xWm4JAVkHDe1vIsXOG1vRzQT/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8BKf/EABYRAQEBAAAAAAAAAAAAAAAAABEAEP/aAAgBAgEBPwEiM//EABwQAAICAgMAAAAAAAAAAAAAAAABETECECFhgf/aAAgBAQAGPwLfbIzs5ZjYhyKDwo//xAAeEAEAAgICAwEAAAAAAAAAAAABABEhMUFxEFGBof/aAAgBAQABPyF3kDrrBj1Km7gVmaZO2alyn7IyVeq6liJB3mJGxmhfk//aAAwDAQACAAMAAAAQ4+8B/8QAGBEAAgMAAAAAAAAAAAAAAAAAACEBEBH/2gAIAQMBAT8QZpCV/8QAFxEBAQEBAAAAAAAAAAAAAAAAAREAEP/aAAgBAgEBPxDgAIYIQ3//xAAdEAEBAAICAwEAAAAAAAAAAAABEQAhMVFBYXHB/9oACAEBAAE/EBeMS8Y9ebLLi9e28VBBqdjxfeJA2lgDhqoDVHWjKZ9OPuIqETvTX7igYIFHnnAAxFJ9MOrQSoc//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 3"
+        title="mopcon 2019 3"
+        src="/static/d566a5607b9d66f2e4f695daf7cf319f/55071/mopcon-2019-3.jpg"
+        srcset="/static/d566a5607b9d66f2e4f695daf7cf319f/493b1/mopcon-2019-3.jpg 163w,
+/static/d566a5607b9d66f2e4f695daf7cf319f/17f95/mopcon-2019-3.jpg 325w,
+/static/d566a5607b9d66f2e4f695daf7cf319f/55071/mopcon-2019-3.jpg 650w,
+/static/d566a5607b9d66f2e4f695daf7cf319f/7b3f7/mopcon-2019-3.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>MOPCON 大會提供的早餐跟去年一樣是興隆居，很讚！</h3>
-<p><img src="/images/mopcon-2019-4.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/15c2af2468689c7b4ea34077477c3e30/00e39/mopcon-2019-4.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 177.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAkABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAMEBQL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/2gAMAwEAAhADEAAAAdPF084XSV2piQz4Ow4OQXA2wHP/xAAcEAACAwEAAwAAAAAAAAAAAAABAgMRIQQQEiL/2gAIAQEAAQUCYY9+3Mah2pBIxiSQRv0fSnUlxoiWVaCLgOxi/H//xAAWEQADAAAAAAAAAAAAAAAAAAABECD/2gAIAQMBAT8Bgr//xAAXEQADAQAAAAAAAAAAAAAAAAAAARBB/9oACAECAQE/AdFVP//EABwQAAIBBQEAAAAAAAAAAAAAAAABEQMQICExIv/aAAgBAQAGPwI4IR5pMUpkW2NrmX//xAAdEAADAAICAwAAAAAAAAAAAAAAAREhQTFRYaGx/9oACAEBAAE/IbYtozrghKb8/S3OtwgZ/QsFn0NbLIuRzqjNlThMuns2VZLPmjXD7EctER//2gAMAwEAAgADAAAAEJDdzfQP/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQEg/9oACAEDAQE/EEmn/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExcf/aAAgBAgEBPxBq7Iokjhk3j//EAB8QAQEAAgICAwEAAAAAAAAAAAERACExQXGhUWGB8f/aAAgBAQABPxCW+N1TJHunbtfh/mcgFXtgMmpR+9x9Y5UEjt8pmxB1jjeHdwNJvFxmsJyYpgSKHnGB5XhpyXIyfsy7bSXWWhQ0vWIKL0OsCuu8/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 4"
+        title="mopcon 2019 4"
+        src="/static/15c2af2468689c7b4ea34077477c3e30/55071/mopcon-2019-4.jpg"
+        srcset="/static/15c2af2468689c7b4ea34077477c3e30/493b1/mopcon-2019-4.jpg 163w,
+/static/15c2af2468689c7b4ea34077477c3e30/17f95/mopcon-2019-4.jpg 325w,
+/static/15c2af2468689c7b4ea34077477c3e30/55071/mopcon-2019-4.jpg 650w,
+/static/15c2af2468689c7b4ea34077477c3e30/00e39/mopcon-2019-4.jpg 720w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「馴養了一隻比猴子聰明的 AI 測試猿」KKBOX 軟體測試工程師 諶毅軒</h3>
-<p><img src="/images/mopcon-2019-5.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1c79f58effcf5e9793192332b23f8ee7/7b3f7/mopcon-2019-5.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIBAwQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQIA/9oADAMBAAIQAxAAAAG5qJikGDUPydVmkzCf/8QAHBABAAIDAAMAAAAAAAAAAAAAAgABAxESBBMy/9oACAEBAAEFAuzKVVO52UcWUrGGUfZo94nWvHltSvndz//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPwFWo//EABgRAAIDAAAAAAAAAAAAAAAAAAARARAS/9oACAECAQE/AUKtSf/EAB4QAAEDBQEBAAAAAAAAAAAAAAEAAhEQEiExcUKR/9oACAEBAAY/AkcimGkjieS0CNKXxKttEdWWP+r2t02v/8QAHRAAAwADAAMBAAAAAAAAAAAAAAERITFBYXGRwf/aAAgBAQABPyGeHt9uh9Htao89Ibx3G8EhmT/AVYe4J4HXfEc31VRbilDQZxnh530//9oADAMBAAIAAwAAABCw8/L/xAAZEQADAAMAAAAAAAAAAAAAAAAAASERQVH/2gAIAQMBAT8QbEj2VDDh/8QAGREBAQADAQAAAAAAAAAAAAAAAQARIWGh/9oACAECAQE/ECrHCeRq6X//xAAgEAEAAwABAwUAAAAAAAAAAAABABEhMUFRcYGRocHR/9oACAEBAAE/EBiY4GFu8EEWJgekY+xCXXV6jaVmTdbaF4vvsZDeDJznxUYOGFrXXituWBTFTR94AvwmEIq8EAohQtNdIl+6f//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 5"
+        title="mopcon 2019 5"
+        src="/static/1c79f58effcf5e9793192332b23f8ee7/55071/mopcon-2019-5.jpg"
+        srcset="/static/1c79f58effcf5e9793192332b23f8ee7/493b1/mopcon-2019-5.jpg 163w,
+/static/1c79f58effcf5e9793192332b23f8ee7/17f95/mopcon-2019-5.jpg 325w,
+/static/1c79f58effcf5e9793192332b23f8ee7/55071/mopcon-2019-5.jpg 650w,
+/static/1c79f58effcf5e9793192332b23f8ee7/7b3f7/mopcon-2019-5.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>午休時間</h3>
-<p><img src="/images/mopcon-2019-6.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fe007546ff033c092d7cf8427bce1295/7b0d7/mopcon-2019-6.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAVZK4OGQv//EABkQAAIDAQAAAAAAAAAAAAAAAAECABIhEf/aAAgBAQABBQIdoNig1K7t24J//8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQMBAT8BS//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/Aar/xAAeEAACAQMFAAAAAAAAAAAAAAAAARICETEQISJBUf/aAAgBAQAGPwKVu8EWtl6LkixGnOn/xAAcEAEAAwADAQEAAAAAAAAAAAABABEhMUFhUYH/2gAIAQEAAT8hG4dPUNWgFhw/PkpDhmMfmv2ZPcq2JADAn//aAAwDAQACAAMAAAAQr/8A/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERUf/aAAgBAwEBPxCLSj//xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFR/9oACAECAQE/ELo4/8QAHRABAAICAwEBAAAAAAAAAAAAAREhAEExYXFR8P/aAAgBAQABPxCZDbN+0JCZLzLA2UmXryuMmixg6dT3lObAFVeyP3OAkRcbj7BwYIeADt7c/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 6"
+        title="mopcon 2019 6"
+        src="/static/fe007546ff033c092d7cf8427bce1295/55071/mopcon-2019-6.jpg"
+        srcset="/static/fe007546ff033c092d7cf8427bce1295/493b1/mopcon-2019-6.jpg 163w,
+/static/fe007546ff033c092d7cf8427bce1295/17f95/mopcon-2019-6.jpg 325w,
+/static/fe007546ff033c092d7cf8427bce1295/55071/mopcon-2019-6.jpg 650w,
+/static/fe007546ff033c092d7cf8427bce1295/4194c/mopcon-2019-6.jpg 975w,
+/static/fe007546ff033c092d7cf8427bce1295/7b0d7/mopcon-2019-6.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>玩遊戲抽到的籤</h3>
-<p><img src="/images/mopcon-2019-7.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bca802d08580aff4ebfb4235497f3935/7b3f7/mopcon-2019-7.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQT/xAAXAQEAAwAAAAAAAAAAAAAAAAABAAID/9oADAMBAAIQAxAAAAHpR3MyIpoyjsFiuFBX/8QAHBAAAgIDAQEAAAAAAAAAAAAAAQIAAwQSIREQ/9oACAEBAAEFAjwbRunwQIsynC3m+vxciom/Sy3YxOfP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwGFe//EABcRAQEBAQAAAAAAAAAAAAAAAAARARL/2gAIAQIBAT8B4TVXX//EAB0QAAICAQUAAAAAAAAAAAAAAAABAhEQITEykaH/2gAIAQEABj8CvFmxxRJF34Um+hyKNMf/xAAcEAADAQEBAAMAAAAAAAAAAAAAAREhMXFBkeH/2gAIAQEAAT8hwUNU6NeE6fHP0fgSHeTnhqsJDdBKFj3o6azw8l6Pp//aAAwDAQACAAMAAAAQG9H9/8QAFxEAAwEAAAAAAAAAAAAAAAAAABARIf/aAAgBAwEBPxAQxU//xAAYEQEBAAMAAAAAAAAAAAAAAAAAEQExYf/aAAgBAgEBPxAgrG3Z/8QAHhAAAgMAAgMBAAAAAAAAAAAAAREAITFBsVGBkfH/2gAIAQEAAT8QZYuOAx2lWlwIlZ+IgwDHR9SmBKAAMQd6bCJ9SnJAgOPyBgQKG1gAz1GaOKSCDCDwuZvP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 7"
+        title="mopcon 2019 7"
+        src="/static/bca802d08580aff4ebfb4235497f3935/55071/mopcon-2019-7.jpg"
+        srcset="/static/bca802d08580aff4ebfb4235497f3935/493b1/mopcon-2019-7.jpg 163w,
+/static/bca802d08580aff4ebfb4235497f3935/17f95/mopcon-2019-7.jpg 325w,
+/static/bca802d08580aff4ebfb4235497f3935/55071/mopcon-2019-7.jpg 650w,
+/static/bca802d08580aff4ebfb4235497f3935/7b3f7/mopcon-2019-7.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「AI？醫療？創業？的現在過去未來」 中國醫藥大學附設醫院 工程師 Frankie Chan</h3>
-<p><img src="/images/mopcon-2019-8.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3eebd2c2675b97956337c7c5529aa088/7b0d7/mopcon-2019-8.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABYBAQEBAAAAAAAAAAAAAAAAAAIAAf/aAAwDAQACEAMQAAABeqBgVJhl/8QAGBAAAwEBAAAAAAAAAAAAAAAAAQIDABP/2gAIAQEAAQUClJTJwUyEsDWg3U0ScrKv/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAEDAQE/AY1//8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8BR//EABsQAAICAwEAAAAAAAAAAAAAAAABAhESMVEh/9oACAEBAAY/Are7OotQKUqiYbfTySR//8QAGhAAAwEAAwAAAAAAAAAAAAAAAAERITFBUf/aAAgBAQABPyGHXpqY6b1XFel2mr4Xddig4694lE9sap//2gAMAwEAAgADAAAAED8//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QER//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/EJxb/8QAHBABAQEAAQUAAAAAAAAAAAAAAREAITFBUZGh/9oACAEBAAE/EImiI4eHPTuSXxk1AFabk01S1dcGJJKAPPhkyVAXIPe//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 8"
+        title="mopcon 2019 8"
+        src="/static/3eebd2c2675b97956337c7c5529aa088/55071/mopcon-2019-8.jpg"
+        srcset="/static/3eebd2c2675b97956337c7c5529aa088/493b1/mopcon-2019-8.jpg 163w,
+/static/3eebd2c2675b97956337c7c5529aa088/17f95/mopcon-2019-8.jpg 325w,
+/static/3eebd2c2675b97956337c7c5529aa088/55071/mopcon-2019-8.jpg 650w,
+/static/3eebd2c2675b97956337c7c5529aa088/4194c/mopcon-2019-8.jpg 975w,
+/static/3eebd2c2675b97956337c7c5529aa088/7b0d7/mopcon-2019-8.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>講者去年也有來講，一樣的生動有趣</p>
 <hr>
 <h3>Unconference 分享遠距工作相關的議題</h3>
-<p><img src="/images/mopcon-2019-9.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2754e2df29ae3684b828b12b3ca82312/7b0d7/mopcon-2019-9.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQT/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAVszuCiFEs//xAAYEAADAQEAAAAAAAAAAAAAAAABAgMAIv/aAAgBAQABBQJoFMIc0DBooxwmRmXf/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BiP/EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oACAECAQE/AaU//8QAHBAAAQMFAAAAAAAAAAAAAAAAAAERIQIQIjEy/9oACAEBAAY/AtpJTNnfE6IY/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBUWH/2gAIAQEAAT8hELW33EVRIObMyrmqwnYqFvFy0enyNZorpP/aAAwDAQACAAMAAAAQMz//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxClP//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxBA2L//xAAbEAEBAAMBAQEAAAAAAAAAAAABEQAhMWFBUf/aAAgBAQABPxB6sgq1G6OW59sI1rIwGXwD937cAw7Sq8+N9zaxKJE5OYyuMHfr7n//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 9"
+        title="mopcon 2019 9"
+        src="/static/2754e2df29ae3684b828b12b3ca82312/55071/mopcon-2019-9.jpg"
+        srcset="/static/2754e2df29ae3684b828b12b3ca82312/493b1/mopcon-2019-9.jpg 163w,
+/static/2754e2df29ae3684b828b12b3ca82312/17f95/mopcon-2019-9.jpg 325w,
+/static/2754e2df29ae3684b828b12b3ca82312/55071/mopcon-2019-9.jpg 650w,
+/static/2754e2df29ae3684b828b12b3ca82312/4194c/mopcon-2019-9.jpg 975w,
+/static/2754e2df29ae3684b828b12b3ca82312/7b0d7/mopcon-2019-9.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>FB 社群 <a href="https://www.facebook.com/profile.php?id=1190343134374259">遠距工作者在台灣 (work remotely in Taiwan)</a> 的管理者</p>
 <hr>
 <h3>「從零建立商業技術團隊」</h3>
-<p><img src="/images/mopcon-2019-10.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fd377dff3670d1a3740ecb3440a45c73/7b0d7/mopcon-2019-10.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAWXMWs2Sof/EABkQAAIDAQAAAAAAAAAAAAAAAAEDAAIREP/aAAgBAQABBQJSl6KV4s1miGf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAXEAADAQAAAAAAAAAAAAAAAAAAETEQ/9oACAEBAAY/AkoTGy5//8QAGhAAAwADAQAAAAAAAAAAAAAAAAERITFBkf/aAAgBAQABPyGjmexyr4RLiH4kOTLFwT032f/aAAwDAQACAAMAAAAQoO//xAAWEQEBAQAAAAAAAAAAAAAAAAARARD/2gAIAQMBAT8Qq5//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QAyy//8QAHhAAAgICAgMAAAAAAAAAAAAAAREAITFRQWFxkcH/2gAIAQEAAT8QGAsBZJLUCw1yn2AcAegQuEdUTIdPuGZPgIQSmNz/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 10"
+        title="mopcon 2019 10"
+        src="/static/fd377dff3670d1a3740ecb3440a45c73/55071/mopcon-2019-10.jpg"
+        srcset="/static/fd377dff3670d1a3740ecb3440a45c73/493b1/mopcon-2019-10.jpg 163w,
+/static/fd377dff3670d1a3740ecb3440a45c73/17f95/mopcon-2019-10.jpg 325w,
+/static/fd377dff3670d1a3740ecb3440a45c73/55071/mopcon-2019-10.jpg 650w,
+/static/fd377dff3670d1a3740ecb3440a45c73/4194c/mopcon-2019-10.jpg 975w,
+/static/fd377dff3670d1a3740ecb3440a45c73/7b0d7/mopcon-2019-10.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>這個議程非常受用，剛好最近也碰到相關的問題</p>
 <hr>
 <h3>「從零建立商業技術團隊」</h3>
-<p><img src="/images/mopcon-2019-11.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a3ad23d12cafa1f3a6a425cd6e78be3e/7b0d7/mopcon-2019-11.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 88.75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAASABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQBBQP/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAG2ndjnrC8ig569RH//xAAcEAADAAEFAAAAAAAAAAAAAAAAAQIEAxAREiP/2gAIAQEAAQUCnGhCiUZK9E+RM1J7ORbf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAEQIDFx/9oACAEBAAY/AjBch1//xAAcEAEAAgMAAwAAAAAAAAAAAAABACERMVEQcfD/2gAIAQEAAT8hv9s1x9zP8dsKl10mVGEx2ALWoqPAJ//aAAwDAQACAAMAAAAQBAgB/8QAFhEAAwAAAAAAAAAAAAAAAAAAAREg/9oACAEDAQE/EA4//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQESH/2gAIAQIBAT8QpGDj/8QAHxABAAICAgIDAAAAAAAAAAAAAQARITFBYRBxUbHh/9oACAEBAAE/EAxD87j9hO+ci/uX0OBC0qcS6B9PMPuMwH1Lx4V32xGxdHiFaJ//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 11"
+        title="mopcon 2019 11"
+        src="/static/a3ad23d12cafa1f3a6a425cd6e78be3e/55071/mopcon-2019-11.jpg"
+        srcset="/static/a3ad23d12cafa1f3a6a425cd6e78be3e/493b1/mopcon-2019-11.jpg 163w,
+/static/a3ad23d12cafa1f3a6a425cd6e78be3e/17f95/mopcon-2019-11.jpg 325w,
+/static/a3ad23d12cafa1f3a6a425cd6e78be3e/55071/mopcon-2019-11.jpg 650w,
+/static/a3ad23d12cafa1f3a6a425cd6e78be3e/4194c/mopcon-2019-11.jpg 975w,
+/static/a3ad23d12cafa1f3a6a425cd6e78be3e/7b0d7/mopcon-2019-11.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「從零建立商業技術團隊」</h3>
-<p><img src="/images/mopcon-2019-12.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4508f12448369365d347b792cec2d05f/7b0d7/mopcon-2019-12.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 86.640625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAARABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMEAgb/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAdmnikpLG+e2EVcY/8QAGxABAAICAwAAAAAAAAAAAAAAAgADERIBECL/2gAIAQEAAQUCrpr1PBwvUKGNjMmGHr//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQAf/aAAgBAgEBPwEp/8QAGhABAQACAwAAAAAAAAAAAAAAAQARICIxMv/aAAgBAQAGPwKyEMci9Xen/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERMSFBkVH/2gAIAQEAAT8hRVpS4yIxUXRUbQtFQLzdGzXpVFBH/9oADAMBAAIAAwAAABCfP4H/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREQ/9oACAEDAQE/EFSCz//EABYRAQEBAAAAAAAAAAAAAAAAACEAEP/aAAgBAgEBPxAjX//EABsQAQEBAQEAAwAAAAAAAAAAAAERADEhQWGh/9oACAEBAAE/ECcgLXjBbMQsyE9zIZkPET7cZD8LHrDEgTPjGxvCZ+bc9xv/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 12"
+        title="mopcon 2019 12"
+        src="/static/4508f12448369365d347b792cec2d05f/55071/mopcon-2019-12.jpg"
+        srcset="/static/4508f12448369365d347b792cec2d05f/493b1/mopcon-2019-12.jpg 163w,
+/static/4508f12448369365d347b792cec2d05f/17f95/mopcon-2019-12.jpg 325w,
+/static/4508f12448369365d347b792cec2d05f/55071/mopcon-2019-12.jpg 650w,
+/static/4508f12448369365d347b792cec2d05f/4194c/mopcon-2019-12.jpg 975w,
+/static/4508f12448369365d347b792cec2d05f/7b0d7/mopcon-2019-12.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「從零建立商業技術團隊」</h3>
-<p><img src="/images/mopcon-2019-13.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ea7af0089249f81565e3157d472aba33/7b0d7/mopcon-2019-13.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.0625%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAQP/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAbFuzN5jh//EABoQAAMBAAMAAAAAAAAAAAAAAAECEQADBCL/2gAIAQEAAQUCTr8YAda0oGnqNv/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AYf/xAAZEAABBQAAAAAAAAAAAAAAAAABAAMRIFH/2gAIAQEABj8C0qA2K//EABsQAAIDAAMAAAAAAAAAAAAAAAERACFBMVGR/9oACAEBAAE/IXAQUNGrMeCI4yKFK4FM0l1sGj9E/9oADAMBAAIAAwAAABDbH//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCVj//EABYRAAMAAAAAAAAAAAAAAAAAAAEQUf/aAAgBAgEBPxAwv//EABsQAQEAAwEBAQAAAAAAAAAAAAERACExUYHB/9oACAEBAAE/EBgQN7Bs57hbR2Wbi1jI8dwTgaLDuscGXQAv1kf4Gf/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 13"
+        title="mopcon 2019 13"
+        src="/static/ea7af0089249f81565e3157d472aba33/55071/mopcon-2019-13.jpg"
+        srcset="/static/ea7af0089249f81565e3157d472aba33/493b1/mopcon-2019-13.jpg 163w,
+/static/ea7af0089249f81565e3157d472aba33/17f95/mopcon-2019-13.jpg 325w,
+/static/ea7af0089249f81565e3157d472aba33/55071/mopcon-2019-13.jpg 650w,
+/static/ea7af0089249f81565e3157d472aba33/4194c/mopcon-2019-13.jpg 975w,
+/static/ea7af0089249f81565e3157d472aba33/7b0d7/mopcon-2019-13.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>MOPCON 2019 Beengaged 醞釀之夜</h3>
-<p><img src="/images/mopcon-2019-14.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4ece6b3d18376cb9c5fe359e73476c89/7b3f7/mopcon-2019-14.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBQH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgH/2gAMAwEAAhADEAAAAc9O0nVNQliTZaWFMf/EAB8QAAICAAcBAAAAAAAAAAAAAAECAAMEERITFCAxQv/aAAgBAQABBQL72mJKWtFfTOQJh2rFXsAImfT/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAWEQADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BK//EABsQAAMAAgMAAAAAAAAAAAAAAAABEQISICFB/9oACAEBAAY/AkvELUsKdJkyJy//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUEQcZH/2gAIAQEAAT8h56hfuGGX8qYR0x9i+oo8xzWDg2I5csUtKg6jDx//2gAMAwEAAgADAAAAEAf18v/EABYRAQEBAAAAAAAAAAAAAAAAABEAEP/aAAgBAwEBPxCHf//EABgRAAIDAAAAAAAAAAAAAAAAAAAhARBB/9oACAECAQE/EHAuX//EAB8QAQACAgICAwAAAAAAAAAAAAEAESExQVFhcaGx8P/aAAgBAQABPxAHYMV9isxdN1qVo+MxAeDFVW/EFuLammvxGRXaAUfdwVaV2cT0AGeZbuDGcZgtppErlWu4an//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 14"
+        title="mopcon 2019 14"
+        src="/static/4ece6b3d18376cb9c5fe359e73476c89/55071/mopcon-2019-14.jpg"
+        srcset="/static/4ece6b3d18376cb9c5fe359e73476c89/493b1/mopcon-2019-14.jpg 163w,
+/static/4ece6b3d18376cb9c5fe359e73476c89/17f95/mopcon-2019-14.jpg 325w,
+/static/4ece6b3d18376cb9c5fe359e73476c89/55071/mopcon-2019-14.jpg 650w,
+/static/4ece6b3d18376cb9c5fe359e73476c89/7b3f7/mopcon-2019-14.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>非常棒的夜晚，跟好朋友見面吃飽喝足</p>
 <hr>
 <h3>聽說是喝到上台(？)</h3>
-<p><img src="/images/mopcon-2019-15.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a22d73a4a754a6e71178ac177cc844d3/7b0d7/mopcon-2019-15.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAP/2gAMAwEAAhADEAAAAeWzFFhKME//xAAaEAACAwEBAAAAAAAAAAAAAAABAgADIRIi/9oACAEBAAEFAlGleoBgsysy1vf/xAAYEQADAQEAAAAAAAAAAAAAAAAAAQIRIf/aAAgBAwEBPwG7pIWvp//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/AYf/xAAYEAADAQEAAAAAAAAAAAAAAAAAAREQQf/aAAgBAQAGPwKxDRwaLn//xAAaEAEBAQADAQAAAAAAAAAAAAABEQAhMUFh/9oACAEBAAE/IekhZxrgluMFQ/dF696Yr3A8jzf/2gAMAwEAAgADAAAAENP/AP/EABgRAAIDAAAAAAAAAAAAAAAAAAABESFh/9oACAEDAQE/EHiiDo//xAAYEQEBAAMAAAAAAAAAAAAAAAABABEhQf/aAAgBAgEBPxAzRt8v/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARITFBYYH/2gAIAQEAAT8QXgCTqvsekEAV9MEthlr7KhF+E6CRj2MqFAKWT//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 15"
+        title="mopcon 2019 15"
+        src="/static/a22d73a4a754a6e71178ac177cc844d3/55071/mopcon-2019-15.jpg"
+        srcset="/static/a22d73a4a754a6e71178ac177cc844d3/493b1/mopcon-2019-15.jpg 163w,
+/static/a22d73a4a754a6e71178ac177cc844d3/17f95/mopcon-2019-15.jpg 325w,
+/static/a22d73a4a754a6e71178ac177cc844d3/55071/mopcon-2019-15.jpg 650w,
+/static/a22d73a4a754a6e71178ac177cc844d3/4194c/mopcon-2019-15.jpg 975w,
+/static/a22d73a4a754a6e71178ac177cc844d3/7b0d7/mopcon-2019-15.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>LeadBest Consulting Group 共同創辦暨技術長 王志清</h3>
-<p><img src="/images/mopcon-2019-16.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9f796cbd5d6d6bd2bb1172705e38df66/7b0d7/mopcon-2019-16.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.921875%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUCA//EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAAB4MTppSTCP//EABsQAQACAgMAAAAAAAAAAAAAAAEAEQIDISIj/9oACAEBAAEFAqxFezsCV5XHl//EABcRAAMBAAAAAAAAAAAAAAAAAAABEUH/2gAIAQMBAT8Bbwp//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgIDAAAAAAAAAAAAAAAAABEBURAhMf/aAAgBAQAGPwJkHCXWh1j/xAAdEAACAgIDAQAAAAAAAAAAAAABEQAhQVExYXGB/9oACAEBAAE/IQKGgMg8wbgL9qFEry9y4CRskD6dIVl/Z//aAAwDAQACAAMAAAAQnw//xAAYEQEBAAMAAAAAAAAAAAAAAAABABEhMf/aAAgBAwEBPxAA0szl/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQAB/9oACAECAQE/EA2b/8QAHBABAQACAgMAAAAAAAAAAAAAAREAITFRYYHR/9oACAEBAAE/EISzRmneTyNQGo7cnIjVl9PGIvC9yQ5ExlsoXs7PuXOR5VVc/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 16"
+        title="mopcon 2019 16"
+        src="/static/9f796cbd5d6d6bd2bb1172705e38df66/55071/mopcon-2019-16.jpg"
+        srcset="/static/9f796cbd5d6d6bd2bb1172705e38df66/493b1/mopcon-2019-16.jpg 163w,
+/static/9f796cbd5d6d6bd2bb1172705e38df66/17f95/mopcon-2019-16.jpg 325w,
+/static/9f796cbd5d6d6bd2bb1172705e38df66/55071/mopcon-2019-16.jpg 650w,
+/static/9f796cbd5d6d6bd2bb1172705e38df66/4194c/mopcon-2019-16.jpg 975w,
+/static/9f796cbd5d6d6bd2bb1172705e38df66/7b0d7/mopcon-2019-16.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>這個 MS 攤位拿的 USB hub 跟這顆豆腐頭一起掛掉… (遺照)</h3>
-<p><img src="/images/mopcon-2019-17.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0dcf0fc6fe7ae98241774aae176fff23/7b3f7/mopcon-2019-17.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAbccqMkebRaUqSpDgz//xAAfEAABAwMFAAAAAAAAAAAAAAABAAIDBBIiERMUITH/2gAIAQEAAQUCmJAsY88doW5c7QlYlRR5SSiz1BVHTV//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAVEQEBAAAAAAAAAAAAAAAAAAAQMf/aAAgBAgEBPwEp/8QAIhAAAQMEAAcAAAAAAAAAAAAAAQACERASITEDIjNBYYGh/9oACAEBAAY/ApblYDoldT4rnFDm852Fc7jQTsKXZVw03HurB2p//8QAHBABAAMBAAMBAAAAAAAAAAAAAQARITFBUWFx/9oACAEBAAE/IcMJ8RaSLpoqOJdnuFdEeDIhvQKAKT9j9V0rJUMHqb4PB7i1K6vZ3MnlFr7cJ//aAAwDAQACAAMAAAAQTNwA/8QAGBEAAgMAAAAAAAAAAAAAAAAAADEBEBH/2gAIAQMBAT8QlmCr/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEhEBH/2gAIAQIBAT8QUOoVZ//EAB8QAQACAwACAwEAAAAAAAAAAAERIQAxQVFxYZGh0f/aAAgBAQABPxCiVEpsi5jvcdswm+t2Z0Yr54Hk/cU1c4q17bcCHPA4FRpEs07ymkVglpNVrWQVCa594FOaEa4ez+YoNQq8ubPnKhKOoltmmf/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 17"
+        title="mopcon 2019 17"
+        src="/static/0dcf0fc6fe7ae98241774aae176fff23/55071/mopcon-2019-17.jpg"
+        srcset="/static/0dcf0fc6fe7ae98241774aae176fff23/493b1/mopcon-2019-17.jpg 163w,
+/static/0dcf0fc6fe7ae98241774aae176fff23/17f95/mopcon-2019-17.jpg 325w,
+/static/0dcf0fc6fe7ae98241774aae176fff23/55071/mopcon-2019-17.jpg 650w,
+/static/0dcf0fc6fe7ae98241774aae176fff23/7b3f7/mopcon-2019-17.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>第二天在議場門口巧遇台北市長</h3>
-<p><img src="/images/mopcon-2019-18.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4eae2f704837c792462cfd4c2c2eafb4/7b0d7/mopcon-2019-18.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAFLs2kqoBj/xAAbEAEAAgIDAAAAAAAAAAAAAAACARIAAxETI//aAAgBAQABBQJc2KUHumMu1PosOlV//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/AV1n/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bh//EABkQAAIDAQAAAAAAAAAAAAAAAAABESExMv/aAAgBAQAGPwJaZR0SVgpZ/8QAHBAAAgMAAwEAAAAAAAAAAAAAAAERITFBYYHw/9oACAEBAAE/IcxWRuEno6CGg+Ypl4Q+SCWro//aAAwDAQACAAMAAAAQR9//xAAXEQEAAwAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EI7Gv//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QH//EABwQAQADAQADAQAAAAAAAAAAAAEAETEhQWGBkf/aAAgBAQABPxDYQgKPa38hEDoFNZRir32Do5tQW8U7D1AQQIFC2HI0Vh83v2f/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 18"
+        title="mopcon 2019 18"
+        src="/static/4eae2f704837c792462cfd4c2c2eafb4/55071/mopcon-2019-18.jpg"
+        srcset="/static/4eae2f704837c792462cfd4c2c2eafb4/493b1/mopcon-2019-18.jpg 163w,
+/static/4eae2f704837c792462cfd4c2c2eafb4/17f95/mopcon-2019-18.jpg 325w,
+/static/4eae2f704837c792462cfd4c2c2eafb4/55071/mopcon-2019-18.jpg 650w,
+/static/4eae2f704837c792462cfd4c2c2eafb4/4194c/mopcon-2019-18.jpg 975w,
+/static/4eae2f704837c792462cfd4c2c2eafb4/7b0d7/mopcon-2019-18.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「機器學習於量化交易的挑戰與解法」芬嚮資訊有限公司 講師 韓承佑</h3>
-<p><img src="/images/mopcon-2019-19.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/30dbe7f03a89130a6315125878985fdd/7b0d7/mopcon-2019-19.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwQA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAGoBHLdo8X/xAAaEAADAAMBAAAAAAAAAAAAAAABAgMABBIT/9oACAEBAAEFAhOhHD9eT4m1Vg9WoRtvPP/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwGI/8QAGxAAAgMAAwAAAAAAAAAAAAAAAAECESEiMUH/2gAIAQEABj8CXJIlGzstKOGZfhVJn//EABoQAAMAAwEAAAAAAAAAAAAAAAABESExQWH/2gAIAQEAAT8h25lxEdCnssESM+fS0bu6Lrs20//aAAwDAQACAAMAAAAQmC//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPxAY/8QAFhEBAQEAAAAAAAAAAAAAAAAAASEA/9oACAECAQE/EKhlk3//xAAbEAEBAQEBAAMAAAAAAAAAAAABESEAMUFxkf/aAAgBAQABPxDEkCCKZyIBiYl4qgYxj88H6YM0zzfOIsBQYEU384rWg6Vfrv/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 19"
+        title="mopcon 2019 19"
+        src="/static/30dbe7f03a89130a6315125878985fdd/55071/mopcon-2019-19.jpg"
+        srcset="/static/30dbe7f03a89130a6315125878985fdd/493b1/mopcon-2019-19.jpg 163w,
+/static/30dbe7f03a89130a6315125878985fdd/17f95/mopcon-2019-19.jpg 325w,
+/static/30dbe7f03a89130a6315125878985fdd/55071/mopcon-2019-19.jpg 650w,
+/static/30dbe7f03a89130a6315125878985fdd/4194c/mopcon-2019-19.jpg 975w,
+/static/30dbe7f03a89130a6315125878985fdd/7b0d7/mopcon-2019-19.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「從後端開始，到架構之路」領投肯科技有限公司 資深專家工程師 官承翰</h3>
-<p><img src="/images/mopcon-2019-20.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/084b32400a2f850b8950c23103fea289/7b0d7/mopcon-2019-20.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAAB5btmyA//xAAZEAEBAQADAAAAAAAAAAAAAAABAgMAEhP/2gAIAQEAAQUCI7VUVAVQNGPK1d4PQP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwFlf//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AVf/xAAeEAACAQQDAQAAAAAAAAAAAAAAAQIREiEiMUGBkf/aAAgBAQAGPwK1RVTMWvTF/wBFKL24En0apUP/xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUFh/9oACAEBAAE/IUBNF0EuBbnUACp8i7vGEyKEe3OxhHebn//aAAwDAQACAAMAAAAQjC//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFh/9oACAEDAQE/EI0ZH//EABYRAQEBAAAAAAAAAAAAAAAAAAERAP/aAAgBAgEBPxAaXRv/xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQTFRgZGx/9oACAEBAAE/EGoM5FO7EhNaZJC+VhQWvD8gWeKsArWNQOKq5nQ9bletWmXnM//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 20"
+        title="mopcon 2019 20"
+        src="/static/084b32400a2f850b8950c23103fea289/55071/mopcon-2019-20.jpg"
+        srcset="/static/084b32400a2f850b8950c23103fea289/493b1/mopcon-2019-20.jpg 163w,
+/static/084b32400a2f850b8950c23103fea289/17f95/mopcon-2019-20.jpg 325w,
+/static/084b32400a2f850b8950c23103fea289/55071/mopcon-2019-20.jpg 650w,
+/static/084b32400a2f850b8950c23103fea289/4194c/mopcon-2019-20.jpg 975w,
+/static/084b32400a2f850b8950c23103fea289/7b0d7/mopcon-2019-20.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「技術人員如何陳述自己的商業價值」商業思維學院 商業思維傳教士 游舒帆 Gipi</h3>
-<p><img src="/images/mopcon-2019-21.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/52938953aba0f6b5d40b6233e9943479/7b0d7/mopcon-2019-21.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAACAP/aAAwDAQACEAMQAAABSiDcrpjBv//EABwQAQACAQUAAAAAAAAAAAAAAAEAAgMEERITIf/aAAgBAQABBQKlOR1hUwuw5oOoZW/n/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/AWV//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERMiJh/9oACAEBAAY/Ar6N1mjhKEaUFo//xAAaEAADAAMBAAAAAAAAAAAAAAAAAREhMUFh/9oACAEBAAE/IUVN8bOEAxVi2xfRbNfDahGyqeH/2gAMAwEAAgADAAAAEJff/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EIVf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERYf/aAAgBAgEBPxCKFw//xAAbEAEBAQACAwAAAAAAAAAAAAABEQAhMVFxkf/aAAgBAQABPxCQblVGRFk0RXHByF1Q6gZt+5QMe0B5OcggACVRnvf/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 21"
+        title="mopcon 2019 21"
+        src="/static/52938953aba0f6b5d40b6233e9943479/55071/mopcon-2019-21.jpg"
+        srcset="/static/52938953aba0f6b5d40b6233e9943479/493b1/mopcon-2019-21.jpg 163w,
+/static/52938953aba0f6b5d40b6233e9943479/17f95/mopcon-2019-21.jpg 325w,
+/static/52938953aba0f6b5d40b6233e9943479/55071/mopcon-2019-21.jpg 650w,
+/static/52938953aba0f6b5d40b6233e9943479/4194c/mopcon-2019-21.jpg 975w,
+/static/52938953aba0f6b5d40b6233e9943479/7b0d7/mopcon-2019-21.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「技術人員如何陳述自己的商業價值」</h3>
-<p><img src="/images/mopcon-2019-22.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e62620968e477cfe2e9dbb332eb5b2e0/7b0d7/mopcon-2019-22.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABycls50+Sxf/EABkQAQEBAQEBAAAAAAAAAAAAAAIBAAMRIv/aAAgBAQABBQIu3fe9c3SKbm2UzVf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGH/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAERMQIiMv/aAAgBAQAGPwKijkUG2TZMn//EABwQAAICAgMAAAAAAAAAAAAAAAERADEhkUFR8P/aAAgBAQABPyFQrHDl67lQJqCngi2ITFFwVE+Wfdz/2gAMAwEAAgADAAAAEGwP/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERYf/aAAgBAwEBPxBt0mn/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/EEkph//EABsQAQEBAQEAAwAAAAAAAAAAAAERACFBMVFh/9oACAEBAAE/EES1gEmP3viFeYsgfSJzQzUcmje3DHRwEK+kbzN5doAE65//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 22"
+        title="mopcon 2019 22"
+        src="/static/e62620968e477cfe2e9dbb332eb5b2e0/55071/mopcon-2019-22.jpg"
+        srcset="/static/e62620968e477cfe2e9dbb332eb5b2e0/493b1/mopcon-2019-22.jpg 163w,
+/static/e62620968e477cfe2e9dbb332eb5b2e0/17f95/mopcon-2019-22.jpg 325w,
+/static/e62620968e477cfe2e9dbb332eb5b2e0/55071/mopcon-2019-22.jpg 650w,
+/static/e62620968e477cfe2e9dbb332eb5b2e0/4194c/mopcon-2019-22.jpg 975w,
+/static/e62620968e477cfe2e9dbb332eb5b2e0/7b0d7/mopcon-2019-22.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「技術人員如何陳述自己的商業價值」</h3>
-<p><img src="/images/mopcon-2019-23.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b064bec421e7993eaa15d9e77e5fd8b7/7b0d7/mopcon-2019-23.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.07812500000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe9O0Af/xAAWEAEBAQAAAAAAAAAAAAAAAAABEAD/2gAIAQEAAQUCxC//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAYEAADAQEAAAAAAAAAAAAAAAABEDEAEf/aAAgBAQABPyHmgqA//9oADAMBAAIAAwAAABBzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEBAQEBAQAAAAAAAAAAAAERADEhYXH/2gAIAQEAAT8QivvTmIMsOeYISr+5Knw09tcEO3f/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 23"
+        title="mopcon 2019 23"
+        src="/static/b064bec421e7993eaa15d9e77e5fd8b7/55071/mopcon-2019-23.jpg"
+        srcset="/static/b064bec421e7993eaa15d9e77e5fd8b7/493b1/mopcon-2019-23.jpg 163w,
+/static/b064bec421e7993eaa15d9e77e5fd8b7/17f95/mopcon-2019-23.jpg 325w,
+/static/b064bec421e7993eaa15d9e77e5fd8b7/55071/mopcon-2019-23.jpg 650w,
+/static/b064bec421e7993eaa15d9e77e5fd8b7/4194c/mopcon-2019-23.jpg 975w,
+/static/b064bec421e7993eaa15d9e77e5fd8b7/7b0d7/mopcon-2019-23.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>「技術人員如何陳述自己的商業價值」</h3>
-<p><img src="/images/mopcon-2019-24.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0a88da7fec434449b7dd8f27751512e4/7b3f7/mopcon-2019-24.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABS/Mvw0AVnPhW2kQif//EAB0QAAICAQUAAAAAAAAAAAAAAAECAAMEEBESFCH/2gAIAQEAAQUCQsWIfccorOtq5DsWs9FzwXWmdlo2v//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAEDAQE/AWP/xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAgEBPwEj/8QAHxAAAgAFBQAAAAAAAAAAAAAAAAECESIyQSAxYZGh/9oACAEBAAY/ApIx2Wk1DxsVQpIpiLvC5Mxo/8QAHRABAAICAgMAAAAAAAAAAAAAAQARITFRYUGBkf/aAAgBAQABPyEAYvcCrA9QAbvuKMx8oLFwq9TGoquYJgDZzsQp38zaWyif/9oADAMBAAIAAwAAABCs7YP/xAAYEQACAwAAAAAAAAAAAAAAAAAAEQEQMf/aAAgBAwEBPxDQ5pn/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAIAQIBAT8QJEORt//EABwQAQADAQADAQAAAAAAAAAAAAEAESExUYHBQf/aAAgBAQABPxBUV5apWeKUZlUdvVfI11togVAG0JrQ81Wx3BtUTfcynL1ESCAWwEDzKavZf5MiogtKZUyM/J//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 24"
+        title="mopcon 2019 24"
+        src="/static/0a88da7fec434449b7dd8f27751512e4/55071/mopcon-2019-24.jpg"
+        srcset="/static/0a88da7fec434449b7dd8f27751512e4/493b1/mopcon-2019-24.jpg 163w,
+/static/0a88da7fec434449b7dd8f27751512e4/17f95/mopcon-2019-24.jpg 325w,
+/static/0a88da7fec434449b7dd8f27751512e4/55071/mopcon-2019-24.jpg 650w,
+/static/0a88da7fec434449b7dd8f27751512e4/7b3f7/mopcon-2019-24.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>覺得超讚，用買 Kobo 有送的 Kobo 點數買了<a href="https://www.kobo.com/tw/zh/ebook/business-thinking">商業思維 Business Thinking：職涯躍進的唯一解！一次搞懂企業如何高效運轉！</a></p>
 <hr>
 <h3><a href="https://github.com/sudoliyang">@sudoliyang</a> 跟 Gipi 合照</h3>
-<p><img src="/images/mopcon-2019-25.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/446c6644ff1cb2ff12739e6dcbef0817/7b3f7/mopcon-2019-25.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAQFAQMG/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABYTzUlSGwmOMbuOueLhX/xAAbEAEAAgMBAQAAAAAAAAAAAAABAgMAERMSIf/aAAgBAQABBQLmJxvHzMyqxpwd43RjlpuUZvm6b0IjN+Ghz//EABYRAQEBAAAAAAAAAAAAAAAAAAARIf/aAAgBAwEBPwFqI//EABYRAQEBAAAAAAAAAAAAAAAAAAASIf/aAAgBAgEBPwHGLW//xAAeEAACAgEFAQAAAAAAAAAAAAAAAQIhERASIjFBsf/aAAgBAQAGPwKolfTqY4NNNsow2bs8kIfhLK0tH//EAB0QAQADAAIDAQAAAAAAAAAAAAEAESExQVFhcZH/2gAIAQEAAT8hAa3ObqdGr0JSC/OppCQHYBtXE6I+IQ3dDMsXnhm+bfaiwCiV+QcOZKAgvsn/2gAMAwEAAgADAAAAEDPCs//EABgRAAIDAAAAAAAAAAAAAAAAAAARECFR/9oACAEDAQE/ELHC2n//xAAZEQACAwEAAAAAAAAAAAAAAAAAAREhUXH/2gAIAQIBAT8QlkRkpSRyf//EAB4QAQADAAIDAQEAAAAAAAAAAAEAESExUUFhkYHR/9oACAEBAAE/EBZGwo0fHP7LKhXhb66moeloKv7LIg2IBMLjCouls/kqNXRz4TDKYNmbxHFw2mnyKAAARa46mukBtenXLASuMVBwccgs/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 25"
+        title="mopcon 2019 25"
+        src="/static/446c6644ff1cb2ff12739e6dcbef0817/55071/mopcon-2019-25.jpg"
+        srcset="/static/446c6644ff1cb2ff12739e6dcbef0817/493b1/mopcon-2019-25.jpg 163w,
+/static/446c6644ff1cb2ff12739e6dcbef0817/17f95/mopcon-2019-25.jpg 325w,
+/static/446c6644ff1cb2ff12739e6dcbef0817/55071/mopcon-2019-25.jpg 650w,
+/static/446c6644ff1cb2ff12739e6dcbef0817/7b3f7/mopcon-2019-25.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3><a href="https://goo.gl/maps/ukDPPF4jn1FNJu4r5">永和小籠包</a></h3>
-<p><img src="/images/mopcon-2019-26.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/102382e448d00f710e37d204635ca57d/7b3f7/mopcon-2019-26.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAEDAgQF/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAABFasVMmMjXJtbRyDOv//EABsQAAIDAQEBAAAAAAAAAAAAAAECAAMSIRET/9oACAEBAAEFAlQ1V9x8qpXq2NYtY81AcylNWHBI6zgBGdgf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEQ/9oACAECAQE/AciP/8QAHhAAAgEEAwEAAAAAAAAAAAAAAAERAhIhMRAyQXH/2gAIAQEABj8Ciqgtg7Md2kW4JRCx9Jr8NLiTDP/EABwQAQADAAMBAQAAAAAAAAAAAAEAESExQWFxkf/aAAgBAQABPyHsTdauDfRTKc/KXra6R1YQVhPsOAz7US/OgcfFheTyrIml09jEFK6yhUE//9oADAMBAAIAAwAAABCwDUP/xAAZEQABBQAAAAAAAAAAAAAAAAAAEBEhQXH/2gAIAQMBAT8QxHog/8QAGREBAQEAAwAAAAAAAAAAAAAAAQARMUFR/9oACAECAQE/ENO5JHJa9v/EAB4QAAICAgMBAQAAAAAAAAAAAAERACExQVFh0aGx/9oACAEBAAE/ELKg5IidPiDmK8UgHn8hUCgWoTim3Mhdi8CpVrIE7bgQy3B/MGGWBihrv2KQZIXReYJJAOzyHB6GgeoEFSG4w1GBP//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 26"
+        title="mopcon 2019 26"
+        src="/static/102382e448d00f710e37d204635ca57d/55071/mopcon-2019-26.jpg"
+        srcset="/static/102382e448d00f710e37d204635ca57d/493b1/mopcon-2019-26.jpg 163w,
+/static/102382e448d00f710e37d204635ca57d/17f95/mopcon-2019-26.jpg 325w,
+/static/102382e448d00f710e37d204635ca57d/55071/mopcon-2019-26.jpg 650w,
+/static/102382e448d00f710e37d204635ca57d/7b3f7/mopcon-2019-26.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>好吃不貴，很多日韓觀光客來吃；很妙的是攤位牆上有放低音量的標語，避免吵到隔壁住戶睡午覺</p>
 <hr>
 <h3>一頁商店「從零到千萬營收創業故事」光速火箭有限公司 Young Boss 李冠霆</h3>
-<p><img src="/images/mopcon-2019-27.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/dd1b384a48447cb3e329eb316a89ea62/7b3f7/mopcon-2019-27.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgEA/9oADAMBAAIQAxAAAAGzU1eaCaNDYI6CcWObJN//xAAcEAADAQACAwAAAAAAAAAAAAAAAQIDBBEQEiH/2gAIAQEAAQUCrEpVI9un38V0j1THyqYs7YsdyUl5/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPwFUjyH/xAAXEQEBAQEAAAAAAAAAAAAAAAAAEgEh/9oACAECAQE/AearFKf/xAAbEAACAwADAAAAAAAAAAAAAAAAAQIhMRBRkf/aAAgBAQAGPwKhlmGnZrKhIxelJLn/xAAeEAACAgICAwAAAAAAAAAAAAAAAREhMVEQYYGRof/aAAgBAQABPyEVAeB70ksby6bJSMskxuuxTL0Ize8ESlTsfHBc/wD/2gAMAwEAAgADAAAAECT6wf/EABcRAQEBAQAAAAAAAAAAAAAAAAEQEfD/2gAIAQMBAT8QEGPEf//EABcRAQEBAQAAAAAAAAAAAAAAAAEAQVH/2gAIAQIBAT8QhGeSU5f/xAAdEAEBAQACAgMAAAAAAAAAAAABEQAhUTHRYXGh/9oACAEBAAE/EBeXHQF2ePvTizy8+8V3wXgdaNbnfk6/DCCDzwYNQpIejSZXbB+6g1Vg3GQw6DKry6ve/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 27"
+        title="mopcon 2019 27"
+        src="/static/dd1b384a48447cb3e329eb316a89ea62/55071/mopcon-2019-27.jpg"
+        srcset="/static/dd1b384a48447cb3e329eb316a89ea62/493b1/mopcon-2019-27.jpg 163w,
+/static/dd1b384a48447cb3e329eb316a89ea62/17f95/mopcon-2019-27.jpg 325w,
+/static/dd1b384a48447cb3e329eb316a89ea62/55071/mopcon-2019-27.jpg 650w,
+/static/dd1b384a48447cb3e329eb316a89ea62/7b3f7/mopcon-2019-27.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>講者商業思路清淅，非常有經營理念</p>
 <hr>
 <h3>一頁商店「從零到千萬營收創業故事」</h3>
-<p><img src="/images/mopcon-2019-28.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b5791a30a09e959949a894d80d9f7641/7b0d7/mopcon-2019-28.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 70.859375%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB6izompBgf//EABsQAAICAwEAAAAAAAAAAAAAAAEDAAIREhMy/9oACAEBAAEFAra5KVmWSsHqu0FgY71//8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bh//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABoQAQABBQAAAAAAAAAAAAAAAAEQAAIRMTL/2gAIAQEABj8Cw2jXMaZ//8QAGRAAAwADAAAAAAAAAAAAAAAAAAERMUFx/9oACAEBAAE/IWAmgEdGU1ngaNF4f//aAAwDAQACAAMAAAAQNP8A/8QAFhEBAQEAAAAAAAAAAAAAAAAAAREA/9oACAEDAQE/EFgmu//EABcRAQADAAAAAAAAAAAAAAAAAAABEXH/2gAIAQIBAT8Q1UP/xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQTFhcbHR/9oACAEBAAE/EKthQqhfGpX4hzhSHkNl8xCsqrRZ3mUSR5D7HEaPtn//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 28"
+        title="mopcon 2019 28"
+        src="/static/b5791a30a09e959949a894d80d9f7641/55071/mopcon-2019-28.jpg"
+        srcset="/static/b5791a30a09e959949a894d80d9f7641/493b1/mopcon-2019-28.jpg 163w,
+/static/b5791a30a09e959949a894d80d9f7641/17f95/mopcon-2019-28.jpg 325w,
+/static/b5791a30a09e959949a894d80d9f7641/55071/mopcon-2019-28.jpg 650w,
+/static/b5791a30a09e959949a894d80d9f7641/4194c/mopcon-2019-28.jpg 975w,
+/static/b5791a30a09e959949a894d80d9f7641/7b0d7/mopcon-2019-28.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3><a href="https://github.com/sudoliyang">@sudoliyang</a> 跟 李冠霆 合照</h3>
-<p><img src="/images/mopcon-2019-29.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ed1a84c87d6985d9c9dc7652e6af78b7/7b3f7/mopcon-2019-29.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIEAQMF/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQACA//aAAwDAQACEAMQAAABvj6aWlZPisl3NcoMv//EABwQAAMBAAIDAAAAAAAAAAAAAAECAwAEERITFP/aAAgBAQABBQIyBX5F7MW17BDOyuwO5h70VKP7dbADy3//xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/AXUjH//EABgRAQADAQAAAAAAAAAAAAAAAAABAhES/9oACAECAQE/Adamzt//xAAfEAABAwMFAAAAAAAAAAAAAAABABESAhCBISIyUZH/2gAIAQEABj8CjKpcjkLaKGTOxUfLBlJ9OrYN/wD/xAAcEAACAwEAAwAAAAAAAAAAAAAAAREhMXFRocH/2gAIAQEAAT8hkaFcIGaYFPOKNtt1NDSjt3qyTBbRbtDVwiXj2W0klUVPwWYj/9oADAMBAAIAAwAAABAc4sH/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxAUP//EABcRAQEBAQAAAAAAAAAAAAAAAAARAXH/2gAIAQIBAT8Q2kIY5f/EAB8QAQEAAgICAwEAAAAAAAAAAAERACExUUGBYXGhsf/aAAgBAQABPxDWfoSs2IlE/fX9xDEIDaZwaCCX26xUezhADtyZqxRjw5zFWNiyTJSJLwIs8+s6hjacovuGHE1sO7y8/OEAAHQZ/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 29"
+        title="mopcon 2019 29"
+        src="/static/ed1a84c87d6985d9c9dc7652e6af78b7/55071/mopcon-2019-29.jpg"
+        srcset="/static/ed1a84c87d6985d9c9dc7652e6af78b7/493b1/mopcon-2019-29.jpg 163w,
+/static/ed1a84c87d6985d9c9dc7652e6af78b7/17f95/mopcon-2019-29.jpg 325w,
+/static/ed1a84c87d6985d9c9dc7652e6af78b7/55071/mopcon-2019-29.jpg 650w,
+/static/ed1a84c87d6985d9c9dc7652e6af78b7/7b3f7/mopcon-2019-29.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3><a href="https://www.facebook.com/agile.kaohsiung/">Agile Kaohsiung</a> 攤位</h3>
-<p><img src="/images/mopcon-2019-30.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cfa6ca993ccb976dfee4c9db689f5943/7b0d7/mopcon-2019-30.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAF5xQzRMML/AP/EABoQAAEFAQAAAAAAAAAAAAAAAAIAAQMREhP/2gAIAQEAAQUC4yZDVuVLoVFKLNtf/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8BV//EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oACAECAQE/AUP/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQISESEiMWH/2gAIAQEABj8CtYXNr07HG2UloxZywbif/8QAGxABAQEBAQADAAAAAAAAAAAAAREAMUEhYXH/2gAIAQEAAT8hAXiUjkqBeLmqkM9MtRErmMfVj4LpeC/rv//aAAwDAQACAAMAAAAQ7O//xAAXEQADAQAAAAAAAAAAAAAAAAABEBEh/9oACAEDAQE/EDbi/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAAAAXH/2gAIAQIBAT8Qar//xAAdEAEAAwEAAgMAAAAAAAAAAAABESExAEFRYZGx/9oACAEBAAE/EMVUJVTY+uDHdAaidzOsKRElPzzNDACZomrjaelGmrc+Sre+g5ZPv0X49//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 30"
+        title="mopcon 2019 30"
+        src="/static/cfa6ca993ccb976dfee4c9db689f5943/55071/mopcon-2019-30.jpg"
+        srcset="/static/cfa6ca993ccb976dfee4c9db689f5943/493b1/mopcon-2019-30.jpg 163w,
+/static/cfa6ca993ccb976dfee4c9db689f5943/17f95/mopcon-2019-30.jpg 325w,
+/static/cfa6ca993ccb976dfee4c9db689f5943/55071/mopcon-2019-30.jpg 650w,
+/static/cfa6ca993ccb976dfee4c9db689f5943/4194c/mopcon-2019-30.jpg 975w,
+/static/cfa6ca993ccb976dfee4c9db689f5943/7b0d7/mopcon-2019-30.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>拿了一些很通的貼紙跟<strong>很漂亮</strong>的敏捷海報</p>
 <hr>
 <h3>「敏捷論壇 - 不同世代的敏捷推行之道」</h3>
@@ -108,27 +994,229 @@
 <li>中佑資訊 工程師 江佳佳</li>
 <li>一卡通票證 敏捷轉型顧問 張昀煒</li>
 </ul>
-<p><img src="/images/mopcon-2019-31.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/689afa7ab34c62519d293a50c44ef72c/7b0d7/mopcon-2019-31.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMBBf/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABtBubRxB//8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAAwQRExL/2gAIAQEAAQUCbIqsHUEh2nGtIdqnoz//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFX/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQIBAT8BS//EAB0QAAICAQUAAAAAAAAAAAAAAAACAREQEhMhMWH/2gAIAQEABj8CKW4Oydy/ORm0Lj//xAAcEAACAgIDAAAAAAAAAAAAAAABEQAhQWExUcH/2gAIAQEAAT8haSLJ9haAxd5iUcCoVgOyouAlLtTcZ//aAAwDAQACAAMAAAAQRz//xAAYEQACAwAAAAAAAAAAAAAAAAAAEQExUf/aAAgBAwEBPxCFYuH/xAAXEQEAAwAAAAAAAAAAAAAAAAABECEx/9oACAECAQE/EG8If//EAB4QAQACAgEFAAAAAAAAAAAAAAERMQAhsUFRYaHx/9oACAEBAAE/EAaQkhZTjeJzwSjAmoytMdK94JkJtyUPIJ7GCjvr6WLxn1nP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 31"
+        title="mopcon 2019 31"
+        src="/static/689afa7ab34c62519d293a50c44ef72c/55071/mopcon-2019-31.jpg"
+        srcset="/static/689afa7ab34c62519d293a50c44ef72c/493b1/mopcon-2019-31.jpg 163w,
+/static/689afa7ab34c62519d293a50c44ef72c/17f95/mopcon-2019-31.jpg 325w,
+/static/689afa7ab34c62519d293a50c44ef72c/55071/mopcon-2019-31.jpg 650w,
+/static/689afa7ab34c62519d293a50c44ef72c/4194c/mopcon-2019-31.jpg 975w,
+/static/689afa7ab34c62519d293a50c44ef72c/7b0d7/mopcon-2019-31.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>進到議場才發現剛剛在攤位聊的是這場的講者 XD 問的問題都得到很好的解答，得到很多幫助！</p>
 <hr>
 <h3>Unconference 分享遠端資料工程師的經驗</h3>
-<p><img src="/images/mopcon-2019-32.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d8dbdefa26fda50e7ca4649104b1a560/7b0d7/mopcon-2019-32.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABn19EvA4H/8QAGRAAAwEBAQAAAAAAAAAAAAAAAQIDABIi/9oACAEBAAEFAjPIrO0gvJkTvQEZnj//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGI/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8Bqv/EAB4QAAIBAwUAAAAAAAAAAAAAAAABIQMQETJBUXGh/9oACAEBAAY/AnO5K7dtHo800cH/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAhMUHRcf/aAAgBAQABPyFhDRIW1FeEbIu9iP0Yt4dheILNdiG7XgT/2gAMAwEAAgADAAAAEJTP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAEDAQE/ENIf/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPxCVg5eH/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBcWH/2gAIAQEAAT8QrqqhH2G6YtA1D3bUHcHujhFwAm5YV79R4Co6GK1BG3MFrvs//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 32"
+        title="mopcon 2019 32"
+        src="/static/d8dbdefa26fda50e7ca4649104b1a560/55071/mopcon-2019-32.jpg"
+        srcset="/static/d8dbdefa26fda50e7ca4649104b1a560/493b1/mopcon-2019-32.jpg 163w,
+/static/d8dbdefa26fda50e7ca4649104b1a560/17f95/mopcon-2019-32.jpg 325w,
+/static/d8dbdefa26fda50e7ca4649104b1a560/55071/mopcon-2019-32.jpg 650w,
+/static/d8dbdefa26fda50e7ca4649104b1a560/4194c/mopcon-2019-32.jpg 975w,
+/static/d8dbdefa26fda50e7ca4649104b1a560/7b0d7/mopcon-2019-32.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>大大們都好強啊！右一 Ofa 是今年 MOPCON 的總召</p>
 <hr>
 <h3>閃電秀</h3>
-<p><img src="/images/mopcon-2019-33.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1d2a070a2e4a1ed21687d4635d47c663/7b0d7/mopcon-2019-33.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAFqGQ7nbRWC/8QAGhAAAwADAQAAAAAAAAAAAAAAAQIDABESE//aAAgBAQABBQJJ7wqykOcFKb5s8x6TH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPwExf//EABwQAAICAgMAAAAAAAAAAAAAAAABEiECQQMxkf/aAAgBAQAGPwKsmh7KT8K5MiLXe2yMj//EABsQAAICAwEAAAAAAAAAAAAAAAABESFBUWGB/9oACAEBAAE/IX4ol0kOicSqI9FehiDL5RQaOgxkMOj/2gAMAwEAAgADAAAAEAg//8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARUf/aAAgBAwEBPxAHs7f/xAAWEQEBAQAAAAAAAAAAAAAAAAARAAH/2gAIAQIBAT8QCwL/xAAbEAEBAAIDAQAAAAAAAAAAAAABEQAhMXGhQf/aAAgBAQABPxCxTU6hXvJ5N4IXrByEYE+s+a4iMIxaC2oNurjpZBrj6Z//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 33"
+        title="mopcon 2019 33"
+        src="/static/1d2a070a2e4a1ed21687d4635d47c663/55071/mopcon-2019-33.jpg"
+        srcset="/static/1d2a070a2e4a1ed21687d4635d47c663/493b1/mopcon-2019-33.jpg 163w,
+/static/1d2a070a2e4a1ed21687d4635d47c663/17f95/mopcon-2019-33.jpg 325w,
+/static/1d2a070a2e4a1ed21687d4635d47c663/55071/mopcon-2019-33.jpg 650w,
+/static/1d2a070a2e4a1ed21687d4635d47c663/4194c/mopcon-2019-33.jpg 975w,
+/static/1d2a070a2e4a1ed21687d4635d47c663/7b0d7/mopcon-2019-33.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>主持人</h3>
-<p><img src="/images/mopcon-2019-34.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/7b0d7/mopcon-2019-34.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGtcS4rUIgf/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQMAAhEEIf/aAAgBAQABBQI0tMM9Ed07FlhN0NZb/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQIBAT8BR//EABwQAAICAgMAAAAAAAAAAAAAAAABAhESMSFhof/aAAgBAQAGPwLZsqvRYtxG+Zjk0lfZ/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFBUf/aAAgBAQABPyHgfNxu0qfcjZjkJUyd9uUYBK1CLVNVH//aAAwDAQACAAMAAAAQLz//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFh/9oACAEDAQE/EMYO3//EABgRAAMBAQAAAAAAAAAAAAAAAAABETFR/9oACAECAQE/EItZej//xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhQTFxgf/aAAgBAQABPxC3aL0OuRYBAU8BaN+y2QuG+/2d4lDhXm+RGgaDMbO8i/RsDRk//9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 34"
+        title="mopcon 2019 34"
+        src="/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/55071/mopcon-2019-34.jpg"
+        srcset="/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/493b1/mopcon-2019-34.jpg 163w,
+/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/17f95/mopcon-2019-34.jpg 325w,
+/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/55071/mopcon-2019-34.jpg 650w,
+/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/4194c/mopcon-2019-34.jpg 975w,
+/static/4b594fb8ca8ff66fa0d6273cac1bdb6a/7b0d7/mopcon-2019-34.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>晚上用完餐路過覺得下次可以來吃的店 0</h3>
-<p><img src="/images/mopcon-2019-35.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f66ffb134dab5a1986fd286e522f91d7/7b0d7/mopcon-2019-35.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABT5tTbGwP/8QAGRABAAMBAQAAAAAAAAAAAAAAAgABAxIi/9oACAEBAAEFAhyca0Li1orryZWFKf/EABURAQEAAAAAAAAAAAAAAAAAAAAS/9oACAEDAQE/AUv/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARP/2gAIAQIBAT8BaR//xAAdEAACAQQDAAAAAAAAAAAAAAAAAQIREkFxAzFR/9oACAEBAAY/Aly21WzEdjRYvRxceslas//EABgQAQADAQAAAAAAAAAAAAAAAAEAESEx/9oACAEBAAE/IS8F1U6ieFvFlQHhjDbow8EXqR73M//aAAwDAQACAAMAAAAQnw//xAAXEQADAQAAAAAAAAAAAAAAAAAAARFB/9oACAEDAQE/EFMLZ//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Qd2jTh//EABwQAQEBAAEFAAAAAAAAAAAAAAERACFBUXHB4f/aAAgBAQABPxAtgtJ5fM/AVbQXviarjXEvNyPTnc2BEEp7mmr5UI7/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 35"
+        title="mopcon 2019 35"
+        src="/static/f66ffb134dab5a1986fd286e522f91d7/55071/mopcon-2019-35.jpg"
+        srcset="/static/f66ffb134dab5a1986fd286e522f91d7/493b1/mopcon-2019-35.jpg 163w,
+/static/f66ffb134dab5a1986fd286e522f91d7/17f95/mopcon-2019-35.jpg 325w,
+/static/f66ffb134dab5a1986fd286e522f91d7/55071/mopcon-2019-35.jpg 650w,
+/static/f66ffb134dab5a1986fd286e522f91d7/4194c/mopcon-2019-35.jpg 975w,
+/static/f66ffb134dab5a1986fd286e522f91d7/7b0d7/mopcon-2019-35.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3>晚上用完餐路過覺得下次可以來吃的店 1</h3>
-<p><img src="/images/mopcon-2019-36.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e790635e4ade44b6387ce532d4aec0ed/7b3f7/mopcon-2019-36.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAwL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAaJ65cahEIS7NMzkr//EABwQAAMBAAIDAAAAAAAAAAAAAAECEQMABCEiMf/aAAgBAQABBQIYI7N1oGQ0aXmzh+owzHKYLG9SvwGKT5//xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAwEBPwFj/8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8BCP/EAB4QAAICAgIDAAAAAAAAAAAAAAABAhEQIQMxIoGC/9oACAEBAAY/ApKnotSXvHJOIvLYtvopFd7oqhn1j//EABwQAAMBAAMBAQAAAAAAAAAAAAABESExQVFxYf/aAAgBAQABPyHxoG0Wo1kwIzL8YxZ5MTzYXzk1Ls5Lto3EUZjKsnRAl2e/pzPByZlLG136f//aAAwDAQACAAMAAAAQ8CbP/8QAGREAAwADAAAAAAAAAAAAAAAAAAERECFB/9oACAEDAQE/EHXCD3j/xAAXEQEBAQEAAAAAAAAAAAAAAAABACEQ/9oACAECAQE/EENHgWX/xAAeEAEBAAICAwEBAAAAAAAAAAABEQAhMUFRgaFxkf/aAAgBAQABPxBaDqFI7ePyYiOOprHyMdgmHHQUumC4ruDpL1T7gsQkiCnHOAiKcdD5mOsJAC/zFJY2mrfWbM2xLvEeUqoF0efeMzu8iv3P/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 36"
+        title="mopcon 2019 36"
+        src="/static/e790635e4ade44b6387ce532d4aec0ed/55071/mopcon-2019-36.jpg"
+        srcset="/static/e790635e4ade44b6387ce532d4aec0ed/493b1/mopcon-2019-36.jpg 163w,
+/static/e790635e4ade44b6387ce532d4aec0ed/17f95/mopcon-2019-36.jpg 325w,
+/static/e790635e4ade44b6387ce532d4aec0ed/55071/mopcon-2019-36.jpg 650w,
+/static/e790635e4ade44b6387ce532d4aec0ed/7b3f7/mopcon-2019-36.jpg 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <hr>
 <h3><a href="https://goo.gl/maps/AMABPZKPqfchT2Yv7">鹽埕王家手工豆花</a></h3>
-<p><img src="/images/mopcon-2019-37.jpg"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e570c20e0b5b774f67c5912e826b8c35/7b0d7/mopcon-2019-37.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIAA//aAAwDAQACEAMQAAABUu+bwlCX/8QAGhAAAQUBAAAAAAAAAAAAAAAAAQACAxEhEv/aAAgBAQABBQKtMVhA9C8cY2H/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwFn/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHBAAAwABBQAAAAAAAAAAAAAAAAERAhIiMUFR/9oACAEBAAY/AvEVdG5JmrEi5Jnaf//EABsQAQADAQEBAQAAAAAAAAAAAAEAESExQWGx/9oACAEBAAE/IRNMjfHdsOXM9T7D6h+QW1WYeS0SPZ//2gAMAwEAAgADAAAAEGg//8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhQf/aAAgBAwEBPxCmJzT/xAAWEQEBAQAAAAAAAAAAAAAAAAAAITH/2gAIAQIBAT8QxX//xAAdEAEAAQUAAwAAAAAAAAAAAAABABEhMVFhcZHB/9oACAEBAAE/EBCMG4oHD7Mskb/kOR9UudOwhcRoNnaMTICUod3iHLYC05P/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="mopcon 2019 37"
+        title="mopcon 2019 37"
+        src="/static/e570c20e0b5b774f67c5912e826b8c35/55071/mopcon-2019-37.jpg"
+        srcset="/static/e570c20e0b5b774f67c5912e826b8c35/493b1/mopcon-2019-37.jpg 163w,
+/static/e570c20e0b5b774f67c5912e826b8c35/17f95/mopcon-2019-37.jpg 325w,
+/static/e570c20e0b5b774f67c5912e826b8c35/55071/mopcon-2019-37.jpg 650w,
+/static/e570c20e0b5b774f67c5912e826b8c35/4194c/mopcon-2019-37.jpg 975w,
+/static/e570c20e0b5b774f67c5912e826b8c35/7b0d7/mopcon-2019-37.jpg 1280w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>好吃！</p>
 <hr>
 <p>這篇文章是用 <a href="https://vim.fandom.com/wiki/Making_a_list_of_numbers">Making a list of numbers</a> in <a href="https://vim.fandom.com/wiki/Vim_Tips_Wiki">Vim Tips Wiki</a> 產生樣版然後再編修的，語法大概會像下面這樣：</p>
@@ -156,4 +1244,4 @@
       
       
       }
-      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"posts-mopcon-2019-aab","path":"/posts/mopcon-2019/"};window.dataPath="307/path---posts-mopcon-2019-aab-1f7-aBK17M4bchdWJB7qFdcLre8M";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-3164dd4ea77c31413143.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-79bbb85a1ccd49f72bec.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-7d74ce5c5e942b44cf70.js"],"component---src-pages-404-js":["/component---src-pages-404-js-665a0d3cb65fa6a253d6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-ba31a9b84572e087ae8d.js"],"pages-manifest":["/pages-manifest-3ccf2bf8e27ce2ef5d30.js"]};/*]]>*/</script><script src="/webpack-runtime-988ec65abd88ce68f487.js" async=""></script><script src="/styles-f35f2d1f5550ba3c536f.js" async=""></script><script src="/app-3164dd4ea77c31413143.js" async=""></script><script src="/0-186f7d81f8627a75bab8.js" async=""></script><script src="/component---src-templates-blog-post-js-7d74ce5c5e942b44cf70.js" async=""></script></body></html>
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"posts-mopcon-2019-aab","path":"/posts/mopcon-2019/"};window.dataPath="773/path---posts-mopcon-2019-aab-1f7-Zzf2ZtSJ4r5WadoRDWOmeVROLtg";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-30953bcfe2f779954489.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-e9d2455f3d4c0f15dbd3.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-703a250183669ccd6d08.js"],"component---src-pages-404-js":["/component---src-pages-404-js-21a27aae9a8b377e9663.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b5f3f9224435635e0b2d.js"],"pages-manifest":["/pages-manifest-80e8d639db8b4726aa53.js"]};/*]]>*/</script><script src="/webpack-runtime-3645322cfb088ab41b16.js" async=""></script><script src="/styles-34cef343e4df6c2b7309.js" async=""></script><script src="/app-30953bcfe2f779954489.js" async=""></script><script src="/0-c1abf0809c81a40b30a0.js" async=""></script><script src="/component---src-templates-blog-post-js-703a250183669ccd6d08.js" async=""></script></body></html>
