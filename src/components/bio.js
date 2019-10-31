@@ -40,7 +40,7 @@ function Bio() {
               </a>
               、
               <a href={`https://github.com/${social.github}`}>
-                Github
+                GitHub
               </a>
               、
               <a href={`https://www.linkedin.com/in/${social.linkedin}`}>
