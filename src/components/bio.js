@@ -51,6 +51,7 @@ function Bio() {
                 Twitter
               </a>
               .
+              You can also <a href="https://feedburner.google.com/fb/a/mailverify?uri=dsewnr&amp;loc=en_US">subscribe</a> by email.
             </p>
           </div>
         )
