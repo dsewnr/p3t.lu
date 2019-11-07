@@ -52,20 +52,6 @@ class Layout extends React.Component {
       )
     }
 
-    let partners = (
-      <div
-          style={{
-            fontFamily: `Merriweather,Georgia,serif`,
-            marginTop: 0,
-            marginBottom: `0.1rem`,
-          fontWeight: 400,
-          }}
-      >
-        <span>Partners: </span>
-        <a href="https://blog.liyang.info/">Liyang's Blog</a>
-      </div>
-    )
-
     return (
       <div
         style={{
@@ -77,7 +63,17 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <partners>{partners}</partners>
+        <div
+          style={{
+            fontFamily: `Merriweather,Georgia,serif`,
+            marginTop: 0,
+            marginBottom: `0.1rem`,
+          fontWeight: 400,
+          }}
+        >
+          <span>Partners: </span>
+          <a href="https://blog.liyang.info/">Liyang's Blog</a>
+        </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
