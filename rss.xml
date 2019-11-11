@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 07 Nov 2019 15:29:28 GMT</lastBuildDate><item><title><![CDATA[斜坡上的藝術節 2019]]></title><description><![CDATA[在幾年前在 YouTube…]]></description><link>https://p3t.lu/posts/kacalisian-2019/</link><guid isPermaLink="false">https://p3t.lu/posts/kacalisian-2019/</guid><pubDate>Mon, 04 Nov 2019 00:21:16 GMT</pubDate><content:encoded>&lt;p&gt;在幾年前在 YouTube 上亂晃發現了&lt;a href=&quot;https://www.youtube.com/watch?v=jb243ol_cCs&quot;&gt;嵐馨樂團&lt;/a&gt;，一聽就被圈粉，原住民的幽默發揮的淋漓盡致，音樂又好聽。然後從而認識屏東在地的&lt;a href=&quot;https://www.youtube.com/watch?v=59SKNU3-X7s&quot;&gt;小魯凱音樂傳創隊&lt;/a&gt;，還有一直重複聽不膩的「&lt;a href=&quot;https://www.youtube.com/watch?v=RJMVsRBLytg&quot;&gt;阿佬啦&lt;/a&gt;」樂團。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Nov 2019 07:05:03 GMT</lastBuildDate><item><title><![CDATA[抽麥當勞快速鍵]]></title><description><![CDATA[iOS shortcuts 這是關於 管理 上的問題產生的困擾，本來寫了支 Python…]]></description><link>https://p3t.lu/posts/pythonista-for-mcdonald-app/</link><guid isPermaLink="false">https://p3t.lu/posts/pythonista-for-mcdonald-app/</guid><pubDate>Mon, 11 Nov 2019 01:53:16 GMT</pubDate><content:encoded>&lt;h3&gt;iOS shortcuts&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64.44444444444444%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pythonista for mcdonald app&quot;
+        title=&quot;pythonista for mcdonald app&quot;
+        src=&quot;/static/03e799f0be787e7404d259e957c44450/8a6f4/pythonista-for-mcdonald-app.jpg&quot;
+        srcset=&quot;/static/03e799f0be787e7404d259e957c44450/51f8b/pythonista-for-mcdonald-app.jpg 180w,
+/static/03e799f0be787e7404d259e957c44450/5aea8/pythonista-for-mcdonald-app.jpg 360w,
+/static/03e799f0be787e7404d259e957c44450/8a6f4/pythonista-for-mcdonald-app.jpg 720w,
+/static/03e799f0be787e7404d259e957c44450/72109/pythonista-for-mcdonald-app.jpg 1080w,
+/static/03e799f0be787e7404d259e957c44450/4bd8d/pythonista-for-mcdonald-app.jpg 1125w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;這是關於&lt;strong&gt;管理&lt;/strong&gt;上的問題產生的困擾，本來寫了支 Python 腳本每天在電腦上手動執行，昨天一覺醒來覺得蠻麻煩的，想到的時候電腦不一定在身邊，電腦不在身邊的時候可能沒網路連線，想想還是把它弄到手機上好了，至少手機是每天不會忘記穿的裝備。&lt;/p&gt;
+&lt;p&gt;舊方法：在電腦上手動執行 Python 腳本&lt;br&gt;
+新方法：按一下或是”Hey Siri 抽麥當勞”就完成&lt;/p&gt;
+&lt;p&gt;原本是打算用 iOS 的排程自動執行，但發現 Pythonista 沒辦法在背景執行腳本(含解鎖及鎖定狀態)，只好改用 shortcut 的方式執行(需解鎖)。&lt;/p&gt;
+&lt;p&gt;生活又進步了 1% XD&lt;/p&gt;</content:encoded></item><item><title><![CDATA[斜坡上的藝術節 2019]]></title><description><![CDATA[在幾年前在 YouTube…]]></description><link>https://p3t.lu/posts/kacalisian-2019/</link><guid isPermaLink="false">https://p3t.lu/posts/kacalisian-2019/</guid><pubDate>Mon, 04 Nov 2019 00:21:16 GMT</pubDate><content:encoded>&lt;p&gt;在幾年前在 YouTube 上亂晃發現了&lt;a href=&quot;https://www.youtube.com/watch?v=jb243ol_cCs&quot;&gt;嵐馨樂團&lt;/a&gt;，一聽就被圈粉，原住民的幽默發揮的淋漓盡致，音樂又好聽。然後從而認識屏東在地的&lt;a href=&quot;https://www.youtube.com/watch?v=59SKNU3-X7s&quot;&gt;小魯凱音樂傳創隊&lt;/a&gt;，還有一直重複聽不膩的「&lt;a href=&quot;https://www.youtube.com/watch?v=RJMVsRBLytg&quot;&gt;阿佬啦&lt;/a&gt;」樂團。&lt;/p&gt;
 &lt;p&gt;前幾年就有注意到斜坡上系列的活動，但一直沒有行動力去參加… (明明那時候人就在屏東)，都是事後才看 YouTube 過過乾癮。這次在週四下午看到 FB 上有人分享，晚上就決定週五請假半天去修了很久發不太動的車然後直接殺過去林後四林參加。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.facebook.com/isenasenai/&quot;&gt;&lt;span
