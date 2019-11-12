@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Nov 2019 07:05:03 GMT</lastBuildDate><item><title><![CDATA[抽麥當勞快速鍵]]></title><description><![CDATA[iOS shortcuts 這是關於 管理 上的問題產生的困擾，本來寫了支 Python…]]></description><link>https://p3t.lu/posts/pythonista-for-mcdonald-app/</link><guid isPermaLink="false">https://p3t.lu/posts/pythonista-for-mcdonald-app/</guid><pubDate>Mon, 11 Nov 2019 01:53:16 GMT</pubDate><content:encoded>&lt;h3&gt;iOS shortcuts&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 12 Nov 2019 16:06:30 GMT</lastBuildDate><item><title><![CDATA[米家檯燈 Pro 沒有開箱]]></title><description><![CDATA[米家檯燈 Pro 已經開完箱 (有開客廳大燈) 用了 7 年左右的工作檯燈掛掉好一陣子了，說是掛掉不太精確，其實是控制不住它了… 插著電的情況下有時候沒人去開它會自動開起來，想開的時候試遍各種方法怎麼開就是不亮，大概就是這種失控的情況。 趁著沒啥優惠感的 111…]]></description><link>https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</link><guid isPermaLink="false">https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</guid><pubDate>Tue, 12 Nov 2019 12:24:16 GMT</pubDate><content:encoded>&lt;h3&gt;米家檯燈 Pro 已經開完箱 (有開客廳大燈)&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mi adjustable smart desk lamp 0&quot;
+        title=&quot;mi adjustable smart desk lamp 0&quot;
+        src=&quot;/static/687b1f6787301f2e2d48f41bd32599af/8a6f4/mi-adjustable-smart-desk-lamp-0.jpg&quot;
+        srcset=&quot;/static/687b1f6787301f2e2d48f41bd32599af/51f8b/mi-adjustable-smart-desk-lamp-0.jpg 180w,
+/static/687b1f6787301f2e2d48f41bd32599af/5aea8/mi-adjustable-smart-desk-lamp-0.jpg 360w,
+/static/687b1f6787301f2e2d48f41bd32599af/8a6f4/mi-adjustable-smart-desk-lamp-0.jpg 720w,
+/static/687b1f6787301f2e2d48f41bd32599af/72109/mi-adjustable-smart-desk-lamp-0.jpg 1080w,
+/static/687b1f6787301f2e2d48f41bd32599af/92a9d/mi-adjustable-smart-desk-lamp-0.jpg 1280w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;用了 7 年左右的工作檯燈掛掉好一陣子了，說是掛掉不太精確，其實是控制不住它了… 插著電的情況下有時候沒人去開它會自動開起來，想開的時候試遍各種方法怎麼開就是不亮，大概就是這種失控的情況。&lt;/p&gt;
+&lt;p&gt;趁著沒啥優惠感的 1111，用了張無感的優惠券在 1111 忍痛下訂了(隔天收到)，為了湊優惠券的使用限制還多訂了一個自拍棒(還在路上)，打算拿來當手機架視訊通話用，平時就可以給家人使用，應該不會變成垃圾吧 XD&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Apple Homekit 初體驗&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 591px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 216.58206429780034%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mi adjustable smart desk lamp 1&quot;
+        title=&quot;mi adjustable smart desk lamp 1&quot;
+        src=&quot;/static/4ccdfa549d3496d274224cb56228f95e/2041f/mi-adjustable-smart-desk-lamp-1.jpg&quot;
+        srcset=&quot;/static/4ccdfa549d3496d274224cb56228f95e/fb98e/mi-adjustable-smart-desk-lamp-1.jpg 180w,
+/static/4ccdfa549d3496d274224cb56228f95e/3c530/mi-adjustable-smart-desk-lamp-1.jpg 360w,
+/static/4ccdfa549d3496d274224cb56228f95e/2041f/mi-adjustable-smart-desk-lamp-1.jpg 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;手機直接控制亮度、色溫超級方便der&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 591px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 216.58206429780034%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mi adjustable smart desk lamp 2&quot;
+        title=&quot;mi adjustable smart desk lamp 2&quot;
+        src=&quot;/static/1bafbe3258a37704ed5b412b0b441251/2041f/mi-adjustable-smart-desk-lamp-2.jpg&quot;
+        srcset=&quot;/static/1bafbe3258a37704ed5b412b0b441251/fb98e/mi-adjustable-smart-desk-lamp-2.jpg 180w,
+/static/1bafbe3258a37704ed5b412b0b441251/3c530/mi-adjustable-smart-desk-lamp-2.jpg 360w,
+/static/1bafbe3258a37704ed5b412b0b441251/2041f/mi-adjustable-smart-desk-lamp-2.jpg 591w&quot;
+        sizes=&quot;(max-width: 591px) 100vw, 591px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;睡前工作區來一杯 (已關客廳大燈)&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;mi adjustable smart desk lamp 3&quot;
+        title=&quot;mi adjustable smart desk lamp 3&quot;
+        src=&quot;/static/510ca92f518f9a2c07523242e42eb2d2/8a6f4/mi-adjustable-smart-desk-lamp-3.jpg&quot;
+        srcset=&quot;/static/510ca92f518f9a2c07523242e42eb2d2/51f8b/mi-adjustable-smart-desk-lamp-3.jpg 180w,
+/static/510ca92f518f9a2c07523242e42eb2d2/5aea8/mi-adjustable-smart-desk-lamp-3.jpg 360w,
+/static/510ca92f518f9a2c07523242e42eb2d2/8a6f4/mi-adjustable-smart-desk-lamp-3.jpg 720w,
+/static/510ca92f518f9a2c07523242e42eb2d2/72109/mi-adjustable-smart-desk-lamp-3.jpg 1080w,
+/static/510ca92f518f9a2c07523242e42eb2d2/92a9d/mi-adjustable-smart-desk-lamp-3.jpg 1280w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;附帶一提，下單之前沒特別注意重量，這燈手感還蠻重的，在我意料之外。目前對這光質、亮度、範圍、機構、操作…等都還蠻滿意的，希望它能活的久一點啊！接下來買日常用品應該都要來注意一下有沒有支援 Apple Homekit 了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[抽麥當勞快速鍵]]></title><description><![CDATA[iOS shortcuts 這是關於 管理 上的問題產生的困擾，本來寫了支 Python…]]></description><link>https://p3t.lu/posts/pythonista-for-mcdonald-app/</link><guid isPermaLink="false">https://p3t.lu/posts/pythonista-for-mcdonald-app/</guid><pubDate>Mon, 11 Nov 2019 01:53:16 GMT</pubDate><content:encoded>&lt;h3&gt;iOS shortcuts&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
