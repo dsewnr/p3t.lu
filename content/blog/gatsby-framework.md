@@ -36,4 +36,10 @@ draft: false
 
 除了上述這些比較明顯的問題，如果不硬要用 AMP 主題的話，應該是不會遇到太多麻煩，我猜 XD
 
+---
+
+[2019/11/21 Updated] 因為 AMP 的圖片的問題心裡有個疙瘩，後來決定把問題解決然後回饋回去 [feat(gatsby-remark-images): add disableBgImage option #19152](https://github.com/gatsbyjs/gatsby/pull/19152)。這邊不得不提一下 GatsbyJS 的社群會那麼大又活躍不是沒有原因的，給貢獻者的文件寫的非常好，然後貢獻者可以得到一個免費的紀念品！
+
+### 從美國寄來的 Gatsby swag
+![](/images/gatsby-framework-swag.jpg)
 
