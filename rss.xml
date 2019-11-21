@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 12 Nov 2019 16:06:30 GMT</lastBuildDate><item><title><![CDATA[米家檯燈 Pro 沒有開箱]]></title><description><![CDATA[米家檯燈 Pro 已經開完箱 (有開客廳大燈) 用了 7 年左右的工作檯燈掛掉好一陣子了，說是掛掉不太精確，其實是控制不住它了… 插著電的情況下有時候沒人去開它會自動開起來，想開的時候試遍各種方法怎麼開就是不亮，大概就是這種失控的情況。 趁著沒啥優惠感的 111…]]></description><link>https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</link><guid isPermaLink="false">https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</guid><pubDate>Tue, 12 Nov 2019 12:24:16 GMT</pubDate><content:encoded>&lt;h3&gt;米家檯燈 Pro 已經開完箱 (有開客廳大燈)&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Code Me, dsewnr]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 21 Nov 2019 15:45:45 GMT</lastBuildDate><item><title><![CDATA[米家檯燈 Pro 沒有開箱]]></title><description><![CDATA[米家檯燈 Pro 已經開完箱 (有開客廳大燈) 用了 7 年左右的工作檯燈掛掉好一陣子了，說是掛掉不太精確，其實是控制不住它了… 插著電的情況下有時候沒人去開它會自動開起來，想開的時候試遍各種方法怎麼開就是不亮，大概就是這種失控的情況。 趁著沒啥優惠感的 111…]]></description><link>https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</link><guid isPermaLink="false">https://p3t.lu/posts/mi-adjustable-smart-desk-lamp/</guid><pubDate>Tue, 12 Nov 2019 12:24:16 GMT</pubDate><content:encoded>&lt;h3&gt;米家檯燈 Pro 已經開完箱 (有開客廳大燈)&lt;/h3&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
@@ -3417,7 +3417,31 @@ df = df.replace({pd.np.nan: None})&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content
 &lt;li&gt;我的標籤雲不見了，要找找看有沒有得用&lt;/li&gt;
 &lt;li&gt;預設的 YouTube iframe 屬性不足，html2amp 後 AMP validation 不會過&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;除了上述這些比較明顯的問題，如果不硬要用 AMP 主題的話，應該是不會遇到太多麻煩，我猜 XD&lt;/p&gt;</content:encoded></item><item><title><![CDATA[E Ink: Kobo Libra H2O 開箱]]></title><description><![CDATA[期待已久的 Kobo Libra H2O 來啦！！！ 參加「KaLUG 1906 聚會: E-ink 大亂鬥、初探 Jetson Nano…]]></description><link>https://p3t.lu/posts/e-ink-kobo-libra-h2o/</link><guid isPermaLink="false">https://p3t.lu/posts/e-ink-kobo-libra-h2o/</guid><pubDate>Tue, 01 Oct 2019 11:29:44 GMT</pubDate><content:encoded>&lt;p&gt;期待已久的 Kobo Libra H2O 來啦！！！&lt;/p&gt;
+&lt;p&gt;除了上述這些比較明顯的問題，如果不硬要用 AMP 主題的話，應該是不會遇到太多麻煩，我猜 XD&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[2019/11/21 Updated] 因為 AMP 的圖片的問題心裡有個疙瘩，後來決定把問題解決然後回饋回去 &lt;a href=&quot;https://github.com/gatsbyjs/gatsby/pull/19152&quot;&gt;feat(gatsby-remark-images): add disableBgImage option #19152&lt;/a&gt;。這邊不得不提一下 GatsbyJS 的社群會那麼大又活躍不是沒有原因的，給貢獻者的文件寫的非常好，然後貢獻者可以得到一個免費的紀念品！&lt;/p&gt;
+&lt;h3&gt;從美國寄來的 Gatsby swag&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gatsby framework swag&quot;
+        title=&quot;gatsby framework swag&quot;
+        src=&quot;/static/e3f60a64a1f537057d36e5430eac2d01/8a6f4/gatsby-framework-swag.jpg&quot;
+        srcset=&quot;/static/e3f60a64a1f537057d36e5430eac2d01/51f8b/gatsby-framework-swag.jpg 180w,
+/static/e3f60a64a1f537057d36e5430eac2d01/5aea8/gatsby-framework-swag.jpg 360w,
+/static/e3f60a64a1f537057d36e5430eac2d01/8a6f4/gatsby-framework-swag.jpg 720w,
+/static/e3f60a64a1f537057d36e5430eac2d01/f7125/gatsby-framework-swag.jpg 960w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[E Ink: Kobo Libra H2O 開箱]]></title><description><![CDATA[期待已久的 Kobo Libra H2O 來啦！！！ 參加「KaLUG 1906 聚會: E-ink 大亂鬥、初探 Jetson Nano…]]></description><link>https://p3t.lu/posts/e-ink-kobo-libra-h2o/</link><guid isPermaLink="false">https://p3t.lu/posts/e-ink-kobo-libra-h2o/</guid><pubDate>Tue, 01 Oct 2019 11:29:44 GMT</pubDate><content:encoded>&lt;p&gt;期待已久的 Kobo Libra H2O 來啦！！！&lt;/p&gt;
 &lt;!--more--&gt;
 &lt;p&gt;參加「KaLUG 1906 聚會: E-ink 大亂鬥、初探 Jetson Nano 邊緣運算開發平台」的時候被大大們燒到…&lt;/p&gt;
 &lt;p&gt;思考了好一陣子，一直在想到底是要花錢買實體書來讀還是要存久一點買電子紙？&lt;/p&gt;
