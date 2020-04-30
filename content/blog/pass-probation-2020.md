@@ -27,19 +27,19 @@ draft: false
 ## 學習
 - ReactJS (體驗不錯，不過我還是麵麵體，前端下的功夫不夠 QQ)
 - Kubernetes (好好玩，這是我這次求職最想接觸的技術之一，剛入門 ;p)
-- Python FastAPI 實作 (只有讚而能形容！)
-- Python unittest.mock (同上)
-- MongoDB Schema Validation (有比沒有安心一些…)
+- [Python FastAPI](https://github.com/tiangolo/fastapi) 實作 (只有讚而能形容！)
+- [Python unittest.mock](https://docs.python.org/3.7/library/unittest.mock.html) (同上)
+- [MongoDB Schema Validation](https://docs.mongodb.com/manual/core/schema-validation/) (有比沒有安心一些…)
 - Neo4j (幾年前很火的東西，沒想到現在才碰到)
 - JWT (第一次使用到)
 - CircleCI (方便)
-- Tmuxinator (之前在 Linux tmux 版本太新無法使用，沒想到在 Mac 用到了 XD)
+- [Tmuxinator](https://github.com/tmuxinator/tmuxinator) (之前在 Linux tmux 版本太新無法使用，沒想到在 Mac 用到了 XD)
 
 ## 接下來的計劃
 (公司有關的不方便說明，來說說我個人的)
 - 更深入的了解 microservice 生態系
 - 想要把 ReactJS 學好
-- Kubeflow 看起來蠻有趣的，想了解！
+- [Kubeflow](https://www.kubeflow.org/) 看起來蠻有趣的，想了解！
 - 目前有合作的外國人有：中國、美國、菲律賓、德國，希望英文能力能再更精進。
 - 今年還有一個目標是要學 rust (還沒忘記)
 
