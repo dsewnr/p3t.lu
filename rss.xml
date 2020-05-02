@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 30 Apr 2020 15:28:48 GMT</lastBuildDate><item><title><![CDATA[通過三個月試用期]]></title><description><![CDATA[沒想到這個 repo 換了台電腦拉下來裝一裝一樣可以直接用，GatsbyJS 大好！~ 在昨天舉行了一場 probation presentation…]]></description><link>https://p3t.luposts/pass-probation-2020/</link><guid isPermaLink="false">https://p3t.luposts/pass-probation-2020/</guid><pubDate>Thu, 30 Apr 2020 14:01:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;del&gt;沒想到這個 repo 換了台電腦拉下來裝一裝一樣可以直接用，GatsbyJS 大好！&lt;/del&gt;~&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 02 May 2020 11:35:45 GMT</lastBuildDate><item><title><![CDATA[通過三個月試用期]]></title><description><![CDATA[沒想到這個 repo 換了台電腦拉下來裝一裝一樣可以直接用，GatsbyJS 大好！~ 在昨天舉行了一場 probation presentation…]]></description><link>https://p3t.luposts/pass-probation-2020/</link><guid isPermaLink="false">https://p3t.luposts/pass-probation-2020/</guid><pubDate>Thu, 30 Apr 2020 14:01:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;del&gt;沒想到這個 repo 換了台電腦拉下來裝一裝一樣可以直接用，GatsbyJS 大好！&lt;/del&gt;~&lt;/p&gt;
 &lt;p&gt;在昨天舉行了一場 probation presentation，分享了我在這段時間中的&lt;strong&gt;貢獻&lt;/strong&gt;、&lt;strong&gt;學習&lt;/strong&gt;還有&lt;strong&gt;接下來的計劃&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;原本發信邀請了整個部門，上上下下應該也有超過百人，因為有國外的同事接受邀請，準備期間就一直用英文反覆的練習報告。&lt;/p&gt;
 &lt;p&gt;後來約定的時間可能因為時區的關係，線上約 2X 人，沒有外國同事參加(有一位懂中文的美國同事)，所以就直接用中文做簡報了 XD&lt;/p&gt;
@@ -35,6 +35,31 @@
 &lt;h3&gt;後記&lt;/h3&gt;
 &lt;p&gt;自 2/3 到職至今，轉眼間即將在台北住滿三個月了！因為平常的生活型態就蠻&lt;del&gt;宅&lt;/del&gt;的，也沒什麼習慣不習慣的問題，台北的山真的好多，週末常常去爬山 XD
 因為武漢肺炎的關係，目前為止 WFH 也超過一個月了，這倒是第一次體驗到那麼長時間的 WFH，我是還蠻適應的，心態、協作工具和網路都準備好，其實是沒什麼大問題的！&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 720px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAVz7MOMrSRf/xAAbEAEAAgIDAAAAAAAAAAAAAAACAQMAEgQRQv/aAAgBAQABBQIdb1kTDiNvHEsSArLz/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECIUERIv/aAAgBAQAGPwKj0mUzpJPCTktP/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERITFBUXGR/9oACAEBAAE/IZEbeuDSQ86E2SYM8icdjSqFmDqf/9oADAMBAAIAAwAAABA/z//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPxA2VG//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EHhAJt//xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhQVGh4f/aAAgBAQABPxCgpbFo12ovSZ+mfJ4MC0hSUDbOE7BoYVWfkUHNB8AMn//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pass probation wfh&quot;
+        title=&quot;pass probation wfh&quot;
+        src=&quot;/static/8f74a96e1518d38a1086dc6d79d2210a/80e3c/pass-probation-wfh.jpg&quot;
+        srcset=&quot;/static/8f74a96e1518d38a1086dc6d79d2210a/4ec73/pass-probation-wfh.jpg 180w,
+/static/8f74a96e1518d38a1086dc6d79d2210a/158ba/pass-probation-wfh.jpg 360w,
+/static/8f74a96e1518d38a1086dc6d79d2210a/80e3c/pass-probation-wfh.jpg 720w,
+/static/8f74a96e1518d38a1086dc6d79d2210a/47311/pass-probation-wfh.jpg 1080w,
+/static/8f74a96e1518d38a1086dc6d79d2210a/644c5/pass-probation-wfh.jpg 1440w,
+/static/8f74a96e1518d38a1086dc6d79d2210a/08395/pass-probation-wfh.jpg 3958w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;網路上看到最近蠻多人在分享 WFH 的環境的，也附上陪我 WFH 一個多月的文山租屋處環境照(即將要換租屋)，第一週 WFH 後覺得會腰痠背痛和眼睛累，後來調整了坐姿跟檯燈的設定之後改善很多；坐久了容易發懶，坐姿就會跑掉，需要定時起來動一下及刻意的維持或變換一下姿勢；還有因為房間是有開窗讓自然光照進來，就要隨著日光入射角跟天氣來調整檯燈的亮度跟窗簾的位置來達到最佳效果 XD&lt;/p&gt;
 &lt;p&gt;還有就是現在 Mac 用的很爽… 我的 X1 幾乎都沒在用了… 已成為壞男人不想回去了www
 (雖然是 Mac 但還是想要有 i3 的體驗，所以來推薦一下 &lt;a href=&quot;https://github.com/koekeishiya/yabai&quot;&gt;yabai&lt;/a&gt; + &lt;a href=&quot;https://github.com/koekeishiya/skhd&quot;&gt;skhd&lt;/a&gt;！一開始可以用這個&lt;a href=&quot;https://github.com/Julian-Heng/chunkwm-yabai-config&quot;&gt;設定檔&lt;/a&gt;試試看！)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[我的職涯變化]]></title><description><![CDATA[2019/0…]]></description><link>https://p3t.luposts/my-career-change/</link><guid isPermaLink="false">https://p3t.luposts/my-career-change/</guid><pubDate>Sun, 15 Dec 2019 09:24:16 GMT</pubDate><content:encoded>&lt;h2&gt;2019/06&lt;/h2&gt;
 &lt;p&gt;前幾個月一位同事離職了，再過一個月又有兩位同事要離職，讓我開始思考到底出了什麼問題？我要的是什麼？下一步該如何走？想要過怎樣的生活？得到一個結論是：想過更好的生活就要努力改變現狀！&lt;/p&gt;
