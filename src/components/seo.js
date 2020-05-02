@@ -22,11 +22,11 @@ function SEO({ description, lang, meta, keywords, title, slug = ''}) {
             link={[
               {
                 rel: 'canonical',
-                href: `${siteUrl}${path}`
+                href: `${siteUrl}/${path}`
               },
               {
                 rel: 'amphtml',
-                href: `${siteUrl}amp/${path}`
+                href: `${siteUrl}/amp/${path}`
               }
             ]}
             meta={[
