@@ -11,7 +11,7 @@
     "@mdx-js/mdx": "^1.6.1",
     "core-js": "^3.6.5",
     "gatsby": "^2.21.9",
-    "gatsby-cli": "^2.12.44",
+    "gatsby-cli": "^2.12.45",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-feed": "^2.0.13",
     "gatsby-plugin-google-analytics": "^2.0.14",
