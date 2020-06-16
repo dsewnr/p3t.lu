@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 06 Jun 2020 02:53:04 GMT</lastBuildDate><item><title><![CDATA[幫忙找出中心座標的 Telegram bot]]></title><description><![CDATA[前情提要 有一天在某個宅宅群組，因為有不少宅宅 relocate 到大台北地區，有宅提議說要辦個宅宅聚餐，但是呢，因為宅宅散佈在大台北各個角落，所以產生了一個問題「A 約的地點 B 說太遠，B 提議的地點 C 說不方便」，哇！這樣不知道要何年何月何日才約的成聚餐 QQ…]]></description><link>https://p3t.luposts/lets-meet-bot/</link><guid isPermaLink="false">https://p3t.luposts/lets-meet-bot/</guid><pubDate>Sat, 06 Jun 2020 00:40:21 GMT</pubDate><content:encoded>&lt;h2&gt;前情提要&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 16:27:46 GMT</lastBuildDate><item><title><![CDATA[發現超好用小工具 Boop！如果沒有它，在 CLI 要如何解決？]]></title><description><![CDATA[睡前在推特上閒晃看到 Boop 這個小工具，馬上把自己能分享的管道全部傳一輪，容我簡短的罵個髒話，幹幹幹幹幹幹，這真的是太讚了！！！平常工作與生活中就很常有這種需求，把字串轉來轉去，解開來又編回去之類的，我個人是蠻在意把一些有機敏資訊的字串貼到隨便 google…]]></description><link>https://p3t.luposts/awesome-tool-boop/</link><guid isPermaLink="false">https://p3t.luposts/awesome-tool-boop/</guid><pubDate>Tue, 16 Jun 2020 15:33:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABYlAAAWJQFJUiTwAAACN0lEQVQ4y52Uy27TQBSGHZWVJ7Fzv9W5x5dMLBORKEE0jZtmWSgg9QHY9gkS9T3BO8QSWCDWJPbwn6FOYlSEWku/ZubMzDf/mTmJotA3aZ4oiqcayoQN+YA5zoB53nP25vo9c7jLqjWDNZpt9mI8ZVevrxkfDhnnQzbgnA0GnLmup2LPiRJ/F+Ozmw9vl59X7xafFv5l4PvLYH7uB9gUTGezYD4/D16dzYPxeBIMXTdY+BfQMtZH37/8Mp29vNkDa5Xq2nX6wuKmME1L4DRhWbbodDrCtm0Zo3G/3xetVlv2bduR8V6vL7rdnqjV6us9UGVsncsXxGn9dGsYxk5V1TDNWJhOp0NNy4SZzB9pmUOfhPkd2l/5fF7ounYAapq2KZVKAgrr9XpUrVZFpVKRwpzApmQr+1IRxjvam8vlNglguVwWAIWNRiOyLEumyjkXFCdQLALGwjjSdV0Cs9nsAYgJ6RCOpMNutyvvr9frCRwgGGNISU+4jIHksFgsJoFYvIFlmXK73ZZAegBySkJMFAqFxwERkA4BiGJ3MbTVaiVSPmofBtKAFgAQjkajqNls7lN2HAclUZNpx7Aj/T9l0zQjehBy5nmevEMCxXf4lx4GIrgmIO5pi0cJsSAkOF0BYiEWh5hHTWohnCYEl9t7YKIO7+jSCUon032SIxL1Kf4vUVFTaWHd3XHZ3GLyB6DfoO+PEYBf0f7E4bcxLwUZ0Aq6eqJW94yUgl9HDKW/n2dPFO1NoRqU32RdJy4cwQoUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;awesome tool boop ui&quot;
+        title=&quot;awesome tool boop ui&quot;
+        src=&quot;/static/c1313ac8fa835278bdaeef37c4baa21a/37523/awesome-tool-boop-ui.png&quot;
+        srcset=&quot;/static/c1313ac8fa835278bdaeef37c4baa21a/e9ff0/awesome-tool-boop-ui.png 180w,
+/static/c1313ac8fa835278bdaeef37c4baa21a/f21e7/awesome-tool-boop-ui.png 360w,
+/static/c1313ac8fa835278bdaeef37c4baa21a/37523/awesome-tool-boop-ui.png 720w,
+/static/c1313ac8fa835278bdaeef37c4baa21a/302a4/awesome-tool-boop-ui.png 1080w,
+/static/c1313ac8fa835278bdaeef37c4baa21a/c2d9c/awesome-tool-boop-ui.png 1326w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;睡前在推特上閒晃看到 &lt;a href=&quot;https://boop.okat.best/&quot;&gt;Boop&lt;/a&gt; 這個小工具，馬上把自己能分享的管道全部傳一輪，容我簡短的罵個髒話，幹幹幹幹幹幹，這真的是太讚了！！！平常工作與生活中就很常有這種需求，把字串轉來轉去，解開來又編回去之類的，我個人是蠻在意把一些有機敏資訊的字串貼到隨便 google 來的網頁上做轉換，所以也找了幾個能在 CLI 的解決方法，是說這些字串留在 shell history 中我也是覺得很母湯，打完我還會手動去把 history 清乾淨，這個 Boop 的出現真的是完完全全打中我的點啊啊啊啊啊啊啊啊！Boop 太好用了，有哪些功能就請各位自行去玩玩看啦！看它熱門的程度未來會支援的功能絕對會更加豐富，以下就來介紹一下平常在 CLI 會用到的解決方案 XD (試想一下未來有一天你沒 Boop 的時候該怎麼辦？)&lt;/p&gt;
+&lt;h2&gt;Base64&lt;/h2&gt;
+&lt;p&gt;encode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ echo &amp;#39;base64&amp;#39; | base64
+YmFzZTY0Cg==&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;decode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ echo &amp;#39;YmFzZTY0Cg==&amp;#39; | base64 --decode
+base64&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;URL&lt;/h2&gt;
+&lt;p&gt;encode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ python3 -c &amp;quot;import sys, urllib.parse as ul;print(ul.quote_plus(sys.argv[1]))&amp;quot; &amp;#39;param1=god&amp;amp;param2=dog&amp;#39;
+param1%3Dgod%26param2%3Ddog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;decode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ python3 -c &amp;quot;import sys, urllib.parse as ul;print(ul.unquote_plus(sys.argv[1]))&amp;quot; &amp;#39;param1%3Dgod%26param2%3Ddog&amp;#39;
+param1=god&amp;amp;param2=dog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;HTML&lt;/h2&gt;
+&lt;p&gt;encode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ python3 -c &amp;quot;import sys, html;print(html.escape(sys.argv[1]))&amp;quot; &amp;#39;A&amp;gt;B&amp;amp;C&amp;#39;
+A&amp;amp;gt;B&amp;amp;amp;C&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;decode&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ python3 -c &amp;quot;import sys, html;print(html.unescape(sys.argv[1]))&amp;quot; &amp;#39;A&amp;amp;gt;B&amp;amp;amp;C&amp;#39;
+A&amp;gt;B&amp;amp;C&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Format JSON&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ echo &amp;#39;{&amp;quot;key1&amp;quot;:&amp;quot;value1&amp;quot;,&amp;quot;key2&amp;quot;:123,&amp;quot;key3&amp;quot;:[&amp;quot;v&amp;quot;,&amp;quot;a&amp;quot;,&amp;quot;l&amp;quot;,&amp;quot;u&amp;quot;,&amp;quot;e&amp;quot;,&amp;quot;3&amp;quot;]}&amp;#39; | jq
+{
+  &amp;quot;key1&amp;quot;: &amp;quot;value1&amp;quot;,
+  &amp;quot;key2&amp;quot;: 123,
+  &amp;quot;key3&amp;quot;: [
+    &amp;quot;v&amp;quot;,
+    &amp;quot;a&amp;quot;,
+    &amp;quot;l&amp;quot;,
+    &amp;quot;u&amp;quot;,
+    &amp;quot;e&amp;quot;,
+    &amp;quot;3&amp;quot;
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Count Characters&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ echo &amp;#39;0123456789
+  9876543210&amp;#39; | wc -c
+      22&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;MD5 Checksum&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;⟩ echo &amp;#39;test&amp;#39; | md5sum
+d8e8fca2dc0f896fd7cb4cb0031ba249  -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;總結&lt;/h2&gt;
+&lt;p&gt;以上就是幾個日常比較常用到的方法，有些用到 Python 其實有點作弊，不過 alias 起來也是可以用的嚇嚇叫的！然後 Boop 真的很讚，能用快點用，用好用滿！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[幫忙找出中心座標的 Telegram bot]]></title><description><![CDATA[前情提要 有一天在某個宅宅群組，因為有不少宅宅 relocate 到大台北地區，有宅提議說要辦個宅宅聚餐，但是呢，因為宅宅散佈在大台北各個角落，所以產生了一個問題「A 約的地點 B 說太遠，B 提議的地點 C 說不方便」，哇！這樣不知道要何年何月何日才約的成聚餐 QQ…]]></description><link>https://p3t.luposts/lets-meet-bot/</link><guid isPermaLink="false">https://p3t.luposts/lets-meet-bot/</guid><pubDate>Sat, 06 Jun 2020 00:40:21 GMT</pubDate><content:encoded>&lt;h2&gt;前情提要&lt;/h2&gt;
 &lt;p&gt;有一天在某個宅宅群組，因為有不少宅宅 relocate 到大台北地區，有宅提議說要辦個宅宅聚餐，但是呢，因為宅宅散佈在大台北各個角落，所以產生了一個問題「A 約的地點 B 說太遠，B 提議的地點 C 說不方便」，哇！這樣不知道要何年何月何日才約的成聚餐 QQ&lt;/p&gt;
 &lt;h2&gt;求解&lt;/h2&gt;
 &lt;p&gt;當時腦中就產生一個想法，不如就用算的吧！讓數據來說話最公平！於是就請大家把自己所在的座標傳到群組裡，然後趁著午休吃飯的時間 google 了一番尋找計算的方法，然後就找到這篇「&lt;a href=&quot;https://stackoverflow.com/questions/37885798/how-to-calculate-the-midpoint-of-several-geolocations-in-python&quot;&gt;How to calculate the midpoint of several geolocations in python&lt;/a&gt;」，計算的方法很簡單，很輕鬆的就找出中心座標！大家也接受了在這座標附近聚餐。&lt;/p&gt;
