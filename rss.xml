@@ -1,4 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Jun 2020 16:27:46 GMT</lastBuildDate><item><title><![CDATA[發現超好用小工具 Boop！如果沒有它，在 CLI 要如何解決？]]></title><description><![CDATA[睡前在推特上閒晃看到 Boop 這個小工具，馬上把自己能分享的管道全部傳一輪，容我簡短的罵個髒話，幹幹幹幹幹幹，這真的是太讚了！！！平常工作與生活中就很常有這種需求，把字串轉來轉去，解開來又編回去之類的，我個人是蠻在意把一些有機敏資訊的字串貼到隨便 google…]]></description><link>https://p3t.luposts/awesome-tool-boop/</link><guid isPermaLink="false">https://p3t.luposts/awesome-tool-boop/</guid><pubDate>Tue, 16 Jun 2020 15:33:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Jun 2020 16:31:37 GMT</lastBuildDate><item><title><![CDATA[解決我的 fish shell 變慢的問題]]></title><description><![CDATA[fish shell 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度) 這週在讀書會帶工作坊的時候，因為要開很多 terminal…]]></description><link>https://p3t.luposts/fish-shell-slow-issue/</link><guid isPermaLink="false">https://p3t.luposts/fish-shell-slow-issue/</guid><pubDate>Wed, 24 Jun 2020 15:43:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;fish shell&lt;/a&gt; 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度)&lt;/p&gt;
+&lt;p&gt;這週在讀書會帶工作坊的時候，因為要開很多 terminal 做不同的操作才意識到「靠… 怎麼變那麼慢。」，每開一個新的 shell 心裡就會靠一次… 開 shell 還要等真的是會讓人很不爽。&lt;/p&gt;
+&lt;p&gt;只好拜請 Google 大神看看有沒有解，後來找到這篇「&lt;a href=&quot;https://github.com/fish-shell/fish-shell/issues/5980&quot;&gt;MacOS 10.15 Beta - Slow Fish Prompts #5980&lt;/a&gt;」，雖然都是變慢但跟我的 root cause 不一樣，但裡面有提到 fish shell profiling 的方法：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fish --profile /tmp/profile -c fish_prompt; sort -nk2 /tmp/profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然後我的執行結果如下：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;…以上略…
+138     52399   ---------&amp;gt; test -e (brew --prefix)/Cellar/nvm
+19      59575   -&amp;gt; if [ (_git_branch_name) ]
+63140   63140   -----&amp;gt; command grep --color=auto $argv
+160     68979   &amp;gt; fish_prompt
+5994    92279   ----&amp;gt; ps -ef | grep $SSH_AGENT_PID | grep -v grep | grep -q ssh-agent
+39      92452   ---&amp;gt; not __ssh_agent_is_started
+4       92456   --&amp;gt; if not __ssh_agent_is_started
+99      92853   -&amp;gt; fish_ssh_agent
+174     130993  &amp;gt; builtin source /Users/peter_br_lu/.config/fish/config.fish
+705586  705586  -------------&amp;gt; bash -c &amp;quot;$program &amp;amp;&amp;amp; echo &amp;amp;&amp;amp; echo &amp;#39;$divider&amp;#39; &amp;amp;&amp;amp; env&amp;quot; 2&amp;gt;&amp;amp;1
+277     705863  ------------&amp;gt; set program_execution (bash -c &amp;quot;$program &amp;amp;&amp;amp; echo &amp;amp;&amp;amp; echo &amp;#39;$divider&amp;#39; &amp;amp;&amp;amp; env&amp;quot; 2&amp;gt;&amp;amp;1)
+179     738392  -----------&amp;gt; fenv.main $argv
+12      745890  ----------&amp;gt; if test (count $argv) -gt 0
+90      745980  ---------&amp;gt; fenv source $nvm_prefix/nvm.sh &amp;gt;/dev/null 2&amp;gt;&amp;amp;1
+883646  883646  ----------&amp;gt; brew --prefix nvm
+216     883862  ---------&amp;gt; set -g nvm_prefix (brew --prefix nvm)
+21      1686271 --------&amp;gt; if type -q fenv
+40      1686311 -------&amp;gt; init /Users/peter_br_lu/.local/share/omf/pkg/nvm
+139     1686450 ------&amp;gt; emit init_$package $path
+237     1716659 -----&amp;gt; for init in $init_path
+431     1722284 ----&amp;gt; require --path {$OMF_PATH,$OMF_CONFIG}/pkg/*
+517     1726529 ---&amp;gt; source $OMF_PATH/init.fish
+275     1726911 --&amp;gt; source $file
+589     1728200 -&amp;gt; for file in $__fish_config_dir/conf.d/*.fish $__fish_sysconf_dir/conf.d/*.fish $vendor_confdirs/*.fish
+1378    1736909 &amp;gt; builtin source /usr/local/Cellar/fish/3.1.2/share/fish/config.fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;第一行是 time，第二行是 sum，第三行是 command&lt;/p&gt;
+&lt;p&gt;然後我就用時間排序一下&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;555     555     -----&amp;gt; set conf_path $package_path/conf.d/*.fish
+586     21317   -&amp;gt; fish_vi_key_bindings
+589     1728200 -&amp;gt; for file in $__fish_config_dir/conf.d/*.fish $__fish_sysconf_dir/conf.d/*.fish $vendor_confdirs/*.fish
+601     601     -----&amp;gt; set init_path $package_path/init.fish*
+606     606     -----&amp;gt; set complete_path $package_path/completions*
+622     643     ----------&amp;gt; source /usr/local/Cellar/fish/3.1.2/share/fish/functions/type.fish
+642     655     --&amp;gt; source /usr/local/Cellar/fish/3.1.2/share/fish/functions/__fish_set_locale.fish
+648     648     -----&amp;gt; set function_path $package_path/functions*
+696     5409    ----------------&amp;gt; for value in $argv
+699     699     ----&amp;gt; set -l theme_function_path {$OMF_CONFIG,$OMF_PATH}/themes*/$theme{,/functions}
+699     731     ----&amp;gt; source /usr/local/Cellar/fish/3.1.2/share/fish/functions/__fish_shared_key_bindings.fish
+1372    1386    --&amp;gt; source /usr/local/Cellar/fish/3.1.2/share/fish/functions/fish_vi_key_bindings.fish
+1378    1736909 &amp;gt; builtin source /usr/local/Cellar/fish/3.1.2/share/fish/config.fish
+5994    92279   ----&amp;gt; ps -ef | grep $SSH_AGENT_PID | grep -v grep | grep -q ssh-agent
+6973    6973    -----&amp;gt; command grep --color=auto $argv
+7065    7065    -------&amp;gt; echo | command grep --color=auto &amp;quot;&amp;quot; &amp;gt;/dev/null 2&amp;gt;&amp;amp;1
+7088    7088    -------------&amp;gt; echo $argv | sed &amp;#39;s/[ \t]//g&amp;#39;
+7778    7778    --&amp;gt; pwd | sed &amp;quot;s:^$HOME:~:&amp;quot;
+8946    8946    -----&amp;gt; command grep --color=auto $argv
+9110    9110    --&amp;gt; tty
+12417   12417   -------------&amp;gt; bash -c &amp;#39;env&amp;#39;
+15441   15441   --------&amp;gt; not which autojump &amp;gt;/dev/null ^/dev/null
+16406   16406   -----&amp;gt; command git symbolic-ref HEAD 2&amp;gt; /dev/null | sed -e &amp;#39;s|^refs/heads/||&amp;#39;
+19165   19165   ------&amp;gt; command git status -s --ignore-submodules=dirty 2&amp;gt; /dev/null
+22741   22741   -----&amp;gt; command git symbolic-ref HEAD 2&amp;gt; /dev/null | sed -e &amp;#39;s|^refs/heads/||&amp;#39;
+52261   52261   ----------&amp;gt; brew --prefix
+63140   63140   -----&amp;gt; command grep --color=auto $argv
+705586  705586  -------------&amp;gt; bash -c &amp;quot;$program &amp;amp;&amp;amp; echo &amp;amp;&amp;amp; echo &amp;#39;$divider&amp;#39; &amp;amp;&amp;amp; env&amp;quot; 2&amp;gt;&amp;amp;1
+883646  883646  ----------&amp;gt; brew --prefix nvm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;從最下面往上逐一檢視&lt;/p&gt;
+&lt;p&gt;疑… nvm…&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;883646  883646  ----------&amp;gt; brew --prefix nvm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;手動執行了一下還真的是有點慢的感覺…&lt;/p&gt;
+&lt;p&gt;所以我就試著把 &lt;a href=&quot;https://github.com/oh-my-fish/oh-my-fish&quot;&gt;Oh My Fish!&lt;/a&gt; 裝的 nvm 外掛移掉試試，果然變快了！如下圖：
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACWElEQVQ4y4WS21LbMBCGBZYl2ZZPcc7kYMcJZRhIh+Gmd1z3OfoYvSJkOm1DyZQpdErf0SsD7tS56spQyrSEXnyz0lr7e1f6yfn87c/jL/PV6eeLcnn5rTy7vCqXX7+Xi4ur1ezjp/L43fvy+MNpOT87X81OTsrZbFYuFotyuVz+w3w+LwnZNDNCNBsZ2aQZ2TAyQgUQZgOh/C5nCsTCM+T/BL4PrivBtm2wLQHSccCxLZCI4Aw4Y5nee1KCZVnAOa/iUwiBjWw1u2pvby+P40RNtrfz/f39fJSm+WQyyV/s7OSD4VDFcaym02k+Ho/zZrOpTNPMtPBTED8NVRj6EHgeRLUaRFEEQRBUtFotVa/XwcNvYRiCXvs4EcOu1wqGrzrX1HGBWoiwgRpGRinNdBeGQR/WVHO/1oXrREntZXwte4lyk+1ctreU124rB7vj1Mg4w2JdaNI77oue7TA66t1wzwUuHOCuD9wLgQcRsKAOzEVhWwLDHPMjPCOqR2JrxCpBuiEyU+K94MimLnRDMFHMrLVQqAYMr4N5EeYawLh46G7tyI7raHtkFv7dwoTAg5be47hCg9bReZ3Ttngs9pQo6ba7Sluk0+2qfr+v0nSca5s00B7aJo1GQ3meD8NhXJ3Tr/28bfqh2ur1lC7UNhkMBlVs4+MkSZIP0YdapNPpVD/UPuTP3WHzqH1j4osaxh+0PTS/93cW+stGj+JjyJvXo+vpzvhHMkpvx2laYHcFmrqQUhZo4sJ13UI6oghDUXieLLDDitFoVLG7u1scHh4WBwcHOt7+AsU/T8dr7tpwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;fish shell slow issue&quot;
+        title=&quot;fish shell slow issue&quot;
+        src=&quot;/static/a031325a31675457e419b556eb1d99c5/37523/fish-shell-slow-issue.png&quot;
+        srcset=&quot;/static/a031325a31675457e419b556eb1d99c5/e9ff0/fish-shell-slow-issue.png 180w,
+/static/a031325a31675457e419b556eb1d99c5/f21e7/fish-shell-slow-issue.png 360w,
+/static/a031325a31675457e419b556eb1d99c5/37523/fish-shell-slow-issue.png 720w,
+/static/a031325a31675457e419b556eb1d99c5/302a4/fish-shell-slow-issue.png 1080w,
+/static/a031325a31675457e419b556eb1d99c5/07a9c/fish-shell-slow-issue.png 1440w,
+/static/a031325a31675457e419b556eb1d99c5/5faa8/fish-shell-slow-issue.png 1444w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;執行時間從 2.33&lt;strong&gt;s&lt;/strong&gt; 變成 221.41&lt;strong&gt;ms&lt;/strong&gt;！！！&lt;/p&gt;
+&lt;h2&gt;舒服！&lt;/h2&gt;
+&lt;p&gt;好吧，只好先這樣，有要用 nvm 的時候再裝回來好惹…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[發現超好用小工具 Boop！如果沒有它，在 CLI 要如何解決？]]></title><description><![CDATA[睡前在推特上閒晃看到 Boop 這個小工具，馬上把自己能分享的管道全部傳一輪，容我簡短的罵個髒話，幹幹幹幹幹幹，這真的是太讚了！！！平常工作與生活中就很常有這種需求，把字串轉來轉去，解開來又編回去之類的，我個人是蠻在意把一些有機敏資訊的字串貼到隨便 google…]]></description><link>https://p3t.luposts/awesome-tool-boop/</link><guid isPermaLink="false">https://p3t.luposts/awesome-tool-boop/</guid><pubDate>Tue, 16 Jun 2020 15:33:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
     &gt;
