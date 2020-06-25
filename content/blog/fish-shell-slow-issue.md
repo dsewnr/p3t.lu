@@ -49,6 +49,7 @@ fish --profile /tmp/profile -c fish_prompt; sort -nk2 /tmp/profile
 
 然後我就用時間排序一下
 ```
+…以上略…
 555     555     -----> set conf_path $package_path/conf.d/*.fish
 586     21317   -> fish_vi_key_bindings
 589     1728200 -> for file in $__fish_config_dir/conf.d/*.fish $__fish_sysconf_dir/conf.d/*.fish $vendor_confdirs/*.fish
@@ -81,7 +82,7 @@ fish --profile /tmp/profile -c fish_prompt; sort -nk2 /tmp/profile
 ```
 從最下面往上逐一檢視
 
-疑… nvm...
+疑… nvm！！！
 ```
 883646  883646  ----------> brew --prefix nvm
 ```
