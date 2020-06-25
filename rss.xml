@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 24 Jun 2020 16:31:37 GMT</lastBuildDate><item><title><![CDATA[解決我的 fish shell 變慢的問題]]></title><description><![CDATA[fish shell 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度) 這週在讀書會帶工作坊的時候，因為要開很多 terminal…]]></description><link>https://p3t.luposts/fish-shell-slow-issue/</link><guid isPermaLink="false">https://p3t.luposts/fish-shell-slow-issue/</guid><pubDate>Wed, 24 Jun 2020 15:43:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;fish shell&lt;/a&gt; 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度)&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby RSS Feed]]></title><description><![CDATA[軟體工程師．大 Linux 神教教徒]]></description><link>https://p3t.lu</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 25 Jun 2020 03:37:59 GMT</lastBuildDate><item><title><![CDATA[解決我的 fish shell 變慢的問題]]></title><description><![CDATA[fish shell 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度) 這週在讀書會帶工作坊的時候，因為要開很多 terminal…]]></description><link>https://p3t.luposts/fish-shell-slow-issue/</link><guid isPermaLink="false">https://p3t.luposts/fish-shell-slow-issue/</guid><pubDate>Wed, 24 Jun 2020 15:43:21 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://fishshell.com/&quot;&gt;fish shell&lt;/a&gt; 從之前的 Linux 使用到現在的 macOS 一直都是速度非常快的，尤其是裝了幾個常用的外掛也不曾感到變慢過。(例如 git 外掛在切換到 git 資料夾時的體感速度)&lt;/p&gt;
 &lt;p&gt;這週在讀書會帶工作坊的時候，因為要開很多 terminal 做不同的操作才意識到「靠… 怎麼變那麼慢。」，每開一個新的 shell 心裡就會靠一次… 開 shell 還要等真的是會讓人很不爽。&lt;/p&gt;
 &lt;p&gt;只好拜請 Google 大神看看有沒有解，後來找到這篇「&lt;a href=&quot;https://github.com/fish-shell/fish-shell/issues/5980&quot;&gt;MacOS 10.15 Beta - Slow Fish Prompts #5980&lt;/a&gt;」，雖然都是變慢但跟我的 root cause 不一樣，但裡面有提到 fish shell profiling 的方法：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;fish --profile /tmp/profile -c fish_prompt; sort -nk2 /tmp/profile&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -31,7 +31,8 @@
 1378    1736909 &amp;gt; builtin source /usr/local/Cellar/fish/3.1.2/share/fish/config.fish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;第一行是 time，第二行是 sum，第三行是 command&lt;/p&gt;
 &lt;p&gt;然後我就用時間排序一下&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;555     555     -----&amp;gt; set conf_path $package_path/conf.d/*.fish
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;…以上略…
+555     555     -----&amp;gt; set conf_path $package_path/conf.d/*.fish
 586     21317   -&amp;gt; fish_vi_key_bindings
 589     1728200 -&amp;gt; for file in $__fish_config_dir/conf.d/*.fish $__fish_sysconf_dir/conf.d/*.fish $vendor_confdirs/*.fish
 601     601     -----&amp;gt; set init_path $package_path/init.fish*
@@ -61,7 +62,7 @@
 705586  705586  -------------&amp;gt; bash -c &amp;quot;$program &amp;amp;&amp;amp; echo &amp;amp;&amp;amp; echo &amp;#39;$divider&amp;#39; &amp;amp;&amp;amp; env&amp;quot; 2&amp;gt;&amp;amp;1
 883646  883646  ----------&amp;gt; brew --prefix nvm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;從最下面往上逐一檢視&lt;/p&gt;
-&lt;p&gt;疑… nvm…&lt;/p&gt;
+&lt;p&gt;疑… nvm！！！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;883646  883646  ----------&amp;gt; brew --prefix nvm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;手動執行了一下還真的是有點慢的感覺…&lt;/p&gt;
 &lt;p&gt;所以我就試著把 &lt;a href=&quot;https://github.com/oh-my-fish/oh-my-fish&quot;&gt;Oh My Fish!&lt;/a&gt; 裝的 nvm 外掛移掉試試，果然變快了！如下圖：

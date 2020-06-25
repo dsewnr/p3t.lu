@@ -31,7 +31,8 @@
 1378    1736909 &gt; builtin source /usr/local/Cellar/fish/3.1.2/share/fish/config.fish</code></pre></div>
 <p>第一行是 time，第二行是 sum，第三行是 command</p>
 <p>然後我就用時間排序一下</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">555     555     -----&gt; set conf_path $package_path/conf.d/*.fish
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">…以上略…
+555     555     -----&gt; set conf_path $package_path/conf.d/*.fish
 586     21317   -&gt; fish_vi_key_bindings
 589     1728200 -&gt; for file in $__fish_config_dir/conf.d/*.fish $__fish_sysconf_dir/conf.d/*.fish $vendor_confdirs/*.fish
 601     601     -----&gt; set init_path $package_path/init.fish*
@@ -61,7 +62,7 @@
 705586  705586  -------------&gt; bash -c &quot;$program &amp;&amp; echo &amp;&amp; echo &#39;$divider&#39; &amp;&amp; env&quot; 2&gt;&amp;1
 883646  883646  ----------&gt; brew --prefix nvm</code></pre></div>
 <p>從最下面往上逐一檢視</p>
-<p>疑… nvm…</p>
+<p>疑… nvm！！！</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">883646  883646  ----------&gt; brew --prefix nvm</code></pre></div>
 <p>手動執行了一下還真的是有點慢的感覺…</p>
 <p>所以我就試著把 <a href="https://github.com/oh-my-fish/oh-my-fish">Oh My Fish!</a> 裝的 nvm 外掛移掉試試，果然變快了！如下圖：
