@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/',
+  pathPrefix: "/",
   siteMetadata: {
     title: `p3t.lu`,
     author: {
@@ -140,5 +140,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`,
+    `gatsby-redirect-from`,
+    `gatsby-plugin-meta-redirect`,
   ],
 }
