@@ -20,6 +20,6 @@ shell 我也是用過不少，從剛接觸 Unix-like 還懵懂無知時的 sh，
 ### [tmux](https://github.com/tmux/tmux)
 讀大學的時候是喜歡用 [screen](https://www.gnu.org/software/screen/)，那時最常用 screen + [irssi](https://github.com/irssi/irssi) 在遠端機器上掛 IRC，畢業後第一份工作是系統工程師，需要不時監控著一大堆的 log，使用 tmux 可以輕易的分割視窗並任意的在視窗間跳躍，愛怎麼切就怎麼切，喜歡怎麼跳就怎麼跳，當時就是靠 tmux 吃飯der，需要在 terminal 下生存的人極度建議要會使用，而 tmux 的外掛我是用 [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) 來做管理。
 ### [Neovim](https://github.com/neovim/neovim)
-Neovim 我的主力編輯器，之前用過 [Sublime Text](https://www.sublimetext.com/)、[Geany](https://www.geany.org/)、[Notepad++](https://notepad-plus-plus.org/)、[Atom](https://atom.io/)、[Visual Studio Code](https://code.visualstudio.com/)，最後還是回到單純的美好… (其實一點也不單純)，花了不少心血調教怎麼捨得放棄 QQ，我的 rc file 在「[分享我的 Vim 設定檔 (vimrc)](/posts/vimrc/)」中有分享，原本是寫了一個可以讓 Vim 與 Neovim 共用的，但後來因為 Neovim 支援 Lua 太香就把 Neovim 變主力了！
+Neovim 我的主力編輯器，之前用過 [Sublime Text](https://www.sublimetext.com/)、[Geany](https://www.geany.org/)、[Notepad++](https://notepad-plus-plus.org/)、[Atom](https://atom.io/)、[Visual Studio Code](https://code.visualstudio.com/)，最後還是回到單純的美好… (其實一點也不單純)，花了不少心血調教怎麼捨得放棄 QQ，我的 rc file 在「[分享我的 Vim 設定檔 (vimrc)](/vimrc/)」中有分享，原本是寫了一個可以讓 Vim 與 Neovim 共用的，但後來因為 Neovim 支援 Lua 太香就把 Neovim 變主力了！
 ### [Tmuxinator](https://github.com/tmuxinator/tmuxinator)
 讓我可以一行指令就把工作環境開好！
