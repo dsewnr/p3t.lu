@@ -1,5 +1,7 @@
 ---
 title: "E Ink: Kobo Libra H2O 開箱"
+redirect_from:
+  - /posts/e-ink-kobo-libra-h2o/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["E Ink", "Kobo", "Books", "Calibre", "Gears", "開箱"]

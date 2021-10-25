@@ -1,5 +1,7 @@
 ---
 title: '我的職涯變化'
+redirect_from:
+  - /posts/my-career-change/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['murmur', 'English', 'Interview', 'Jobs', 'Career']

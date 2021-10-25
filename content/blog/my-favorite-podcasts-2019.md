@@ -1,5 +1,7 @@
 ---
 title: '2019 我最喜歡聽的 podcasts'
+redirect_from:
+  - /posts/my-favorite-podcasts-2019/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['Podcast', '2019', '播客', 'murmur']

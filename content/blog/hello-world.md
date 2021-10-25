@@ -1,5 +1,7 @@
 ---
 title: "Hello World"
+redirect_from:
+  - /posts/hello-world/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["murmur"]

@@ -1,5 +1,7 @@
 ---
 title: '抽麥當勞快速鍵'
+redirect_from:
+  - /posts/pythonista-for-mcdonald-app/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['Pythonista', 'Python', 'McDonald', 'App']

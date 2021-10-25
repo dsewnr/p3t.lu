@@ -1,5 +1,7 @@
 ---
 title: '斜坡上的藝術節 2019'
+redirect_from:
+  - /posts/kacalisian-2019/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['kacalisian', '2019', 'Pingtung', '原住民', '藝術節']

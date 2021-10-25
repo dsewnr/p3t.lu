@@ -1,5 +1,7 @@
 ---
 title: "通過三個月試用期"
+redirect_from:
+  - /posts/pass-probation-2020/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["career", "job", "plan"]

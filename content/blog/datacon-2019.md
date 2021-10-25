@@ -1,5 +1,7 @@
 ---
 title: 'DataCon.TW 2019'
+redirect_from:
+  - /posts/datacon-2019/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['DataCon', '2019', 'Taipei']

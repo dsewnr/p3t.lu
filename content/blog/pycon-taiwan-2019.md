@@ -1,5 +1,7 @@
 ---
 title: 'PyCon Taiwan 2019'
+redirect_from:
+  - /posts/pycon-taiwan-2019/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['PyCon', 'Taiwan', '2019', 'Python', 'Taipei']

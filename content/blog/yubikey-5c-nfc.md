@@ -1,5 +1,7 @@
 ---
 title: "YubiKey 5C NFC"
+redirect_from:
+  - /posts/yubikey-5c-nfc/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["yubico", "YubiKey", "Type-C", "NFC", "Security"]

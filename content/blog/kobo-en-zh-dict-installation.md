@@ -1,5 +1,7 @@
 ---
 title: "Kobo 安裝英漢字典"
+redirect_from:
+  - /posts/kobo-en-zh-dict-installation/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Kobo", "E Ink", "Dictionary", "字典", "英文", "英漢", "安裝"]

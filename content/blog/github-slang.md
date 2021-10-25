@@ -1,5 +1,7 @@
 ---
 title: 'TL;DR? LGTM? 什麼意思？'
+redirect_from:
+  - /posts/github-slang/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['GitHub', 'Slang', 'murmur']

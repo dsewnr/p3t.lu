@@ -1,5 +1,7 @@
 ---
 title: "幫忙找出中心座標的 Telegram bot"
+redirect_from:
+  - /posts/lets-meet-bot/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Telegram", "bot", "location", "GPS", "distance"]

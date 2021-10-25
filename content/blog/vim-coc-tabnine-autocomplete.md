@@ -1,5 +1,7 @@
 ---
 title: "Vim TabNine Plugin 自動補齊"
+redirect_from:
+  - /posts/vim-coc-tabnine-autocomplete/
 author: "dsewnr"
 #cover: "/images/vim-coc-tabnine.jpg"
 tags: ["Vim", "TabNine", "Autocomplete", "Machine Learning", "自動補齊", "coc", "plugin"]

@@ -1,5 +1,7 @@
 ---
 title: '分享我的 Vim 設定檔 (vimrc)'
+redirect_from:
+  - /posts/vimrc/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['vim', 'Editor', 'vimrc', '設定檔', '編輯器']

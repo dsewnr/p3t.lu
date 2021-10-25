@@ -1,5 +1,7 @@
 ---
 title: 'MOPCON 2019'
+redirect_from:
+  - /posts/mopcon-2019/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['MOPCON', '2019', 'Con', 'Kaohsiung']

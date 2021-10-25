@@ -1,8 +1,10 @@
 ---
 title: "iPhone 睡眠分析"
+redirect_from:
+  - /posts/iphone-sleep-analytics/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
-tags: []
+tags: ["iPhone", "iOS", "Sleep", "Health"]
 date: 2021-10-24T03:10:21+08:00
 draft: false
 ---

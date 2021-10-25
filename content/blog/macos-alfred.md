@@ -1,5 +1,7 @@
 ---
 title: "傳說中的神器 Alfred"
+redirect_from:
+  - /posts/macos-alfred/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Mac", "Alfred", "Spotlight", "Powerpack", "workflow"]

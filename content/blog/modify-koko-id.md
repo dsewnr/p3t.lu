@@ -1,5 +1,7 @@
 ---
 title: '國泰世華 KOKO ID 變更方法'
+redirect_from:
+  - /posts/modify-koko-id/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['murmur', 'KOKO']

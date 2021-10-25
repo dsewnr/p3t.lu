@@ -1,5 +1,7 @@
 ---
 title: "我的 Mac 開發環境 (terminal)"
+redirect_from:
+  - /posts/mac-dev-env/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Mac", "dev", "environment", "terminal", "Alacritty", "fish", "shell", "tmux", "Neovim", "editor"]

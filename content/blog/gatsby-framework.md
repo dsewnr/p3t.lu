@@ -1,5 +1,7 @@
 ---
 title: "Gatsby Framework"
+redirect_from:
+  - /posts/gatsby-framework/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Gatsby", "Framework", "Blog", "React", "AMP", "PWA"]

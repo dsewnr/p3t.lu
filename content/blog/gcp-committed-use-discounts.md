@@ -1,5 +1,7 @@
 ---
 title: "買了 GCP 的承諾使用折扣 (Committed Use Discounts)"
+redirect_from:
+  - /posts/gcp-committed-use-discounts/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["GCP", "VM", "cost", "discount"]

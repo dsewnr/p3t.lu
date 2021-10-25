@@ -1,5 +1,7 @@
 ---
 title: "Upgrade MongoDB From 3.2 to 4.2"
+redirect_from:
+  - /posts/upgrade-mongodb-from-3/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["MongoDB", "Upgrade"]

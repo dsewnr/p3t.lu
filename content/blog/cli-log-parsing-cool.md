@@ -1,5 +1,7 @@
 ---
 title: "面對 Log 檔的思路"
+redirect_from:
+  - /posts/cli-log-parsing-cool/
 author: "dsewnr"
 cover: "/images/cli-log-parsing-cool-cover.jpg"
 tags: ["Log", "Parse", "Analyze", "Unix-Like", "CLI"]

@@ -1,5 +1,7 @@
 ---
 title: "Upgrade chromedp to v0.4.0"
+redirect_from:
+  - /posts/golang-chromedp-v0.4.0/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Golang", "Chrome", "chromedp", "Headless"]

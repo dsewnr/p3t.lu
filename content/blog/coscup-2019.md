@@ -1,5 +1,7 @@
 ---
 title: 'COSCUP 2019'
+redirect_from:
+  - /posts/coscup-2019/
 author: 'dsewnr'
 # cover: "/img/cover.jpg"
 tags: ['COSCUP', '2019', 'Stickers', 'Taipei']

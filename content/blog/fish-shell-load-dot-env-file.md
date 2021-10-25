@@ -1,5 +1,7 @@
 ---
 title: "fish shell 讀 .env 檔設成環境變數"
+redirect_from:
+  - /posts/fish-shell-load-dot-env-file/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["fish", "shell", ".env"]

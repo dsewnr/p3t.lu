@@ -1,5 +1,7 @@
 ---
 title: "Shell 的歡迎訊息(welcome message)"
+redirect_from:
+  - /posts/shell-welcome-message/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["shell", "welcome message", "greeting", "ASCII", "banner"]

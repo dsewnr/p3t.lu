@@ -1,5 +1,7 @@
 ---
 title: "發現超好用小工具 Boop！如果沒有它，在 CLI 要如何解決？"
+redirect_from:
+  - /posts/awesome-tool-boop/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["boop", "tool", "security", "cli"]

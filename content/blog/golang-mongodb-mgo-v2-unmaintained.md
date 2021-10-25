@@ -1,5 +1,7 @@
 ---
 title: "gopkg.in/mgo.v2 Is Unmaintained"
+redirect_from:
+  - /posts/golang-mongodb-mgo-v2-unmaintained/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["Golang", "MongoDB", "mgo"]

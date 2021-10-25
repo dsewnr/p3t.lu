@@ -1,5 +1,7 @@
 ---
 title: '米家檯燈 Pro 沒有開箱'
+redirect_from:
+  - /posts/mi-adjustable-smart-desk-lamp/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['Mi', 'Development Environment', 'Gears', 'Apple Homekit',  '燈', '開箱']

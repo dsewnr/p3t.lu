@@ -1,5 +1,7 @@
 ---
 title: 'Pandas NaN to None'
+redirect_from:
+  - /posts/python-pandas-nan-to-none/
 author: 'dsewnr'
 #cover: "/img/cover.jpg"
 tags: ['Python', 'Pandas', 'Numpy']

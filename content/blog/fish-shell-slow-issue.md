@@ -1,5 +1,7 @@
 ---
 title: "解決我的 fish shell 變慢的問題"
+redirect_from:
+  - /posts/fish-shell-slow-issue/
 author: "dsewnr"
 #cover: "/img/cover.jpg"
 tags: ["fish", "shell", "performance", "nvm"]
