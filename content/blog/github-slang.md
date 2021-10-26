@@ -1,5 +1,5 @@
 ---
-title: 'TL;DR? LGTM? 什麼意思？'
+title: 'LGTM? TL;DR? 什麼意思？'
 redirect_from:
   - /posts/github-slang/
 author: 'dsewnr'
