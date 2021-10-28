@@ -142,5 +142,11 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-redirect-from`,
     `gatsby-plugin-meta-redirect`,
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `p3t-lu`,
+      },
+    },
   ],
 }
