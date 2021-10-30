@@ -45,4 +45,4 @@ A: 可以找中心附近或離中心最近交通方便的地點r
 ## 後記
 這隻 chatbot 有個已知的問題是非常大量的人使用會爆炸！不過等有那一天到的時候再來煩惱吧… BTW, 最近在看[異獸魔都](https://www.netflix.com/title/80991903)，真的好讚！[Welcome トゥ 混沌](https://www.youtube.com/watch?v=8OLtM7-VbO8)！
 
-![](https://i.ytimg.com/vi/BK0tDxrzUOc/maxresdefault.jpg)
+![](/images/dorohedoro.jpg)
