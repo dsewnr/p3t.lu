@@ -26,3 +26,13 @@ draft: false
 ![](/images/things-of-importing-macbook-pro-from-oversea-1.png)
 
 就這樣，一直到週一中午狀態都沒有更新，我才覺得應該是遇到什麼問題了吧？但是我之前沒類似的經驗，真的不知道要怎麼做，所以我打了 Fedex 的客服電話詢問，客服表示要幫我問一下海關那邊的情況再聯絡我。
+
+吃完午餐就收到 Fedex 的信，說還要補上「[NCC 自用切結書](https://www.ncc.gov.tw/chinese/news_detail.aspx?site_content_sn=290&sn_f=44630)」，一開始還把它印出來填寫，基本資料都沒問題，但是「工作頻率」跟「輸出功率」誰知道要填什麼啊… 後來查到用「型號+FCC」去搜尋就會有檢驗的報告，但是報告裡一堆數字誰知道要填哪個… 後來又查到說只要正常數值範圍內填個大概就好了，填完之後簽好名，沒想到還要蓋章，但最大的問題就是沒有印泥… 於是趁著午休時間跑了兩家超商都沒找到印泥… 只好放棄了…
+
+過了兩個小時之後 Fedex 寄信給我的大大打給我關心有沒有收到信，然後跟我說可以「直接用 EZWay 簽自用切結書」就好了，還有順便提醒說「如果工作頻率跟輸出功率不知道就填 N/A 就好」，等等… 我剛剛那麼忙到底是為了什麼 Orz
+
+![](/images/things-of-importing-macbook-pro-from-oversea-2.jpg)
+
+填完之後隔天就出關啦！上班時間就看到 Fedex 貨物追蹤又開始更新了，下班回家就拿到我的包裏了！！！
+
+![](/images/things-of-importing-macbook-pro-from-oversea-3.jpg)
