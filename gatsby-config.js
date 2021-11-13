@@ -4,7 +4,7 @@ module.exports = {
     title: `p3t.lu`,
     author: {
       name: `dsewnr`,
-      summary: `who lives and works in Taiwan learning software engineering.`,
+      summary: `who lives and works in Taiwan has a great enthusiasm for software engineering.`,
     },
     description: `Just Murmurs`,
     siteUrl: `https://p3t.lu/`,
