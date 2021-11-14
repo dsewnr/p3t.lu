@@ -49,22 +49,10 @@ const Bio = () => {
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          Please feel free to contact me by:
+          Please feel free to contact me by
           {` `}
           <a href={`mailto:${social?.email}`}>
-            Email
-          </a>
-          、
-          <a href={`https://github.com/${social?.github}`}>
-            GitHub
-          </a>
-          、
-          <a href={`https://www.linkedin.com/in/${social?.linkedin}`}>
-            LinkedIn
-          </a>
-          、
-          <a href={`https://twitter.com/${social?.twitter}`}>
-            Twitter
+            email
           </a>
           .
         </p>
