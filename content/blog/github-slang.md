@@ -29,19 +29,19 @@ LGTM 到底是什麼意思呢？Google 了一下才知道原來是 GitHub 上常
 
 整理一下網路上找到的常用縮寫：
 
-- **LGTM**: Looks Good To Me.
-- **SGTM**: Sounds Goood To Me.
-- **PTAL**: Please Take A Look.
-- **WIP**: Work In Progress.
-- **TL;DR**: Too Long; Don't Read.
-- **TBD**: To Be Done(or Defined/Discussed/Decided/Determined).
-- **TBR**: To Be Reviewed.
+- **LGTM**: Looks Good To Me. 看起來很好
+- **SGTM**: Sounds Good To Me. 聽起來很好
+- **PTAL**: Please Take A Look. 請看一下
+- **WIP**: Work In Progress. 工作進行中
+- **TL;DR**: Too Long; Don't Read. 太長了；別讀
+- **TBD**: To Be Done(or Defined/Discussed/Decided/Determined). 待完成(or 定義/討論/決定)
+- **TBR**: To Be Reviewed. 待審查
 - **PR**: Pull Request
-- **ACK**: Acknowledgement, i.e. agreed/accepted change
-- **NACK/NAK**: Negative Acknowledgement, i.e. disagree with change and/or concept
+- **ACK**: Acknowledgement, i.e. agreed/accepted change 贊同
+- **NACK/NAK**: Negative Acknowledgement, i.e. disagree with change and/or concept 不贊同
 - **RFC**: Request For Comments, i.e. I think this is a good idea, lets discuss
-- **AFAIK/AFAICT**: As Far As I Know / Can Tell
-- **IIRC**: If I Recall Correctly
+- **AFAIK/AFAICT**: As Far As I Know / Can Tell 就我所知/就我能說
+- **IIRC**: If I Recall Correctly 如果我記的沒錯的話
 - **IANAL**: “I Am Not A Lawyer”, but I smell licensing issues
 
 以上，還有哪些常用縮寫呢？知道請[告訴我](mailto:hello@p3t.lu)。
