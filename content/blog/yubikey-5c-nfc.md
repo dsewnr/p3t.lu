@@ -46,3 +46,8 @@ BTW, 本文的 commit 就是透過 YubiKey 用裡面的 GPG key 簽名並透過 
 最後附上我的 YubiKey 5C NFC 獨照
 ![](/images/yubikey-5c-nfc-2.jpg)
 
+---
+
+#### 2021/11/28 update
+
+因為月初離職之前慣用的 MacBook 還給前公司，變成要跟家人共用一台 ThinkPad，還好之前有把常用的網路服務登入加上 YubiKey, 這時候就顯得超級方便！插上電腦就可以登入了，不用去回想密碼是哪一組！再來現在公司 MacBook 上登入我個人的網路服務也是用這把 YubiKey，真的是非常之愉悅 XD
