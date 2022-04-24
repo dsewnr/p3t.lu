@@ -32,3 +32,6 @@ draft: false
 #### 2021/09/07 update
 
 在最近一次高度自訂 Neovim 之後看到有人分享了 [NvChad](https://github.com/NvChad/NvChad)，看了一下發現跟我挑的 plugin 有 90% 像… 就改用 NvChad 當底，再加上自己客製化的設定，目前使用上覺得還蠻滿意的！推薦大家也用用看 NvChad，裝好就已經是一個 ready-to-use 的狀態了！
+
+#### 2022/04/24 update
+原本去年底約聖誕節的時候，NvChad 作者在 [LunarVim vs NVChad](https://www.reddit.com/r/neovim/comments/r2l5ui/lunarvim_vs_nvchad/) 有提到今年一月要有新版出來，本來是很期待會有什麼改變，但是一直等不到… 而且要常常一直追 master branch 的變更追的有點懶了… 最近試了一下 [LunarVim](https://github.com/LunarVim/LunarVim) 之後就回不去了… LunarVim 就夠穩夠好用，該有的都有了！
