@@ -18,3 +18,11 @@ draft: false
 ![](/images/browser-switch-between-tabs-1.png)
 
 BTW, 給 Google Chrome 用的叫 [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)，給 Microsoft Edge 用的叫 [Vimium C](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)。Have fun!
+
+---
+
+#### 2022/04/25 update
+
+![](/images/browser-switch-between-tabs-2.jpg)
+
+後來發現 Edge 已經偷偷加入這個功能了，超棒der！
