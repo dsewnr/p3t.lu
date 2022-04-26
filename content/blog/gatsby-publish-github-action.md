@@ -9,7 +9,7 @@ draft: false
 
 這篇文件不是要說如何使用 GatsbyJS，而是要來說一下 [Gatsby Publish](https://github.com/marketplace/actions/gatsby-publish) 這個 GitHub Action 有多方便！
 
-因為 [p3t.lu](https://p3t.lu) 是放在 GitHub Pages，也就是 GitHub Pages 上放的都是 GatsbyJS build 完後的靜態檔案，也就是說在放上去 GitHGitHub Pages 前要先在某台機器上把靜態檔案 build 好，也就是說在要 build 就要在那台電腦上裝好 GatsbyJS 及其相依的套件讓該 GatsbyJS 專案可以順利運作。
+因為 [p3t.lu](https://p3t.lu) 是放在 GitHub Pages，也就是 GitHub Pages 上放的都是 GatsbyJS build 完後的靜態檔案，也就是說在放上去 GitHub Pages 前要先在某台機器上把靜態檔案 build 好，也就是說在要 build 就要在那台電腦上裝好 GatsbyJS 及其相依的套件讓該 GatsbyJS 專案可以順利運作。
 
 撇除掉要建立 GatsbyJS 專案裝好環境，發佈新文章的流程就是：
 1. 在本機編輯 Markdown 檔案
