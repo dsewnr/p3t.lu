@@ -1,5 +1,4 @@
 name: Gatsby Publish
-name: Gatsby Publish
 on:
   push:
     branches:
