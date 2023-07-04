@@ -54,6 +54,10 @@ const Bio = () => {
           <a href={`mailto:${social?.email}`}>
             email
           </a>
+          {` `}
+          or
+          {` `}
+          <a rel="me" href="https://g0v.social/@dsewnr">Mastodon</a>
           .
         </p>
       )}
