@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.7"/><meta name="theme-color" content="#debe1d"/><meta data-react-helmet="true" name="description" content="從小家境困苦買不起 Apple 產品一直都使用廢廢的電腦裝著不要錢的 Unix-like 系統，也一直都有用滑鼠的習慣，那時候還不知道 Mac trackpad 那麼的淫蕩風騷，也不知道為何用 Mac 的大大從早到晚一直把 Spotlight 打開 XD 直到某天在工作場合遇到了某手黏在 Mac…"/><meta data-react-helmet="true" property="og:title" content="傳說中的神器 Alfred"/><meta data-react-helmet="true" property="og:description" content="從小家境困苦買不起 Apple 產品一直都使用廢廢的電腦裝著不要錢的 Unix-like 系統，也一直都有用滑鼠的習慣，那時候還不知道 Mac trackpad 那麼的淫蕩風騷，也不知道為何用 Mac 的大大從早到晚一直把 Spotlight 打開 XD 直到某天在工作場合遇到了某手黏在 Mac…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="dsewnr"/><meta data-react-helmet="true" name="twitter:title" content="傳說中的神器 Alfred"/><meta data-react-helmet="true" name="twitter:description" content="從小家境困苦買不起 Apple 產品一直都使用廢廢的電腦裝著不要錢的 Unix-like 系統，也一直都有用滑鼠的習慣，那時候還不知道 Mac trackpad 那麼的淫蕩風騷，也不知道為何用 Mac 的大大從早到晚一直把 Spotlight 打開 XD 直到某天在工作場合遇到了某手黏在 Mac…"/><style data-href="/styles.a9af78e1992c55828fdb.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#334747;--color-text-light:violet;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-background:#fdf6e3}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--color-background);font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio p,.bio-avatar{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="stylesheet"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Gatsby Starter Blog RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=471e0b5eb429186b20a8a62a96c25985" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=471e0b5eb429186b20a8a62a96c25985"/><title data-react-helmet="true">傳說中的神器 Alfred | p3t.lu</title><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">p3t.lu</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">傳說中的神器 Alfred</h1><p>May 21, 2021</p></header><section itemProp="articleBody"><p>從小家境困苦買不起 Apple 產品一直都使用廢廢的電腦裝著不要錢的 Unix-like 系統，也一直都有用滑鼠的習慣，那時候還不知道 Mac trackpad 那麼的<del>淫蕩</del>風騷，也不知道為何用 Mac 的大大從早到晚一直把 Spotlight 打開 XD 直到某天在工作場合遇到了某手黏在 Mac 上魔人…</p>
+<p>：手離開鍵盤寫 code 速度就變慢了<br>
+：你看，我手指這樣點就可以上一頁下一頁<br>
+：你的 shell 有 true color 嗎？(x)</p>
+<p>之前一直被嗆 Linux 沒有 Spotlight 所以用了 <a href="https://albertlauncher.github.io/">Albert</a>，Albert 真的沒話說，該有的都有而且不用付任何錢！後來覺得 Albert 太肥了，又改用了 <a href="https://wiki.archlinux.org/title/Dmenu">demnu</a> 和 <a href="https://github.com/davatorium/rofi">Rofi</a> 取代。</p>
+<p>加入現職公司電腦配了台 19 的 MacBook Pro，本來一直用 Linux Desktop 的我，突然被丟到一個陌生的環境… Spotlight 用起來感覺也很好用，也用的好好的，一年後突然有一天開始覺得卡卡的… 就去裝了之前 J 哥推薦的 <a href="https://www.alfredapp.com/">Alfred</a> 來試用，一用不得了了，覺得<del>想花錢</del>更卡… 被之前 Linux 上想要什麼有什麼的習慣養壞了！想想反正已經用過 Mac 了再也回不去從前了…</p>
+<p>認真的看了一下 Alfred Powerpack Mega Supporter(Free Lifetime Upgrades) 才 £49 約 1,939 台幣，於是我…</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c587ac3614da1732ebad1971cc1803b5/252a4/macos-alfred-0.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.72151898734178%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADdElEQVQ4y42SW2xUVRSGT2Jso5iSqrHqu08WjDEN6oMxJuIDmpCirVgvBROgN6DQAlUsTMWQqi1gEBNMjFUhQoJNhVKrhdJpYErLtJ2Zzkw7jVwK7ZS59cycM+c6Zz5zThPfTFzJytrJzv7Wv/69hMf2HGVV63Gebv6akr1Heaq5gyd3HqaksZ0nGtt5vPYgj9YcoLjmIEUft/DIR008XL2HwqpGHqyo44GKeko2NVO0sYHiqh0I64/9hGcyQP8NH5d9IYanZnAHwrgD0wwHIwwFphn0hxnwheifmKLP6+fCmI+e65N0e7ycGR7FPe7nkx/P8tC7DQjbu7rJKxKmruGElePfsM95i/8Tg5NBCt6pRWj4uQcMnUtXhmhta+PD6k00NjXR9cspMpKEqmksiWmScpaUoiJqOhnDRNQMUpKMnFUc4JAvSOHb2xD2/toLlknH5WHWnj7PurN9vPr9aSq7zpDKSFi5HLH795n3Xmdh9Cp3PW6iNzzcuzbEvaCfrLo82UgoworKOoS2c39AzuBk+CYbp2P0yRYnbkXZfG2StKKQz+exVAW2rIO3VkP5C7ChDNY+Q/6HThx9OZPR6VlWVm1H6OwdhHyO4/4Zav23nW42/P1LHiS7u2VhWRb5WJREyE8yHCAe8qPemsVIJZAV1QGOhSMUv9eAcHLgqu0+3wUibPbPMSWptHjDVF8ZRdJ0p4FpmmQNk4ztn6aRVjXErIKUVZBlmbxpMBqaWQaeGhpxHn0bsBXeoXM2yvpBL1ttoG44d7phOD5G5+eJLiw4eXdujqVUCkmWsQwdz9Q0K21g98jE8piRO2y5uUT9bZEPJv6mdiyIbJiQz5OzLDRNc9TYKYqiUxVFIZ1Ok9M1hn1BVlTUIFz0Bhzgke7zrNnn4o22r3ip6VPKD7Uj2Z9iWRimSSYjEYvFiMfjLC4ukkgkkCSJJVHE1FQGxiYoLN+C8Nf4lAOMhMP0/naOgd4L9P/ew4jbjWmYjn+GbmAYy2kr1VSVbDa7DFwS0bMy3W4PBfYe/jke+M/tt3fQMHRUVXVGTKczDiCZSpFIJkkmk8TjCdRMmq6LAxRs2Irw4v4O3jx8gtddx3jN9Q2vtB7h5ZZ21uxrp6zlS57ffYjndn3O6t1fsGqHi9KGA5TudPGsXev2U1r/GWW7XJTWtFBUWcs/2fWSLw4sIBMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 0"
+        title="macos alfred 0"
+        src="/static/c587ac3614da1732ebad1971cc1803b5/f058b/macos-alfred-0.png"
+        srcset="/static/c587ac3614da1732ebad1971cc1803b5/c26ae/macos-alfred-0.png 158w,
+/static/c587ac3614da1732ebad1971cc1803b5/6bdcf/macos-alfred-0.png 315w,
+/static/c587ac3614da1732ebad1971cc1803b5/f058b/macos-alfred-0.png 630w,
+/static/c587ac3614da1732ebad1971cc1803b5/40601/macos-alfred-0.png 945w,
+/static/c587ac3614da1732ebad1971cc1803b5/78612/macos-alfred-0.png 1260w,
+/static/c587ac3614da1732ebad1971cc1803b5/252a4/macos-alfred-0.png 1314w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>當然最常用的功能就是快速開啟或聚焦程式
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/81b169502235cd087106e0e76ac7aebb/fe9e8/macos-alfred-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAADRUlEQVQ4y32STW/cVBSG/WMKYo0UxMcCkPgPLEBdsIQ1UjclBalqUsSiAkQXVErZVIIiJCAF1AQaqklpyJAoaZqZ8WTG44/x1PNlX9tjj+3Jg+7NxEolyuLRuZbuff2+5xzNthwc20KIiCAQBEFIICJ838f3A0QYE4izRPjy7vx8WuW9njdC26sZ3NvcZhJHJMmELJ1QTCcc5ylFlsCs4HgOz+B4lgPHjMcB2qUrX/D+R1/x7s0R73zd5fVPOyxcbvPyVZuFZZuFJYuFJft/eWnZ5sUrDu/daKOd/+Aib5xf5K1rLm9+3uO16yGvXBvy6lWbFz6xOHfJ4rn/4NyiWfK8rB/bvH29jXb54gWWFi9gWCbm7RWylc/gYIs8T5ilkYp/ltkcZhmQw7GMWyB6Y7xuH+37W99w+9YKeqtN584PBN/eIDrYIYhihBAEIiwRYXQyPBGSpFOm04x0ThhMcN0h2urqKqs//cijwxrmzS9Jlj9kUlljFMUEvq8e+4FAzOtkkpDnhRIryTLGnsC2PTTTsnHdLnrziNbuDvWNdez6IXkxYzqdlo+SJCHLMsVTYnNBvx/i2H20uu1hDnycrovlPsHqeZhOF9txcHtPcJyuqnE8oShmzGYzsixXnBUMxzGO00f72Yi4YyW0mzrtdltRr9U4PDykVqtxcHBAs9kkjk96KsJQLXwqezh3K8UHXR/b8tB+NwLuO5ESbOg6uq6XYrLW63V17vf7KrZ0GobRXDAvBf1BSFc6XDME61ZIS2/QarU4OjpSLg3DUN/SnfzJYDAgDEOFdBjFcRlbCfbFSQ9X2yG/dCLqjx9RbzSUq2q1ys7ODru7u+zv77O3t4fneQRBoASD+bTLPqqhCLpyD/80BQ/cGNNo0+l0lDvpTJ6lM+nUdV0lJjmNnCRpGfl0KK47QPu1LbhrRWVkGVH2TFbpVooeNZuMhqPSodxHJSiXOj0RHLo+tumhrZkRG25Ks15T/ZOicrK63lADkUi3aZ4RJwnpdKrEZNyiKNSSy+p7gq7s4Xqjx3dbezyo/MH2wwp/b96nsvEbW5tr7G5XqD6s8PifKo2/tqmu38O2bCzHxeuPGI58BsMx/eEYx/IwDJd/AfqFwraqUwswAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 1"
+        title="macos alfred 1"
+        src="/static/81b169502235cd087106e0e76ac7aebb/f058b/macos-alfred-1.png"
+        srcset="/static/81b169502235cd087106e0e76ac7aebb/c26ae/macos-alfred-1.png 158w,
+/static/81b169502235cd087106e0e76ac7aebb/6bdcf/macos-alfred-1.png 315w,
+/static/81b169502235cd087106e0e76ac7aebb/f058b/macos-alfred-1.png 630w,
+/static/81b169502235cd087106e0e76ac7aebb/40601/macos-alfred-1.png 945w,
+/static/81b169502235cd087106e0e76ac7aebb/fe9e8/macos-alfred-1.png 1146w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>計算機
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/634a87289db35e1df465a8b03e62dc84/75a80/macos-alfred-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 19.62025316455696%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAABCElEQVQY0y3Mu0rDcBiG8dyJiwfaRlAcCqIoiKO34CR4D4KS1tZTEIUWRJ3sDYizm7qIh6FFGy2aNCmlhepQsPF/0EcS88GP550+o+E8UavXeXx55dlxaHc6dL8G9MOQX63QWvGTVEmZECgl0UqhlUQIQXTWaQXj8vqOqtPg6qHKze09b36L3kDQDwVSaUREar6lQkiFVAop/4mkoZDxw43jM4z18jlLJ58sVz5YLPcwi20ym0HMLLRi0R4vBKTzASOWz6jlJw1iYzkfs9hlePUIY610wYzdZP6wSdb2mNh2mdpxye56zO0HzNp+bOEgYHrPJ2V5ZHIe6ZhLynIx8+9MbrUZWinxB26v/b0NS16RAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 2"
+        title="macos alfred 2"
+        src="/static/634a87289db35e1df465a8b03e62dc84/f058b/macos-alfred-2.png"
+        srcset="/static/634a87289db35e1df465a8b03e62dc84/c26ae/macos-alfred-2.png 158w,
+/static/634a87289db35e1df465a8b03e62dc84/6bdcf/macos-alfred-2.png 315w,
+/static/634a87289db35e1df465a8b03e62dc84/f058b/macos-alfred-2.png 630w,
+/static/634a87289db35e1df465a8b03e62dc84/40601/macos-alfred-2.png 945w,
+/static/634a87289db35e1df465a8b03e62dc84/75a80/macos-alfred-2.png 1134w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Google 翻譯
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f2e1e7b165847375358470f42e19f3c7/75a80/macos-alfred-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.253164556962027%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAABJklEQVQY0yXIPy8DYQDH8Q5U7GZJhcTgNVhUE4ukmnT0CpxBghgQ6U4tbdPJzmDSKv1zz/U5PeWaEK2gf3LX62ChTctAfMUZfvnm8/OcnKrkhUkmVyZ1USKrmm7LZo376gvZwi2py2s0eYP9/EBRVkhny+RFhX7/g3qzQ167QxpVak8tPGeZAtm8ilA10ulzdP0KXepoQmDemuhSYhjXaKrqumyUKAqB1AS99zc+BwN63S4/318IWcGzedRk47hDMN4mnHQIxduEEg7BuEM42WEp4bhejDnMR20Ch238URv/geXu75vbb7EQe2V2K4cnEHlkOVHHt2MxE7HxbVtM7lhMbFtM7Vqup/dsxtZbDClNvEqDYaWBV2kysvpvr1JndM1hfEXyC1fw7+2JeYL6AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 3"
+        title="macos alfred 3"
+        src="/static/f2e1e7b165847375358470f42e19f3c7/f058b/macos-alfred-3.png"
+        srcset="/static/f2e1e7b165847375358470f42e19f3c7/c26ae/macos-alfred-3.png 158w,
+/static/f2e1e7b165847375358470f42e19f3c7/6bdcf/macos-alfred-3.png 315w,
+/static/f2e1e7b165847375358470f42e19f3c7/f058b/macos-alfred-3.png 630w,
+/static/f2e1e7b165847375358470f42e19f3c7/40601/macos-alfred-3.png 945w,
+/static/f2e1e7b165847375358470f42e19f3c7/75a80/macos-alfred-3.png 1134w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>查 Mac 內建的字典
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/894e574a07aa195ebb37372550eb776a/05fb0/macos-alfred-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.708860759493675%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAB5UlEQVQozyWKzU4TUQBG5xkMSkL0Kdz4Bu6MCQtjIgbQoAs3JoJK1J0muq0LIP4UjC6EGAJWLS0ppLUdHWjp0GkZpra0dDrTe9vbli4Ibo6hLk6+c5JPC68liEZixBO/MYwsyeQWup5h17Qws7uk9G2i0Th7BZsj6VIp13CcQ0qlGn9PjpGyhW1XqFQ8clYR7WPoF5+/JwjFDL5tbrMS1Vld11mN6ix+3WA5nGAptEkqW8Sp93BqHfYPO/3t43bYqyrq7RM+fImjTUwEGHkW41Kgx+WA4Mqs4uJLn6HpGheeugxNu5x/UmfocZXBqTJnJ8ucmyoz+PCAgcn/PfCgxJlHHoNjP9Du3Z/j7vMIw7NVRmYcrr22uT5T5vaCz+j7Ojfeutx8V2ds3uPOJ8lo0Gc86HFr3mN83mMs6PU/w3OCqy+SaKHADFYkzJ+DEpaZJWfu4FYP6DQFbdmg05S0RINOS3Dca9NVkqZo0G4Kem3BkZKopqTrClZCcbTwmwUK8TiFiouZt8laNpZdRKguDdXFl218ofCEolqX/T51Xypcv9X3U5TssRRKogVfBVhbXGYjnSfy0yCS3GI9lSFt5slkcxjmPql0gZxdpiGapM0CqXSejFWkpRROqYq+s4ex5ZAy8vwDrpnJSluWnW4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 4"
+        title="macos alfred 4"
+        src="/static/894e574a07aa195ebb37372550eb776a/f058b/macos-alfred-4.png"
+        srcset="/static/894e574a07aa195ebb37372550eb776a/c26ae/macos-alfred-4.png 158w,
+/static/894e574a07aa195ebb37372550eb776a/6bdcf/macos-alfred-4.png 315w,
+/static/894e574a07aa195ebb37372550eb776a/f058b/macos-alfred-4.png 630w,
+/static/894e574a07aa195ebb37372550eb776a/40601/macos-alfred-4.png 945w,
+/static/894e574a07aa195ebb37372550eb776a/05fb0/macos-alfred-4.png 1138w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>控制我的 YouTube Music
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8a1e38a6db2d8f713c4c2f95949aba72/f32b7/macos-alfred-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 84.81012658227847%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAAD1klEQVQ4y1WUy48UVRTG6w/QhS78U9y5cGVcMWggAYkgqDGsJG78CyTKS4EZJGDiK0HAIQZH0gLCDGRmYJphHt1dNd1V1VXd9X53dVf1Ywj5ma6GiS6+nPOd3Hvud+53c4X5hRXW1yoYbQfDcDENl1bLIYk7ZL1eURtzx3bphi62NeGm6bI9GhbrNN3CdQJESUW4MrdEabFCVYup6RM0jATZTJCNGKWICYrV2cFLrr5AvRVhhgOu33qEMPv2Qc4fnuHN6ZR3z9q8dcrmtS80Xj02wSv/xefN//OdusrrXzq8cfg2wuw7H3Phk++Yumyxf7rOh5c0Dvxgs2vGYGrGZKqIBrsvmOy97BRx1/SktueiyXvfm0xNt9lzyWP38WUE+f0D+F8dp6priJUKkiSRdmJG/YxR3mOYZ/R7XZ6PBvB8xLNBXtS2BznPBj22+z2yXkrHDijdXkZQDn6K9+1ZVjWD9YrEWq2OKDfZFBtUtxQqYgNVt7i3sMg/84ssPV5l/uEyi8tltmQNRTNQdBPXipn9awlB2X8Y/9QZNk2X2pZMtaHS0Ay0tklTb1FXWzTbNmJdRdPbNBStOKiu6HS7XRwvQG1ZtDSPqqghKPs+wvv6JEtig/LqBo9fIIhT4k6PIMnwoi5xt083HxDGKX6UEnUyBsNtutkAN0wxWgGLZQmhceQo0cxF5KCDorYL+c3xiaaD6QR4YYIbxHhBhOOFeH6E64d4QTyphwlOkBD5KVdvLkxG9r45yaO6Sk2S2ajVKa9VqNS2qNQkLDfc2dhJe3hhXDT245hulhElHWwvwNB97j94giB/cITwzFmeqG3WNmqIsoYTpSTdnCzv4/gRth8VjXq9DD+KsTy/UJnnfeIkxXJ9NNlkfaOO0Dj0GeG5GTYMh6rYoFZXadt+MbLt+nh+iOP6+GFU5JPRgyKO4YdxodA1A67+XkJo7jtEcuI0T5ptnq5XWd2sobRMorRXLA6iDs640Yt8rOwl96ME148KhXY74MbNOwjq0WN452Z4qhnFs1mrSjytiEh1GbWpITdbOP64WcJgOCxUWW5Q3GuadAjCGNPx0Zv25HOQDhzBPnGaFUWnIo3fYRNJ1mioGkqzhaobmG5QjDV21naDwn3bC3ecb1suhu4xO3cfwdq7n/zkKUTbRRIl6rKCYdq0jTZpNyXvD8n6ffLhiHwwYjAY0ssmhgVxp3B+nOfJgGvjkS/uOcSN4+f5+d4qv5SW+fVumR9vPeCP+TXulHWu31ngt9J9bszd5s+5En/PL1F6uMLNu4uYlsPj1U1+vDbHT1fmWClv8C996pKlvSOzzwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 5"
+        title="macos alfred 5"
+        src="/static/8a1e38a6db2d8f713c4c2f95949aba72/f058b/macos-alfred-5.png"
+        srcset="/static/8a1e38a6db2d8f713c4c2f95949aba72/c26ae/macos-alfred-5.png 158w,
+/static/8a1e38a6db2d8f713c4c2f95949aba72/6bdcf/macos-alfred-5.png 315w,
+/static/8a1e38a6db2d8f713c4c2f95949aba72/f058b/macos-alfred-5.png 630w,
+/static/8a1e38a6db2d8f713c4c2f95949aba72/40601/macos-alfred-5.png 945w,
+/static/8a1e38a6db2d8f713c4c2f95949aba72/f32b7/macos-alfred-5.png 1136w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>查時間
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/05fb0/macos-alfred-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 20.253164556962027%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAABEElEQVQY012JQUvCcBiH9zk61F2SEo20z9AH6BJ07hYEFUlQpuagQ0WnoFMnb0EIQgZBFEQS2Vqswm3/Tc21zbaDdntCdwg6PDzv83uli8oN9YcGyrOK3XJQ1CZPShNhdXG+fBRVH7X2ZuC2dDTNGPVw7/cHtDsuj40PXl5NtHcTqVy9507VqVSvsDsun26A4wb4foDnDx3ieQF+L8TrhZH9qIMgwvW+GQx+qF3XkbKFc44OL1k681g4abF42mb+2GZ2T5CRBenSH5l/d6ooSBZMknmD9H6XxEoNKbt8wMZamZTcYU62SJdsZooW8Zwgti1Gntq1iO0IpvM28Vz0S+QtJjYNxtaH6IxvtZlcveUXuJP5wOqJDCUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 6"
+        title="macos alfred 6"
+        src="/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/f058b/macos-alfred-6.png"
+        srcset="/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/c26ae/macos-alfred-6.png 158w,
+/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/6bdcf/macos-alfred-6.png 315w,
+/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/f058b/macos-alfred-6.png 630w,
+/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/40601/macos-alfred-6.png 945w,
+/static/7f2c140a8e37ff1e4a2a9b8bc01d720c/05fb0/macos-alfred-6.png 1138w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>查天氣
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cdce27eb165087dc1f490f301f51ee4f/f32b7/macos-alfred-7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.44303797468356%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAAD3UlEQVQ4yz2USW8cVRSF628gQfgjLEhiiDcgBYH4A4gVe1CQEOsQxQRCwpBFNkgRSYgDSaw2tkN3HNvteOqh5uqqru7qmruGHmM2H6rqwOLqvvMW555z7tMT1irPqdX2cB0PzwuRFQtJtnAcnyCIUdQuktzFNG0Sz6Zj2IhSF0WzeTmf4/sxLdFE0/tIiomwWtllbWuHtj6g62XYZeVYbrbA/uLcK7o3KrET5AzCHCdc9J6XkoxP+WN9H+Gznw745HaX5eshy997vHVlwNI1l49vBby94pZ3H/3scW7F4eJNlw9+dHntc4szX3Z541KXM5e6vP6FyZmvPN78dB3h/Fd/c+Fyk3NXLM5e1jh72eDcNzrLVw3evdph6YrBxZsD3rsx4MNffN6/MeD8Sp93vnVY/s7hwjWHpZUeS9cDlr7eQdjcqqEpMook0m42UBUZSWzT0XVMw8DQNJJhwnQ84nQ+ZTzKGWUZk1HOy0nObJyTZylJP2StsouweyiimzYtxeC4rSB3uki6iayZaB2bTrdPMMwJ4gw/SgmLHmclLqrAbpgS+Rm/P9lB2D6Q0Kx+SdjWOsiGRUPSkDUDRTPQzR5elBEOc/LxlCBO8cK0HHJ6+k95VxD2rJDjpoHwZKNGoyVycCKyd3DCUVNi/7hJS1JoSwpNUf2fMM0nBFGCGwxLdbP5KdloQdjvRuweqggbz/aRVQNRM2mKGrJuoRoWhtWjYztlHH03IBqm+OGQMEoWPU5KteEwxYtShmHOb49qCJWnO7REuczvxUmLhqTSlDQU3cSwbFqSitUbECU5STYqFXphTJgk5OMJcZLhBjH9bsjG0zpCpbqHKGs0Zb2025L1MkOtY2H3+jTaUqk0SjLGkwnhMGEQhPhRzGw2J81yBn6IqTmIolFYriMpBeFiy5Jmovxn2bJRVB27PyAaFlZjgmiIF0QEr86FdbfATsyde2sIj6uHHLc1jloSL45btFSjtF0spRh03Ghh2v0ywzBOS1IvLJaSvMLDUqHXj7n3oIIgnjzC6dRpqDaNgkS3aMoalt3Ddb0yQ9MeECc58/nLUtXAj/CjhDzNieIExwvpmi5y8TnUt1fpyLscSSaHTbHMrymp5Ts0zC5tWSvt+6W9FNePcLxooTJaxNBzA3qWz8O1KoJa/5XYeo6o9ZBkBc2wkBUNTddRVAWjYzGdzRnPZoync6bTGflowmgyJRpmpNmo3PYkmXLn4TrCD7duc3+9xt3Nfe5XD3nwrMHdzT029iU2Xxisbj3jz+oula1tNreq1OpHVPcb/LV9wMD1OWrK3H+8xb3VTfbqJ/wLd3GiGBWtTOsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 7"
+        title="macos alfred 7"
+        src="/static/cdce27eb165087dc1f490f301f51ee4f/f058b/macos-alfred-7.png"
+        srcset="/static/cdce27eb165087dc1f490f301f51ee4f/c26ae/macos-alfred-7.png 158w,
+/static/cdce27eb165087dc1f490f301f51ee4f/6bdcf/macos-alfred-7.png 315w,
+/static/cdce27eb165087dc1f490f301f51ee4f/f058b/macos-alfred-7.png 630w,
+/static/cdce27eb165087dc1f490f301f51ee4f/40601/macos-alfred-7.png 945w,
+/static/cdce27eb165087dc1f490f301f51ee4f/f32b7/macos-alfred-7.png 1136w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>快速連接藍芽裝置
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/534e5525007ceca8f08415b4e670b098/75a80/macos-alfred-8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.16455696202532%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACzUlEQVQozz2PyW8bdRiG54xExXLgzoF/gwMHDkAJOaaV2CRKKTQqbRBbgTYSy6GL0haQylaVRAWpCCkNqRqy2Lj2eKvtuHW8zXhsz2LPeOY3M7YTeogeZDfl8Oj9nu/w6vukjWiaSrVBq2WQK1T5J54nmytjml1KFY1kpkw0vkkmlaJSzJPMbLEayRBPbbK98y+KZnFzJcHKmoyqGUh/r66xdOMvlm/eIiGnWFxcYnVtnWQyRSIWJS0nuJNOcTsaISXH2VhdIZOUScZjqLUKofBwul3y2TTxeBrpw2sNDv9qMnPN4P2FNtPzOtPzbd78qcn+iy1evNBi4juDye/NcY52D/2FuSYv7fnL3+o8P5tCenY2y9OfG1x67QuWJg5wffJ1/nzlVa7uf4NnjubYN6Pz1Acajx3XePxEkydONHlyRuPRYw2kd0aoSIfqPHJcZ9/hLFIir7Aub3J34RcGi78xWP6D/o3fGS5fR9dMGlaAZnhYbh9bDGiYAtXw0CyBYQs0U6CYgsKmwa1IEaleq1GqVFHPnUb/+G28bz5icOZT+mc/w281cYM+nucjRPA/7p574mEG2FaPbG4LKV8ssRK5jfzVSWJHDmKcn+X+1UuEP89hN9tYbkjHEdhuMGY0W3seDrbpeSEd10epmsjpMlJV0ShWFLT5H9DnvqR+9jTKmVO4P57HaT0otGyBCIeE/SGW7WLagp4I2d3dxQ+HmI6Pptk0NAupUNwiU7hH4+tPaL83hXL0AM3pg/inpnEbGpYY0HE87J6P3RN0HBer62K7Pp7fx/ECOm6AWrNIjC6s1FTWozHkhSvcuXKZYTpOPxHBi23gdGxsL8DueeOy7rj4AY4n6PZGrwscEWC0e8QSBaR0rkip3sQ8+S7W1HO4hyYRb01w/9gUnXIZxeyhtszxZUHYR20bKC0dvdNle2cHs2NT19rcu6tSKin8B4Jg3AHOG84YAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 8"
+        title="macos alfred 8"
+        src="/static/534e5525007ceca8f08415b4e670b098/f058b/macos-alfred-8.png"
+        srcset="/static/534e5525007ceca8f08415b4e670b098/c26ae/macos-alfred-8.png 158w,
+/static/534e5525007ceca8f08415b4e670b098/6bdcf/macos-alfred-8.png 315w,
+/static/534e5525007ceca8f08415b4e670b098/f058b/macos-alfred-8.png 630w,
+/static/534e5525007ceca8f08415b4e670b098/40601/macos-alfred-8.png 945w,
+/static/534e5525007ceca8f08415b4e670b098/75a80/macos-alfred-8.png 1134w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>還有一些其他功能就不一一列上來了…</p>
+<p>不是有一句話這樣說的嗎？「在非洲，每六十秒，就有一分鐘過去」</p>
+<p>上面幾個常用的操作習慣大概每天可以幫我省下數十秒甚至是幾分鐘，久而久之就可以幫我省下不少時間，真的是幫助我非常多，省下的時間就可以拿來浪費在其他事物上 (x)，傳統客家人就是連時間都要省…</p>
+<p>另外要提醒的是 Alfred Workflows 有些在維護上並不是那麼的好，而且不是全部都無腦使用，要<del>付錢</del>用的話可能需要有點愛才行，可以先裝個免費版來試試，有愛的話再付錢會比較適合 XD</p>
+<p>不過感覺的出來作者是還蠻有心維護 Alfred 的，一直有在推出新版本，最新消息也可追蹤 Alfred 的 <a href="https://twitter.com/alfredapp">Twitter</a> 取得 (一直等不到特價…)</p>
+<p>附上用量統計
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/40bc6f3abe10a864dca1fc242839c5eb/bf9ea/macos-alfred-9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.65822784810127%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACNklEQVQ4y5WTy2sTURTG80+J4EJFKAp1UcHHTkTUjVhw51tRK5aqqSDYLEqENkQbbB5NtNUmYhSDybQRtTWPDk1bk4xlmsykCUlm7p1P5iQTRlxYD3yce+d893fPHGYcqqrCkqIolGVZhiSVUS5bKkGSpN6+UqnAfq6mqqiqKpalbTg45zAMA5wb0No6NKZD03UwEqPMuSkGznTozICum542rLOWzHDYH5rRrLXANEZru3mnclggg3dyMSOjobR2BLSHARvQFGOcCt9jBSi/6r1L/rtDxhjRLWDCl4EolKHKDdpzxjvi/xYBzUN1pQWtqRPgw+QS3rq+YCVV7gC7o7C/5h9dUd3WoWnIJYqQxCqZTdjYmVkk/Tna620G+WetC8Jfs7MusKAEjE8u4cfHDSr67yVw+8ALREYF1KtNGkfYKUBa2+p1rGsMrM1R266hsLpOz2l0JrDwdROuc3P4Fi1QwXPpPe73v8SjY0G4B6No1ttwD8YwesqPqDtNns01BcvxDXwOZOC5/q43awI+ORnB3b4pLIRFKjy7GMPIgB/O4yE8OBJA9lMR4+fnMdw/jeHD05DXayhlt+A6O4enp2cxMhBAKVvpQR0PjwZxedcEzc4M54kQbu1/jqFDPtzc54X3ahym507fFK7t8SDyWMCbsTSu7J7A0EEfbuz1YvzCPFoNrfOnJGey9KmspiVqefGViGQgh1Qoj2Qwh8XXIoSZFaSCedJCuLsO5SGEOtn0l8VOl78BRYq0CBvJ3h0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="macos alfred 9"
+        title="macos alfred 9"
+        src="/static/40bc6f3abe10a864dca1fc242839c5eb/f058b/macos-alfred-9.png"
+        srcset="/static/40bc6f3abe10a864dca1fc242839c5eb/c26ae/macos-alfred-9.png 158w,
+/static/40bc6f3abe10a864dca1fc242839c5eb/6bdcf/macos-alfred-9.png 315w,
+/static/40bc6f3abe10a864dca1fc242839c5eb/f058b/macos-alfred-9.png 630w,
+/static/40bc6f3abe10a864dca1fc242839c5eb/40601/macos-alfred-9.png 945w,
+/static/40bc6f3abe10a864dca1fc242839c5eb/78612/macos-alfred-9.png 1260w,
+/static/40bc6f3abe10a864dca1fc242839c5eb/bf9ea/macos-alfred-9.png 2716w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>以上。</p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#d8b818;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/d4bf4/profile-pic.avif 50w" sizes="50px"/><source type="image/webp" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/3faea/profile-pic.webp 50w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg 50w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/d4bf4/profile-pic.avif 50w" sizes="50px"/><source type="image/webp" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/3faea/profile-pic.webp 50w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg 50w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>dsewnr</strong> <!-- -->who lives and works in Taiwan has a great enthusiasm for software engineering.<!-- --> <!-- -->Please feel free to contact me by<!-- --> <a href="mailto:hello@p3t.lu">email</a> <!-- -->or<!-- --> <a rel="me" href="https://g0v.social/@dsewnr">Mastodon</a>.</p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/fish-shell-slow-issue/">← <!-- -->解決我的 fish shell 變慢的問題</a></li><li><a rel="next" href="/mac-dev-env/">我的 Mac 開發環境 (terminal)<!-- --> →</a></li></ul></nav><hr/><div id="disqus_thread" identifier="008f1a8b-46e6-5a87-8e8e-440a8d657771" url="undefined/macos-alfred/"></div></main><footer>© <!-- -->2023<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-77038091-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/macos-alfred/";window.___webpackCompilationHash="00cd55ea43534f6675fe";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-30f2bf2a1846f97f91ab.js"],"app":["/app-81ac1edc6f2d87d104da.js"],"component---src-pages-404-js":["/component---src-pages-404-js-27981ca7dd461cb4280e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6ada977a4f5924cae235.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-d8923195b75f970a97ad.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ba991ac52366d3be120d.js"]};/*]]>*/</script><script src="/polyfill-30f2bf2a1846f97f91ab.js" nomodule=""></script><script src="/app-81ac1edc6f2d87d104da.js" async=""></script><script src="/framework-b9a5f57e28a68b87a1d1.js" async=""></script><script src="/webpack-runtime-4f38c71f224092186a19.js" async=""></script></body></html>

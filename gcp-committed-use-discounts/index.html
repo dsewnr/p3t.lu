@@ -1,0 +1,360 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.25.7"/><meta name="theme-color" content="#debe1d"/><meta data-react-helmet="true" name="description" content="上上個月不小心發現養在 GCP 上的 VM 變慢了，於是就順手升級了機器規格，結果這個月收到帳單的時候嚇了一跳… 原本我估計的費用還要高出不少… 根本快增加了一倍 XD  於是就買了 GCP 的承諾使用折扣 (committed use discounts…"/><meta data-react-helmet="true" property="og:title" content="買了 GCP 的承諾使用折扣 (Committed Use Discounts)"/><meta data-react-helmet="true" property="og:description" content="上上個月不小心發現養在 GCP 上的 VM 變慢了，於是就順手升級了機器規格，結果這個月收到帳單的時候嚇了一跳… 原本我估計的費用還要高出不少… 根本快增加了一倍 XD  於是就買了 GCP 的承諾使用折扣 (committed use discounts…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="dsewnr"/><meta data-react-helmet="true" name="twitter:title" content="買了 GCP 的承諾使用折扣 (Committed Use Discounts)"/><meta data-react-helmet="true" name="twitter:description" content="上上個月不小心發現養在 GCP 上的 VM 變慢了，於是就順手升級了機器規格，結果這個月收到帳單的時候嚇了一跳… 原本我估計的費用還要高出不少… 根本快增加了一倍 XD  於是就買了 GCP 的承諾使用折扣 (committed use discounts…"/><style data-href="/styles.a9af78e1992c55828fdb.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}
+
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{-webkit-text-size-adjust:100%;line-height:1.15}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden]{display:none}:root{--maxWidth-none:"none";--maxWidth-xs:20rem;--maxWidth-sm:24rem;--maxWidth-md:28rem;--maxWidth-lg:32rem;--maxWidth-xl:36rem;--maxWidth-2xl:42rem;--maxWidth-3xl:48rem;--maxWidth-4xl:56rem;--maxWidth-full:"100%";--maxWidth-wrapper:var(--maxWidth-2xl);--spacing-px:"1px";--spacing-0:0;--spacing-1:0.25rem;--spacing-2:0.5rem;--spacing-3:0.75rem;--spacing-4:1rem;--spacing-5:1.25rem;--spacing-6:1.5rem;--spacing-8:2rem;--spacing-10:2.5rem;--spacing-12:3rem;--spacing-16:4rem;--spacing-20:5rem;--spacing-24:6rem;--spacing-32:8rem;--fontFamily-sans:Montserrat,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--fontFamily-serif:"Merriweather","Georgia",Cambria,"Times New Roman",Times,serif;--font-body:var(--fontFamily-serif);--font-heading:var(--fontFamily-sans);--fontWeight-normal:400;--fontWeight-medium:500;--fontWeight-semibold:600;--fontWeight-bold:700;--fontWeight-extrabold:800;--fontWeight-black:900;--fontSize-root:16px;--lineHeight-none:1;--lineHeight-tight:1.1;--lineHeight-normal:1.5;--lineHeight-relaxed:1.625;--fontSize-0:0.833rem;--fontSize-1:1rem;--fontSize-2:1.2rem;--fontSize-3:1.44rem;--fontSize-4:1.728rem;--fontSize-5:2.074rem;--fontSize-6:2.488rem;--fontSize-7:2.986rem;--color-primary:#005b99;--color-text:#334747;--color-text-light:violet;--color-heading:#1a202c;--color-heading-black:#000;--color-accent:#d1dce5;--color-background:#fdf6e3}*,:after,:before{box-sizing:border-box}html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--color-background);font-size:var(--fontSize-root);line-height:var(--lineHeight-normal)}body{color:var(--color-text);font-family:var(--font-body);font-size:var(--fontSize-1)}footer{padding:var(--spacing-6) var(--spacing-0)}hr{background:var(--color-accent);border:0;height:1px}h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);letter-spacing:-.025em;line-height:var(--lineHeight-tight);margin-bottom:var(--spacing-6);margin-top:var(--spacing-12)}h2,h3,h4,h5,h6{color:var(--color-heading);font-weight:var(--fontWeight-bold)}h1{color:var(--color-heading-black);font-size:var(--fontSize-6);font-weight:var(--fontWeight-black)}h2{font-size:var(--fontSize-5)}h3{font-size:var(--fontSize-4)}h4{font-size:var(--fontSize-3)}h5{font-size:var(--fontSize-2)}h6{font-size:var(--fontSize-1)}h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{color:inherit;text-decoration:none}p{--baseline-multiplier:0.179;--x-height-multiplier:0.35;line-height:var(--lineHeight-relaxed);margin:var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0)}ol,p,ul{padding:var(--spacing-0)}ol,ul{list-style-image:none;list-style-position:outside;margin-bottom:var(--spacing-8);margin-left:var(--spacing-0);margin-right:var(--spacing-0)}ol li,ul li{padding-left:var(--spacing-0)}li>p,ol li,ul li{margin-bottom:calc(var(--spacing-8)/2)}li :last-child{margin-bottom:var(--spacing-0)}li>ul{margin-left:var(--spacing-8);margin-top:calc(var(--spacing-8)/2)}blockquote{border-left:var(--spacing-1) solid var(--color-primary);color:var(--color-text-light);font-size:var(--fontSize-2);font-style:italic;margin-bottom:var(--spacing-8);margin-left:calc(var(--spacing-6)*-1);margin-right:var(--spacing-8);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6)}blockquote>:last-child{margin-bottom:var(--spacing-0)}blockquote>ol,blockquote>ul{list-style-position:inside}table{border-collapse:collapse;border-spacing:.25rem;margin-bottom:var(--spacing-8);width:100%}table thead tr th{border-bottom:1px solid var(--color-accent)}a{color:var(--color-primary)}a:focus,a:hover{text-decoration:none}.global-wrapper{margin:var(--spacing-0) auto;max-width:var(--maxWidth-wrapper);padding:var(--spacing-10) var(--spacing-5)}.global-wrapper[data-is-root-path=true] .bio{margin-bottom:var(--spacing-20)}.global-header{margin-bottom:var(--spacing-12)}.main-heading{font-size:var(--fontSize-7);margin:0}.post-list-item{margin-bottom:var(--spacing-8);margin-top:var(--spacing-8)}.post-list-item p{margin-bottom:var(--spacing-0)}.post-list-item h2{color:var(--color-primary);font-size:var(--fontSize-4);margin-bottom:var(--spacing-2);margin-top:var(--spacing-0)}.post-list-item header{margin-bottom:var(--spacing-4)}.header-link-home{font-family:var(--font-heading);font-size:var(--fontSize-2);font-weight:var(--fontWeight-bold);text-decoration:none}.bio{display:flex;margin-bottom:var(--spacing-16)}.bio p,.bio-avatar{margin-bottom:var(--spacing-0)}.bio-avatar{border-radius:100%;margin-right:var(--spacing-4);min-width:50px}.blog-post header h1{margin:var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0)}.blog-post header p{font-family:var(--font-heading);font-size:var(--fontSize-2)}.blog-post-nav ul{margin:var(--spacing-0)}.gatsby-highlight{margin-bottom:var(--spacing-8)}@media (max-width:42rem){blockquote{margin-left:var(--spacing-0);padding:var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4)}ol,ul{list-style-position:inside}}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="stylesheet"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Gatsby Starter Blog RSS Feed" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=471e0b5eb429186b20a8a62a96c25985" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=471e0b5eb429186b20a8a62a96c25985"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=471e0b5eb429186b20a8a62a96c25985"/><title data-react-helmet="true">買了 GCP 的承諾使用折扣 (Committed Use Discounts) | p3t.lu</title><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="global-wrapper" data-is-root-path="false"><header class="global-header"><a class="header-link-home" href="/">p3t.lu</a></header><main><article class="blog-post" itemscope="" itemType="http://schema.org/Article"><header><h1 itemProp="headline">買了 GCP 的承諾使用折扣 (Committed Use Discounts)</h1><p>June 03, 2021</p></header><section itemProp="articleBody"><p>上上個月不小心發現養在 GCP 上的 VM 變慢了，於是就順手升級了機器規格，結果這個月收到帳單的時候嚇了一跳… 原本我估計的費用還要高出不少… 根本快增加了一倍 XD</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/05a8ac28fbced8787b7f340dfd5dcddc/07a9c/gcp-committed-use-discounts-0.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.21518987341771%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB3klEQVQ4y6WS22/TMBjF8w/zyEVC47JBBwzeeIMHxGUT2tatu0gIxEVjIASiHQjo1g3QtrbLSFJoArbjSw767KZk0xCtiHRyYvvzz8d2PCklqtUqarUaut0uqJ1lGejJ/V9Psd4zxoAxhjiOkSQJlFIHCgZVH6i1RqPRQL1et8AiaJh0BxISSAhxZMFRgLzfZJlVMal3GDCojKF5+VZN/+y9YSB9WC/E6y2Ft18UwtgQ9Q9QG7fi37wo6pPaAa8ucdx8KrAbaWjtLtPDgId/6CTt+/pDgdsrKdodbbdNyT0hDapfFV42FB5/kHi1qfCxqfHovcTqhsSbzwordYkHaxLrbW1rl2sSzz5JXFnkuPM8RaujYfKEQWxw7NYvXJjjODHJrI9MM5ydYTg15fzcTM9nGU5OMYyWOU7fZxgrc9xdTdGMCgmjxOD4PYaJJY4z0wwTi9xCSxVuIaV5jvGKa5NTzeUFjrE5bsGTL1L4PyihdgkJSKteW+Y2CXmp4iaNlhkuLXD7nev8rFv84rwbu/FE4N22or/SJZTKYDdI4X+XaEUp9jop2lFRworGaawV9mo61BbYCVwdMuMScgn4YYKf3RBcpAiDb9j3W/D3moiC/eHu3t6yEOD8/0Uc0m+ltGzBiYT/kwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 0"
+        title="gcp committed use discounts 0"
+        src="/static/05a8ac28fbced8787b7f340dfd5dcddc/f058b/gcp-committed-use-discounts-0.png"
+        srcset="/static/05a8ac28fbced8787b7f340dfd5dcddc/c26ae/gcp-committed-use-discounts-0.png 158w,
+/static/05a8ac28fbced8787b7f340dfd5dcddc/6bdcf/gcp-committed-use-discounts-0.png 315w,
+/static/05a8ac28fbced8787b7f340dfd5dcddc/f058b/gcp-committed-use-discounts-0.png 630w,
+/static/05a8ac28fbced8787b7f340dfd5dcddc/40601/gcp-committed-use-discounts-0.png 945w,
+/static/05a8ac28fbced8787b7f340dfd5dcddc/78612/gcp-committed-use-discounts-0.png 1260w,
+/static/05a8ac28fbced8787b7f340dfd5dcddc/07a9c/gcp-committed-use-discounts-0.png 1440w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>於是就買了 GCP 的承諾使用折扣 (committed use discounts)，想說機器剛升級且蠻懶的短期內也不會有什麼大變化，就直接買了個三年！</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cb6936ec5b0c2cb891dcac70aaf93128/a016c/gcp-committed-use-discounts-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.77215189873418%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA7klEQVQoz3VSyaqEQAzs//8zbyKexG3cFVcUd81QgYivmRco0iZFUklUaZqS7/s0zzPBruui+74fnOdJfd/TMAzUtu2T13kC5bouGYZBURQ9RAG+j+OgPM8Jjcdx/JN7cwUqjmMKgoCSJGE1OgGxpmkYkofftu13wc/nQ1ApJtJFxb7vVFUVqyyKgpWWZcnj6+PCFAi2bZPjOGRZFtV1zYm3GhTsuo6LwqMwIE2QRx14lWUZeZ5Hy7IwoEhXiIOh8LquvFPEAHm/Y3wU0zS5s4ysHwVXxs7eK/kPCscIw/A5ik5ADGuYpunnb6Xv/Avl52uE0SdrKwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 2"
+        title="gcp committed use discounts 2"
+        src="/static/cb6936ec5b0c2cb891dcac70aaf93128/f058b/gcp-committed-use-discounts-2.png"
+        srcset="/static/cb6936ec5b0c2cb891dcac70aaf93128/c26ae/gcp-committed-use-discounts-2.png 158w,
+/static/cb6936ec5b0c2cb891dcac70aaf93128/6bdcf/gcp-committed-use-discounts-2.png 315w,
+/static/cb6936ec5b0c2cb891dcac70aaf93128/f058b/gcp-committed-use-discounts-2.png 630w,
+/static/cb6936ec5b0c2cb891dcac70aaf93128/a016c/gcp-committed-use-discounts-2.png 762w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>買完隔天就生效了，可以從介面看到承諾使用折扣的使用率</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e516ac6c1dc97a1d010fe2a7978dc041/8079d/gcp-committed-use-discounts-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.92405063291139%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAACQUlEQVQ4y62T609aQRDF7/8fEyVKpRikhFoIQRQEI5Km8VEDaQUTNVojTbDlCgre2/sC7uvX7KIlVfutm5zs7Jyzs7Ozs0qv16PdbtPrqUzGI8LAJ/A9CUIP3XKxLFviwXC5HYzQjAmW46LejxjoY0zbxRm5QIAy0Eb0HyaItTUGZzKDPQbT8TGd4BE+1sh/9P1tC2imi3I3MOh0B3R+DrjpDrn6rvKt3ZVzu9NHtwI003sGH93yX/h100MZ3N9zq3bR9V/YtoNtGVimgeNY2JbJv0f4qlfp9+/odrsEQfhC0uncoKqq5CQfThWGYXB93WbiBrg+BOGUE1DG4zHD4RDLsgjDAN/3CYLprGkauq5jmiae50m/gOu6Uu/5Pr4f/DlMBuR/jTCQmSrixMvLSw4PDzk/P+f4+JhGo8HFxQVHR0e0Wi1OT0+lfXZ2RrPZpF6vS2290aDV/Mrnkx9odijrqoirlctl5ubmKBQKJBIJotEoxWKRSCRCKpUil8sxPz9PPp8nmUyytLQktdHoG1LJOJHMF1SdWcBarcby8jKVSoVMJiM3VatVVlZWZLBSqUQ8Hmdra4tsNsvq6irb29skk+/IZd8TL5zwTQ1mAQW5sLDA5uamzCgWi8msRSZra2usr6+zuLjIxsYG6XRa8uIGsbdxPqQTRLIt4p/86U8RrydqJjYdHByws7MjxaJmIsDu7i57e3uS39/fl5kLXmiLpRK1aoX8xyvKLW+WoWgb0Vvi2Z9aQ+D5+jU8acJH+zeI6K6+8oFZYwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 1"
+        title="gcp committed use discounts 1"
+        src="/static/e516ac6c1dc97a1d010fe2a7978dc041/f058b/gcp-committed-use-discounts-1.png"
+        srcset="/static/e516ac6c1dc97a1d010fe2a7978dc041/c26ae/gcp-committed-use-discounts-1.png 158w,
+/static/e516ac6c1dc97a1d010fe2a7978dc041/6bdcf/gcp-committed-use-discounts-1.png 315w,
+/static/e516ac6c1dc97a1d010fe2a7978dc041/f058b/gcp-committed-use-discounts-1.png 630w,
+/static/e516ac6c1dc97a1d010fe2a7978dc041/40601/gcp-committed-use-discounts-1.png 945w,
+/static/e516ac6c1dc97a1d010fe2a7978dc041/78612/gcp-committed-use-discounts-1.png 1260w,
+/static/e516ac6c1dc97a1d010fe2a7978dc041/8079d/gcp-committed-use-discounts-1.png 2100w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>可以看到承諾使用折扣生效後的費用馬上降下來…</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bae08b4d5c1083aac3445fe5a06856cd/6052f/gcp-committed-use-discounts-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.202531645569614%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABdUlEQVQoz3VSO07DQBTcI3AIrpAKJBASOQEfIYKgoAkFJVKKiEBBRQESMiBScIEUEZH4VRQUcAJo0tlIjtaxY6+9jnc9yOtPHBSeNFpr9+3MvFkT0zRhGAYopWrlnCOpOI6Rl4wl/DFHJASklFNn5Ur2iWUNQS0LQRCo5hRxhvTyOIpAHRseY/A8D1EUqf2/SPrJhF0WhIhl4iuF+o4LBxPRVIwxhjAMEYQCjheB2J6A5QpINUaqxMcxfC7hhyXw1HneU4aKJRMg9XuO2g2Hx3MXQKsTYO2SYeeaYVtjqGkMW1cMfVNmmc7OMCmyf/GDjTMdXiCLseptB5UGxXLLwtIxVVhoUnzpkeoRcnZ+KsPR0Tqcgyokc1VSyeHg9BD65iKMvSqM3VUFvbaCsP+dikoxk1CNTLV5DM7nIAO7cOi3Kxg1CNwTAreVoUkg9M+C8N+Re29P6Lx21UvlhO8fXXQfNfRe7vDwfFusQ9uceoAcovR//gIqFJatUEZ46gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 3"
+        title="gcp committed use discounts 3"
+        src="/static/bae08b4d5c1083aac3445fe5a06856cd/f058b/gcp-committed-use-discounts-3.png"
+        srcset="/static/bae08b4d5c1083aac3445fe5a06856cd/c26ae/gcp-committed-use-discounts-3.png 158w,
+/static/bae08b4d5c1083aac3445fe5a06856cd/6bdcf/gcp-committed-use-discounts-3.png 315w,
+/static/bae08b4d5c1083aac3445fe5a06856cd/f058b/gcp-committed-use-discounts-3.png 630w,
+/static/bae08b4d5c1083aac3445fe5a06856cd/40601/gcp-committed-use-discounts-3.png 945w,
+/static/bae08b4d5c1083aac3445fe5a06856cd/78612/gcp-committed-use-discounts-3.png 1260w,
+/static/bae08b4d5c1083aac3445fe5a06856cd/6052f/gcp-committed-use-discounts-3.png 2030w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>不知道這個月可以降下多少費用，還是其實買完費用會更高… 這個月過了再來更新吧 XD</p>
+<hr>
+<h3>購買時遇到問題？</h3>
+<p>如果在購買過程中遇到下列錯誤訊息</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Quota 'COMMITMENTS' exceeded. Limit: 0.0 in region</code></pre></div>
+<p>可以到左邊選單 > IAM 與管理 > 配額，然後搜尋 commitments</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/35ad74c65b361c51d323fc1788681b64/e3829/gcp-committed-use-discounts-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABUUlEQVQoz51S2Y6CQBDk/7/NIHgEFUERT8Qgx4BylakmYzZZH3adpNI9tJRV1Rij0Qh9DzlR0sL2SjhBhaYdHurZX49xu91QliWqqkKhFApVoW5atO13MBaLBeI4FpxOJ1yvV3RfEHVdh77vYXieh+VyiSiKZDDY7H+BL3wCZ4/HA2maQikFg4qocjabYT6fYzKZYDqdwnEc6U3TxHg8xm63EwebzQaHw0H64/EolXeSisL7/S4/Iqlt21iv1yiKQqwHQSA1y7J3zlTBqkEizrmLt0L+exiGQna5XPDfU9e1EFKIKNzv93BdV1SuViu5046uzPZnnvronoRN0wyfTZIkoopgHlRKIi6Jve/7EgntaZJPS3lnSMu0yiVw21wMKxXrStWcs2e1LEvAnq74/Pl8DoQMlAq2262AeXIBtEkbGrzneY7z+Szq+R4V6pmO4wWvBEdmMxyIRgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 4"
+        title="gcp committed use discounts 4"
+        src="/static/35ad74c65b361c51d323fc1788681b64/f058b/gcp-committed-use-discounts-4.png"
+        srcset="/static/35ad74c65b361c51d323fc1788681b64/c26ae/gcp-committed-use-discounts-4.png 158w,
+/static/35ad74c65b361c51d323fc1788681b64/6bdcf/gcp-committed-use-discounts-4.png 315w,
+/static/35ad74c65b361c51d323fc1788681b64/f058b/gcp-committed-use-discounts-4.png 630w,
+/static/35ad74c65b361c51d323fc1788681b64/40601/gcp-committed-use-discounts-4.png 945w,
+/static/35ad74c65b361c51d323fc1788681b64/e3829/gcp-committed-use-discounts-4.png 1077w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>按所有配額</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f4c865f68c53010b8aafa45b906e5e05/7388e/gcp-committed-use-discounts-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 26.58227848101266%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAABDklEQVQY05WO207CQABE+/8fgRqMfwAJxjcfwMgTWuXWViill+1t27Jsqe0xNPoBTnIyyWQyGcNxHLaWxZ+C9ILlaeqm5T/quq7HyHNJ4HtsPcXzQjI1C14+rpTMVxUzs/zNSl6XFVOzxBNnzqpCygIpJVVV9WNt22LEccKXvWZm5gzGIcNJxMOT4H4ScDc+cDv2GT5GDCchN6MDg9GRT6dAnUrSNCPLMvI8p641TXPBqLXGsmyKPAY0XXMCakopeF/MSYQHNKgq5W0xZ2cvyVKBUqpHa90PbjYWYRRjXG/GQrDfu7jugd1uT5Kk6PrSexQJClmRqoKV7xD4Yd/zfZ8oiigKyXfbYR/PrN0zPzRtdTykAE0GAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 5"
+        title="gcp committed use discounts 5"
+        src="/static/f4c865f68c53010b8aafa45b906e5e05/f058b/gcp-committed-use-discounts-5.png"
+        srcset="/static/f4c865f68c53010b8aafa45b906e5e05/c26ae/gcp-committed-use-discounts-5.png 158w,
+/static/f4c865f68c53010b8aafa45b906e5e05/6bdcf/gcp-committed-use-discounts-5.png 315w,
+/static/f4c865f68c53010b8aafa45b906e5e05/f058b/gcp-committed-use-discounts-5.png 630w,
+/static/f4c865f68c53010b8aafa45b906e5e05/40601/gcp-committed-use-discounts-5.png 945w,
+/static/f4c865f68c53010b8aafa45b906e5e05/7388e/gcp-committed-use-discounts-5.png 1104w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>選擇你要的位置按編輯配額</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7dd6a0638da421f106869c83f0cadd45/d004c/gcp-committed-use-discounts-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.53164556962025%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABHklEQVQoz5WS24qDUAxFz///nCDYClrwQXFQkLZqtd5SVmAPjE/TA+FoLis70dC2rcVxbEmSuI3jYOtulpWT/XSLcY7j+LeFYRgM6/veXq/XL0Bn/wLmwKqqLM9zK8vSpmmyfd/dlmXx+9sTrterXS4Xi6LIR86yzPAVReHQr0cex9He77ePi8J1Xf1d51xwPudYqOvans+nNU3ju9TIwPGjcts2b6Rm5BHjWTFuRAWcqGSX8zy7AeHrMzqFxIEQu9/vvvM0Ta3rOo8BouZ2u1mAjlwSKZZ8OmoVFGk1FKqpYvipgRUkl26Px8MTGJkkfiXBVKiRMflpIBEOBIBC9iaFKNA4ugU8+wHC+ANkZyToy0mhfnrtENO7TEIAfgDtVFe342imjAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 6"
+        title="gcp committed use discounts 6"
+        src="/static/7dd6a0638da421f106869c83f0cadd45/f058b/gcp-committed-use-discounts-6.png"
+        srcset="/static/7dd6a0638da421f106869c83f0cadd45/c26ae/gcp-committed-use-discounts-6.png 158w,
+/static/7dd6a0638da421f106869c83f0cadd45/6bdcf/gcp-committed-use-discounts-6.png 315w,
+/static/7dd6a0638da421f106869c83f0cadd45/f058b/gcp-committed-use-discounts-6.png 630w,
+/static/7dd6a0638da421f106869c83f0cadd45/40601/gcp-committed-use-discounts-6.png 945w,
+/static/7dd6a0638da421f106869c83f0cadd45/78612/gcp-committed-use-discounts-6.png 1260w,
+/static/7dd6a0638da421f106869c83f0cadd45/d004c/gcp-committed-use-discounts-6.png 1611w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>右邊表單填入需要增加的限制及說明</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/be62d864b33dc38c6b9bf52cfcbd7315/2e195/gcp-committed-use-discounts-7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 163.29113924050634%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAhCAYAAADZPosTAAAACXBIWXMAABYlAAAWJQFJUiTwAAADOUlEQVRIx51WaXOqQBD0//+dfM1RlaQqt88oh+KtSFQQbwU5+lWPQoimPLJVw7ILzHbv9MySmywCjGYh4iiAruu4vb1FoVDAYDDAzc0Nrq+vUavVwBbHMU613NILsVxHiOMI/f4AzWZTnC0WC3HE8Xg8Th2eshziCHEUIgzDoytHUXSW5fY/zK6WvJRQPYuy7/soFotQFAXlclkcnGpHKa9WK9zd3eH+/h5vb28IgiBFxm3Yt1Noc+v1WhBWKhWoqorn52eJsmEYgvjj4wPv7+/I5/N4enrCcDg8ijJHJJ7ngdTZbzYbMSIlIvbJmH0SvCzCxJkgxB/aPqrsfC6J4jmS+I0iG9GTXerwUnT798vlEpPJ5JsyB0y7RqMhwWGGMCAMDMfdbleCNZ/PD/Ysu4AImxOUDlOMkaR06KRer+Pl5UUizGdcgNSyTrJ9sm2CkPwty5IIMpLM49lsJogS/ZGW67o/nO47Th2ORiMRNnvTNAUht4DZQ7pcjAhp1O1vuZ3qkBdqsN/vC7V2u52iuLSlCEmFdZAZ8/r6KhnDbOEi0+lUgsVAVavV1MiCvaZpgpzvplG2bVsoki4dMjiPj494eHhAr9fD1dUVSqUSHMeRMbeA72YtqZnikPvCSX5EZMzXZD8ZjFarJUo4i3IibMqEyPjxb0Jmz709ZqkOk8RP2n7JSgrFsbRMHW4nYjlToijcGY+Fy4w+flCOYiCMtn18oUWZbRHK81WIgjHFk+JCbcxgOT5afQ/tM43vdoc+glB0GKNheTDNHpoNA91OO13xkkaHk3mwdchBZ7hB3w1hjQKYtgfT9mEOvZ9mE8n2vmf76DkbdAZrWI4HvbXAygt3BZayaX0h/6mjpNVRKFXQaH+hpNWgVZoy96lUoejbZ/+KZVRqXXR6DopqFe7Uw9rf/iykQXHsASplHfVaFZqqYOw6UJUSlNInyromz2i8r9UM6JqKsq7CskyG41DYnU5H0k/VNBhGdZdmlvyWME9ZhJmi4/EEnu/LPbOJzzeb4NAh6x+NxYB1kDXy8oMr+j6kTv3P7B9OFDKpurMA9mRziPCvbTCmKnYOswf9Xy0MfEShj/V6+5PwH4+R7urFVx5HAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 7"
+        title="gcp committed use discounts 7"
+        src="/static/be62d864b33dc38c6b9bf52cfcbd7315/f058b/gcp-committed-use-discounts-7.png"
+        srcset="/static/be62d864b33dc38c6b9bf52cfcbd7315/c26ae/gcp-committed-use-discounts-7.png 158w,
+/static/be62d864b33dc38c6b9bf52cfcbd7315/6bdcf/gcp-committed-use-discounts-7.png 315w,
+/static/be62d864b33dc38c6b9bf52cfcbd7315/f058b/gcp-committed-use-discounts-7.png 630w,
+/static/be62d864b33dc38c6b9bf52cfcbd7315/2e195/gcp-committed-use-discounts-7.png 782w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>填入姓名、email、電話</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/92a0b94d913e192c2fc0769cf57236b6/612f7/gcp-committed-use-discounts-8.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 106.9620253164557%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAACkklEQVQ4y6WUTWtTURCG70LFX+DShahYxB8gCBbFDxAFXWgLbrQuulAUqaAudONCXQoq4sKNC8GNuNDaamxsTJqmrbFCEmtr2qa0adM2Tdt83fPxyDlJJBXaXHDg5Z57ztxz5513Zpx8UVByFUK4zKTTTE5OksvlLFKpFOPj4xQKBYwppRrCAY1W0r5sZOZca90QjtcPvZqTzWaJx+PEYjFL15iXSNaNcG5ujmAwSCAQIJFI8L/m/Eu3WCxSKpUszNogn89TLpeRUtp9I1LNr+Zj9oQQOPPz83z2+fjQ2Ul3dzddXV2EgkGi0Sg+n4/e3l6LZDJJJpOhv78fv99POBy260gkYs9DoRCLi4s4s+k0fcGvRIcGiYT7CHzxM51KVXIp5YaC1M7qfSzlqZWChTFpHOpRV2MbiVE7d1haYKKlmemWZug4j7x2Dnm9Fdl+Cvnysf2BFMLmzwsckUnD5dPQfhLddhx14SjKPFsPoJ4/xJS7EqJhhxhBrCiG1jKwCKxWKat6eLis1mWWslrJkbhxiXDbGZK32xFP7qGe3Uc+uov69LZyqRQNozN9byOU6Sk4sReO7bbQh3egj+xC79+GftBREaaq9notaWrUlJupS0vZBUSVbo3yX+pSbhidlHItZZQi8uY1iY/vYXoCkfyFnBhFJkeQmTRSa0/qimquHTE1QbFpC+WdDrJpM3LPJvS+rejtDvrWxYaU62FziCzD6DcYGYSRAUgMIIcj8L0PNTmG1CCltzq0Ef6eKfOiJ8+rYNE+exLC5iOnK3nVWnkeXbb13oUWOHhlmLN34hy6+oObT8eQbomBWJbcctE2oNfxakXJrboMJpYY+rlEJJYlNVuwdeeWS7iuu2YAeBmwfwBEiy07qleH6AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 8"
+        title="gcp committed use discounts 8"
+        src="/static/92a0b94d913e192c2fc0769cf57236b6/f058b/gcp-committed-use-discounts-8.png"
+        srcset="/static/92a0b94d913e192c2fc0769cf57236b6/c26ae/gcp-committed-use-discounts-8.png 158w,
+/static/92a0b94d913e192c2fc0769cf57236b6/6bdcf/gcp-committed-use-discounts-8.png 315w,
+/static/92a0b94d913e192c2fc0769cf57236b6/f058b/gcp-committed-use-discounts-8.png 630w,
+/static/92a0b94d913e192c2fc0769cf57236b6/612f7/gcp-committed-use-discounts-8.png 773w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>送出之後就是去收 email 等結果啦！</p>
+<hr>
+<h4>2021/07/02 update</h4>
+<p>費用降回來了，付差不多的價格機器規格還升級！！！</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; border-style: solid; border-width: thin; border-color: #334747;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/acb5ca6952b56d37965d8eaf46928ae1/f98ee/gcp-committed-use-discounts-9.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQoz51TW0sCQRjd3xxBUNIFu9pDL730EAQm3Sw1K6iIioqKAqmHNIoMpWRttXR1ZnZndk/MbK5aRNoHh++6Z8/3sauVSiWkUinoug5pruv6+I9plFIUCgUYhgHOeRthp2gVopmmiXQ6jXK57Dc6MTnWGG19RnMcB0KIH+v+rcpDg0zyKIXNN3ZHZlIHNdYk9Qm9xIXT8E5joFmXufjKufAUzR0whE8sFcua3LJN4bcL/ZpLYmmzewzzh8wn9BVmXgWWzy1ELy3s39rYvbEROWXKJ64txK8sLBwzXDxwbKdsLJ4wVZ9OUkxtUtVThEKobbSjO46eMEH/CsFQlGBwrRkPfPneCMF4nKJvyetLBDeownCUeLd1hDqJdnbPEVijGI1RhLYYQkmGYIxhKilrBJMJisAqwcwOxcg6wVicYCLh9YIxGRM8FQUqdaFOoxlVgXS+jsdXhoeXOu7zJjK5GrK6haxu47lo40nnyL1Jb/u1bEtsVDkI4x4hsVzUzCq4zVAzK6i8G6h+lACXd/3byS/qE7d0izv1UL8HAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gcp committed use discounts 9"
+        title="gcp committed use discounts 9"
+        src="/static/acb5ca6952b56d37965d8eaf46928ae1/f058b/gcp-committed-use-discounts-9.png"
+        srcset="/static/acb5ca6952b56d37965d8eaf46928ae1/c26ae/gcp-committed-use-discounts-9.png 158w,
+/static/acb5ca6952b56d37965d8eaf46928ae1/6bdcf/gcp-committed-use-discounts-9.png 315w,
+/static/acb5ca6952b56d37965d8eaf46928ae1/f058b/gcp-committed-use-discounts-9.png 630w,
+/static/acb5ca6952b56d37965d8eaf46928ae1/40601/gcp-committed-use-discounts-9.png 945w,
+/static/acb5ca6952b56d37965d8eaf46928ae1/78612/gcp-committed-use-discounts-9.png 1260w,
+/static/acb5ca6952b56d37965d8eaf46928ae1/f98ee/gcp-committed-use-discounts-9.png 1808w"
+        sizes="(max-width: 630px) 100vw, 630px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>BTW, 升級前的規格是 CPU: 1 Core 和 Memory: 3.5 GB</p></section><hr/><footer><div class="bio"><div data-gatsby-image-wrapper="" style="width:50px;height:50px" class="gatsby-image-wrapper bio-avatar"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#d8b818;width:50px;height:50px;position:relative"></div><picture><source type="image/avif" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/d4bf4/profile-pic.avif 50w" sizes="50px"/><source type="image/webp" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/3faea/profile-pic.webp 50w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" data-src="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg" data-srcset="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg 50w" alt="Profile picture"/></picture><noscript><picture><source type="image/avif" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/d4bf4/profile-pic.avif 50w" sizes="50px"/><source type="image/webp" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/3faea/profile-pic.webp 50w" sizes="50px"/><img data-gatsby-image-ssr="" layout="fixed" data-main-image="" style="opacity:0" sizes="50px" decoding="async" loading="lazy" src="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg" srcSet="/static/d1c0c909403f9875f5396d1bc68aeeb0/d24ee/profile-pic.jpg 50w" alt="Profile picture"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script></div><p>Written by <strong>dsewnr</strong> <!-- -->who lives and works in Taiwan has a great enthusiasm for software engineering.<!-- --> <!-- -->Please feel free to contact me by<!-- --> <a href="mailto:hello@p3t.lu">email</a> <!-- -->or<!-- --> <a rel="me" href="https://g0v.social/@dsewnr">Mastodon</a>.</p></div></footer></article><nav class="blog-post-nav"><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/mac-dev-env/">← <!-- -->我的 Mac 開發環境 (terminal)</a></li><li><a rel="next" href="/fish-shell-load-dot-env-file/">fish shell 讀 .env 檔設成環境變數<!-- --> →</a></li></ul></nav><hr/><div id="disqus_thread" identifier="2d021a85-9eff-5605-91cc-efc0b0d16e24" url="undefined/gcp-committed-use-discounts/"></div></main><footer>© <!-- -->2023<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.com">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-77038091-8', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/gcp-committed-use-discounts/";window.___webpackCompilationHash="00cd55ea43534f6675fe";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-30f2bf2a1846f97f91ab.js"],"app":["/app-81ac1edc6f2d87d104da.js"],"component---src-pages-404-js":["/component---src-pages-404-js-27981ca7dd461cb4280e.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6ada977a4f5924cae235.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-d8923195b75f970a97ad.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-ba991ac52366d3be120d.js"]};/*]]>*/</script><script src="/polyfill-30f2bf2a1846f97f91ab.js" nomodule=""></script><script src="/app-81ac1edc6f2d87d104da.js" async=""></script><script src="/framework-b9a5f57e28a68b87a1d1.js" async=""></script><script src="/webpack-runtime-4f38c71f224092186a19.js" async=""></script></body></html>
